@@ -1,0 +1,6 @@
+framework module Pods_JQCloudMusic {
+  umbrella header "Pods-JQCloudMusic-umbrella.h"
+
+  export *
+  module * { export * }
+}

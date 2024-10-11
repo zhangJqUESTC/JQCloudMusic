@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6902CB9501F004DEFCB /* AppDelegate.m */; };
-		09CAB6942CB9501F004DEFCB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6932CB9501F004DEFCB /* SceneDelegate.m */; };
 		09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6962CB9501F004DEFCB /* ViewController.m */; };
-		09CAB69A2CB9501F004DEFCB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 09CAB6992CB9501F004DEFCB /* Base */; };
 		09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB69B2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld */; };
 		09CAB69F2CB95020004DEFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CAB69E2CB95020004DEFCB /* Assets.xcassets */; };
 		09CAB6A22CB95020004DEFCB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 09CAB6A12CB95020004DEFCB /* Base */; };
@@ -18,6 +16,10 @@
 		09CAB6AF2CB95020004DEFCB /* JQCloudMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6AE2CB95020004DEFCB /* JQCloudMusicTests.m */; };
 		09CAB6B92CB95020004DEFCB /* JQCloudMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6B82CB95020004DEFCB /* JQCloudMusicUITests.m */; };
 		09CAB6BB2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */; };
+		09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6CB2CB95780004DEFCB /* SplashController.m */; };
+		32A0BAB8888FBAE1B965A80C /* Pods_JQCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */; };
+		6B60053BE17049B245EF5391 /* Pods_JQCloudMusic_JQCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */; };
+		F27B5E00385567DA3A0285E6 /* Pods_JQCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +43,8 @@
 		09CAB68C2CB9501F004DEFCB /* JQCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CAB68F2CB9501F004DEFCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09CAB6902CB9501F004DEFCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09CAB6922CB9501F004DEFCB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		09CAB6932CB9501F004DEFCB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		09CAB6952CB9501F004DEFCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		09CAB6962CB9501F004DEFCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		09CAB6992CB9501F004DEFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09CAB69C2CB9501F004DEFCB /* JQCloudMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JQCloudMusic.xcdatamodel; sourceTree = "<group>"; };
 		09CAB69E2CB95020004DEFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09CAB6A12CB95020004DEFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +55,17 @@
 		09CAB6B42CB95020004DEFCB /* JQCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CAB6B82CB95020004DEFCB /* JQCloudMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQCloudMusicUITests.m; sourceTree = "<group>"; };
 		09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQCloudMusicUITestsLaunchTests.m; sourceTree = "<group>"; };
+		09CAB6CA2CB95780004DEFCB /* SplashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashController.h; sourceTree = "<group>"; };
+		09CAB6CB2CB95780004DEFCB /* SplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
+		34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusicTests/Pods-JQCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5853F085DD0C202B0CFE8F9D /* Pods-JQCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-JQCloudMusicTests/Pods-JQCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		78BF13EEF8F7F61CD85B5983 /* Pods-JQCloudMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic.release.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic/Pods-JQCloudMusic.release.xcconfig"; sourceTree = "<group>"; };
+		79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4352599BF13B6EC863620F4 /* Pods-JQCloudMusic-JQCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic-JQCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusic_JQCloudMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBD8F2D4F4004DBCD15287B /* Pods-JQCloudMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic/Pods-JQCloudMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27B5E00385567DA3A0285E6 /* Pods_JQCloudMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A0BAB8888FBAE1B965A80C /* Pods_JQCloudMusicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +89,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B60053BE17049B245EF5391 /* Pods_JQCloudMusic_JQCloudMusicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078E0048B6FE5810DBDF3DE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD8F2D4F4004DBCD15287B /* Pods-JQCloudMusic.debug.xcconfig */,
+				78BF13EEF8F7F61CD85B5983 /* Pods-JQCloudMusic.release.xcconfig */,
+				4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */,
+				C4352599BF13B6EC863620F4 /* Pods-JQCloudMusic-JQCloudMusicUITests.release.xcconfig */,
+				417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */,
+				5853F085DD0C202B0CFE8F9D /* Pods-JQCloudMusicTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		09CAB6832CB9501F004DEFCB = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +116,8 @@
 				09CAB6AD2CB95020004DEFCB /* JQCloudMusicTests */,
 				09CAB6B72CB95020004DEFCB /* JQCloudMusicUITests */,
 				09CAB68D2CB9501F004DEFCB /* Products */,
+				078E0048B6FE5810DBDF3DE1 /* Pods */,
+				262DC25882317B543228A00F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,13 +134,11 @@
 		09CAB68E2CB9501F004DEFCB /* JQCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09CAB6C72CB956F8004DEFCB /* Component */,
 				09CAB68F2CB9501F004DEFCB /* AppDelegate.h */,
 				09CAB6902CB9501F004DEFCB /* AppDelegate.m */,
-				09CAB6922CB9501F004DEFCB /* SceneDelegate.h */,
-				09CAB6932CB9501F004DEFCB /* SceneDelegate.m */,
 				09CAB6952CB9501F004DEFCB /* ViewController.h */,
 				09CAB6962CB9501F004DEFCB /* ViewController.m */,
-				09CAB6982CB9501F004DEFCB /* Main.storyboard */,
 				09CAB69E2CB95020004DEFCB /* Assets.xcassets */,
 				09CAB6A02CB95020004DEFCB /* LaunchScreen.storyboard */,
 				09CAB6A32CB95020004DEFCB /* Info.plist */,
@@ -139,6 +165,41 @@
 			path = JQCloudMusicUITests;
 			sourceTree = "<group>";
 		};
+		09CAB6C72CB956F8004DEFCB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6C82CB9572D004DEFCB /* Splash */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		09CAB6C82CB9572D004DEFCB /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6C92CB9573C004DEFCB /* Controller */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		09CAB6C92CB9573C004DEFCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6CA2CB95780004DEFCB /* SplashController.h */,
+				09CAB6CB2CB95780004DEFCB /* SplashController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		262DC25882317B543228A00F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */,
+				F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */,
+				79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09CAB6BE2CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusic" */;
 			buildPhases = (
+				DB1FD4B86F65CCA46D333197 /* [CP] Check Pods Manifest.lock */,
 				09CAB6882CB9501F004DEFCB /* Sources */,
 				09CAB6892CB9501F004DEFCB /* Frameworks */,
 				09CAB68A2CB9501F004DEFCB /* Resources */,
+				D48E0C5F52B9F88857BAEE0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09CAB6C12CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusicTests" */;
 			buildPhases = (
+				6572FFA871B2BA42640E8FC7 /* [CP] Check Pods Manifest.lock */,
 				09CAB6A62CB95020004DEFCB /* Sources */,
 				09CAB6A72CB95020004DEFCB /* Frameworks */,
 				09CAB6A82CB95020004DEFCB /* Resources */,
@@ -181,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09CAB6C42CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusicUITests" */;
 			buildPhases = (
+				7D75D8B11E189A554CC31458 /* [CP] Check Pods Manifest.lock */,
 				09CAB6B02CB95020004DEFCB /* Sources */,
 				09CAB6B12CB95020004DEFCB /* Frameworks */,
 				09CAB6B22CB95020004DEFCB /* Resources */,
+				F664162BF5B2DB85B116EE71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,7 +310,6 @@
 			files = (
 				09CAB69F2CB95020004DEFCB /* Assets.xcassets in Resources */,
 				09CAB6A22CB95020004DEFCB /* Base in Resources */,
-				09CAB69A2CB9501F004DEFCB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +329,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6572FFA871B2BA42640E8FC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JQCloudMusicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D75D8B11E189A554CC31458 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JQCloudMusic-JQCloudMusicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48E0C5F52B9F88857BAEE0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic/Pods-JQCloudMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic/Pods-JQCloudMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic/Pods-JQCloudMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1FD4B86F65CCA46D333197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JQCloudMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F664162BF5B2DB85B116EE71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09CAB6882CB9501F004DEFCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,9 +439,9 @@
 			files = (
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
 				09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */,
+				09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */,
 				09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */,
 				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
-				09CAB6942CB9501F004DEFCB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +478,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		09CAB6982CB9501F004DEFCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09CAB6992CB9501F004DEFCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		09CAB6A02CB95020004DEFCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,16 +607,17 @@
 		};
 		09CAB6BF2CB95020004DEFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBD8F2D4F4004DBCD15287B /* Pods-JQCloudMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JQCloudMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,16 +634,17 @@
 		};
 		09CAB6C02CB95020004DEFCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BF13EEF8F7F61CD85B5983 /* Pods-JQCloudMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JQCloudMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,6 +661,7 @@
 		};
 		09CAB6C22CB95020004DEFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +679,7 @@
 		};
 		09CAB6C32CB95020004DEFCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5853F085DD0C202B0CFE8F9D /* Pods-JQCloudMusicTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +697,7 @@
 		};
 		09CAB6C52CB95020004DEFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -548,6 +713,7 @@
 		};
 		09CAB6C62CB95020004DEFCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4352599BF13B6EC863620F4 /* Pods-JQCloudMusic-JQCloudMusicUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
