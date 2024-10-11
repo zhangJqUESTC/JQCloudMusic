@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6902CB9501F004DEFCB /* AppDelegate.m */; };
+		09CAB6942CB9501F004DEFCB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6932CB9501F004DEFCB /* SceneDelegate.m */; };
+		09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6962CB9501F004DEFCB /* ViewController.m */; };
+		09CAB69A2CB9501F004DEFCB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 09CAB6992CB9501F004DEFCB /* Base */; };
+		09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB69B2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld */; };
+		09CAB69F2CB95020004DEFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CAB69E2CB95020004DEFCB /* Assets.xcassets */; };
+		09CAB6A22CB95020004DEFCB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 09CAB6A12CB95020004DEFCB /* Base */; };
+		09CAB6A52CB95020004DEFCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6A42CB95020004DEFCB /* main.m */; };
+		09CAB6AF2CB95020004DEFCB /* JQCloudMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6AE2CB95020004DEFCB /* JQCloudMusicTests.m */; };
+		09CAB6B92CB95020004DEFCB /* JQCloudMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6B82CB95020004DEFCB /* JQCloudMusicUITests.m */; };
+		09CAB6BB2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09CAB6AB2CB95020004DEFCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09CAB6842CB9501F004DEFCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CAB68B2CB9501F004DEFCB;
+			remoteInfo = JQCloudMusic;
+		};
+		09CAB6B52CB95020004DEFCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09CAB6842CB9501F004DEFCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CAB68B2CB9501F004DEFCB;
+			remoteInfo = JQCloudMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09CAB68C2CB9501F004DEFCB /* JQCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CAB68F2CB9501F004DEFCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09CAB6902CB9501F004DEFCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09CAB6922CB9501F004DEFCB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		09CAB6932CB9501F004DEFCB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		09CAB6952CB9501F004DEFCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09CAB6962CB9501F004DEFCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09CAB6992CB9501F004DEFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09CAB69C2CB9501F004DEFCB /* JQCloudMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JQCloudMusic.xcdatamodel; sourceTree = "<group>"; };
+		09CAB69E2CB95020004DEFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09CAB6A12CB95020004DEFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09CAB6A32CB95020004DEFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09CAB6A42CB95020004DEFCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09CAB6AA2CB95020004DEFCB /* JQCloudMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQCloudMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CAB6AE2CB95020004DEFCB /* JQCloudMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQCloudMusicTests.m; sourceTree = "<group>"; };
+		09CAB6B42CB95020004DEFCB /* JQCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CAB6B82CB95020004DEFCB /* JQCloudMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQCloudMusicUITests.m; sourceTree = "<group>"; };
+		09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQCloudMusicUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09CAB6892CB9501F004DEFCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CAB6A72CB95020004DEFCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CAB6B12CB95020004DEFCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09CAB6832CB9501F004DEFCB = {
+			isa = PBXGroup;
+			children = (
+				09CAB68E2CB9501F004DEFCB /* JQCloudMusic */,
+				09CAB6AD2CB95020004DEFCB /* JQCloudMusicTests */,
+				09CAB6B72CB95020004DEFCB /* JQCloudMusicUITests */,
+				09CAB68D2CB9501F004DEFCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09CAB68D2CB9501F004DEFCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB68C2CB9501F004DEFCB /* JQCloudMusic.app */,
+				09CAB6AA2CB95020004DEFCB /* JQCloudMusicTests.xctest */,
+				09CAB6B42CB95020004DEFCB /* JQCloudMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09CAB68E2CB9501F004DEFCB /* JQCloudMusic */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB68F2CB9501F004DEFCB /* AppDelegate.h */,
+				09CAB6902CB9501F004DEFCB /* AppDelegate.m */,
+				09CAB6922CB9501F004DEFCB /* SceneDelegate.h */,
+				09CAB6932CB9501F004DEFCB /* SceneDelegate.m */,
+				09CAB6952CB9501F004DEFCB /* ViewController.h */,
+				09CAB6962CB9501F004DEFCB /* ViewController.m */,
+				09CAB6982CB9501F004DEFCB /* Main.storyboard */,
+				09CAB69E2CB95020004DEFCB /* Assets.xcassets */,
+				09CAB6A02CB95020004DEFCB /* LaunchScreen.storyboard */,
+				09CAB6A32CB95020004DEFCB /* Info.plist */,
+				09CAB6A42CB95020004DEFCB /* main.m */,
+				09CAB69B2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld */,
+			);
+			path = JQCloudMusic;
+			sourceTree = "<group>";
+		};
+		09CAB6AD2CB95020004DEFCB /* JQCloudMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6AE2CB95020004DEFCB /* JQCloudMusicTests.m */,
+			);
+			path = JQCloudMusicTests;
+			sourceTree = "<group>";
+		};
+		09CAB6B72CB95020004DEFCB /* JQCloudMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6B82CB95020004DEFCB /* JQCloudMusicUITests.m */,
+				09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */,
+			);
+			path = JQCloudMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09CAB68B2CB9501F004DEFCB /* JQCloudMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CAB6BE2CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusic" */;
+			buildPhases = (
+				09CAB6882CB9501F004DEFCB /* Sources */,
+				09CAB6892CB9501F004DEFCB /* Frameworks */,
+				09CAB68A2CB9501F004DEFCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JQCloudMusic;
+			productName = JQCloudMusic;
+			productReference = 09CAB68C2CB9501F004DEFCB /* JQCloudMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09CAB6A92CB95020004DEFCB /* JQCloudMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CAB6C12CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusicTests" */;
+			buildPhases = (
+				09CAB6A62CB95020004DEFCB /* Sources */,
+				09CAB6A72CB95020004DEFCB /* Frameworks */,
+				09CAB6A82CB95020004DEFCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09CAB6AC2CB95020004DEFCB /* PBXTargetDependency */,
+			);
+			name = JQCloudMusicTests;
+			productName = JQCloudMusicTests;
+			productReference = 09CAB6AA2CB95020004DEFCB /* JQCloudMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09CAB6B32CB95020004DEFCB /* JQCloudMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CAB6C42CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusicUITests" */;
+			buildPhases = (
+				09CAB6B02CB95020004DEFCB /* Sources */,
+				09CAB6B12CB95020004DEFCB /* Frameworks */,
+				09CAB6B22CB95020004DEFCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09CAB6B62CB95020004DEFCB /* PBXTargetDependency */,
+			);
+			name = JQCloudMusicUITests;
+			productName = JQCloudMusicUITests;
+			productReference = 09CAB6B42CB95020004DEFCB /* JQCloudMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09CAB6842CB9501F004DEFCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					09CAB68B2CB9501F004DEFCB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					09CAB6A92CB95020004DEFCB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 09CAB68B2CB9501F004DEFCB;
+					};
+					09CAB6B32CB95020004DEFCB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 09CAB68B2CB9501F004DEFCB;
+					};
+				};
+			};
+			buildConfigurationList = 09CAB6872CB9501F004DEFCB /* Build configuration list for PBXProject "JQCloudMusic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09CAB6832CB9501F004DEFCB;
+			productRefGroup = 09CAB68D2CB9501F004DEFCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09CAB68B2CB9501F004DEFCB /* JQCloudMusic */,
+				09CAB6A92CB95020004DEFCB /* JQCloudMusicTests */,
+				09CAB6B32CB95020004DEFCB /* JQCloudMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09CAB68A2CB9501F004DEFCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CAB69F2CB95020004DEFCB /* Assets.xcassets in Resources */,
+				09CAB6A22CB95020004DEFCB /* Base in Resources */,
+				09CAB69A2CB9501F004DEFCB /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CAB6A82CB95020004DEFCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CAB6B22CB95020004DEFCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09CAB6882CB9501F004DEFCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
+				09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */,
+				09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */,
+				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
+				09CAB6942CB9501F004DEFCB /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CAB6A62CB95020004DEFCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CAB6AF2CB95020004DEFCB /* JQCloudMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CAB6B02CB95020004DEFCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CAB6BB2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m in Sources */,
+				09CAB6B92CB95020004DEFCB /* JQCloudMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09CAB6AC2CB95020004DEFCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09CAB68B2CB9501F004DEFCB /* JQCloudMusic */;
+			targetProxy = 09CAB6AB2CB95020004DEFCB /* PBXContainerItemProxy */;
+		};
+		09CAB6B62CB95020004DEFCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09CAB68B2CB9501F004DEFCB /* JQCloudMusic */;
+			targetProxy = 09CAB6B52CB95020004DEFCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09CAB6982CB9501F004DEFCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CAB6992CB9501F004DEFCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09CAB6A02CB95020004DEFCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CAB6A12CB95020004DEFCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09CAB6BC2CB95020004DEFCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09CAB6BD2CB95020004DEFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09CAB6BF2CB95020004DEFCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JQCloudMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangJq.JQCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09CAB6C02CB95020004DEFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JQCloudMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangJq.JQCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09CAB6C22CB95020004DEFCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangJq.JQCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JQCloudMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JQCloudMusic";
+			};
+			name = Debug;
+		};
+		09CAB6C32CB95020004DEFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangJq.JQCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JQCloudMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JQCloudMusic";
+			};
+			name = Release;
+		};
+		09CAB6C52CB95020004DEFCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangJq.JQCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JQCloudMusic;
+			};
+			name = Debug;
+		};
+		09CAB6C62CB95020004DEFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangJq.JQCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JQCloudMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09CAB6872CB9501F004DEFCB /* Build configuration list for PBXProject "JQCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CAB6BC2CB95020004DEFCB /* Debug */,
+				09CAB6BD2CB95020004DEFCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CAB6BE2CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CAB6BF2CB95020004DEFCB /* Debug */,
+				09CAB6C02CB95020004DEFCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CAB6C12CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CAB6C22CB95020004DEFCB /* Debug */,
+				09CAB6C32CB95020004DEFCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CAB6C42CB95020004DEFCB /* Build configuration list for PBXNativeTarget "JQCloudMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CAB6C52CB95020004DEFCB /* Debug */,
+				09CAB6C62CB95020004DEFCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09CAB69B2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09CAB69C2CB9501F004DEFCB /* JQCloudMusic.xcdatamodel */,
+			);
+			currentVersion = 09CAB69C2CB9501F004DEFCB /* JQCloudMusic.xcdatamodel */;
+			path = JQCloudMusic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09CAB6842CB9501F004DEFCB /* Project object */;
+}
