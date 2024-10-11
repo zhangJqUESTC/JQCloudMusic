@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework
 ${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework

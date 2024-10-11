@@ -10,6 +10,10 @@ target 'JQCloudMusic' do
   #https://github.com/QMUI/QMUIDemo_iOS
   #https://qmuiteam.com/ios/get-started
   pod "QMUIKit"
+  
+  #提供类似Android中更高层级的布局框架
+  #https://github.com/youngsoft/MyLinearLayout
+  pod 'MyLayout'
 
   target 'JQCloudMusicTests' do
     inherit! :search_paths

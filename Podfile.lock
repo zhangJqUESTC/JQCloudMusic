@@ -1,4 +1,5 @@
 PODS:
+  - MyLayout (1.9.10)
   - QMUIKit (4.8.0):
     - QMUIKit/QMUIComponents (= 4.8.0)
     - QMUIKit/QMUICore (= 4.8.0)
@@ -317,15 +318,18 @@ PODS:
   - QMUIKit/QMUIWeakObjectContainer (4.8.0)
 
 DEPENDENCIES:
+  - MyLayout
   - QMUIKit
 
 SPEC REPOS:
   trunk:
+    - MyLayout
     - QMUIKit
 
 SPEC CHECKSUMS:
+  MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
 
-PODFILE CHECKSUM: 61048c5d5d233908d2b661032695aaf99643b948
+PODFILE CHECKSUM: 250a1f41cf00101eeb56deb66189f122522a5594
 
 COCOAPODS: 1.15.2

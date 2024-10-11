@@ -17,6 +17,7 @@
 		09CAB6B92CB95020004DEFCB /* JQCloudMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6B82CB95020004DEFCB /* JQCloudMusicUITests.m */; };
 		09CAB6BB2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */; };
 		09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6CB2CB95780004DEFCB /* SplashController.m */; };
+		09CAB6D22CB97C46004DEFCB /* SuperDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6D12CB97C46004DEFCB /* SuperDateUtil.m */; };
 		32A0BAB8888FBAE1B965A80C /* Pods_JQCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */; };
 		6B60053BE17049B245EF5391 /* Pods_JQCloudMusic_JQCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */; };
 		F27B5E00385567DA3A0285E6 /* Pods_JQCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */; };
@@ -57,6 +58,8 @@
 		09CAB6BA2CB95020004DEFCB /* JQCloudMusicUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQCloudMusicUITestsLaunchTests.m; sourceTree = "<group>"; };
 		09CAB6CA2CB95780004DEFCB /* SplashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashController.h; sourceTree = "<group>"; };
 		09CAB6CB2CB95780004DEFCB /* SplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
+		09CAB6D02CB97C46004DEFCB /* SuperDateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperDateUtil.h; sourceTree = "<group>"; };
+		09CAB6D12CB97C46004DEFCB /* SuperDateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDateUtil.m; sourceTree = "<group>"; };
 		34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusicTests/Pods-JQCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 		09CAB68E2CB9501F004DEFCB /* JQCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09CAB6CD2CB97B86004DEFCB /* Vender */,
 				09CAB6C72CB956F8004DEFCB /* Component */,
 				09CAB68F2CB9501F004DEFCB /* AppDelegate.h */,
 				09CAB6902CB9501F004DEFCB /* AppDelegate.m */,
@@ -188,6 +192,31 @@
 				09CAB6CB2CB95780004DEFCB /* SplashController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		09CAB6CD2CB97B86004DEFCB /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6CE2CB97B93004DEFCB /* SuperUI */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		09CAB6CE2CB97B93004DEFCB /* SuperUI */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6CF2CB97BB6004DEFCB /* Date */,
+			);
+			path = SuperUI;
+			sourceTree = "<group>";
+		};
+		09CAB6CF2CB97BB6004DEFCB /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				09CAB6D02CB97C46004DEFCB /* SuperDateUtil.h */,
+				09CAB6D12CB97C46004DEFCB /* SuperDateUtil.m */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		262DC25882317B543228A00F /* Frameworks */ = {
@@ -442,6 +471,7 @@
 				09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */,
 				09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */,
 				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
+				09CAB6D22CB97C46004DEFCB /* SuperDateUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
