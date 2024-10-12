@@ -6,10 +6,10 @@
 //  启动界面
 
 #import <UIKit/UIKit.h>
-
+#import "BaseLogicController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SplashController : UIViewController
+@interface SplashController : BaseLogicController
 
 @end
 

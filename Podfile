@@ -15,6 +15,10 @@ target 'JQCloudMusic' do
   #https://github.com/youngsoft/MyLinearLayout
   pod 'MyLayout'
 
+  #https://github.com/SysdataSpA/R.objc
+  #作者说受R.swift的自由启发，获取自动完成的本地化字符串、资产目录图像名称和故事板对象
+  pod 'R.objc'
+
   target 'JQCloudMusicTests' do
     inherit! :search_paths
     # Pods for testing

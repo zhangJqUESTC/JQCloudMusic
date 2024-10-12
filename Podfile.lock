@@ -316,20 +316,24 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.8.0)
   - QMUIKit/QMUIWeakObjectContainer (4.8.0)
+  - R.objc (0.8.2)
 
 DEPENDENCIES:
   - MyLayout
   - QMUIKit
+  - R.objc
 
 SPEC REPOS:
   trunk:
     - MyLayout
     - QMUIKit
+    - R.objc
 
 SPEC CHECKSUMS:
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
+  R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
 
-PODFILE CHECKSUM: 250a1f41cf00101eeb56deb66189f122522a5594
+PODFILE CHECKSUM: 1a9eed21121969771b443728f60bc8867da03c34
 
 COCOAPODS: 1.15.2
