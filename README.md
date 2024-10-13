@@ -3,7 +3,6 @@
 
 启动页与隐私协议：
 <div align=center>  <img src="https://github.com/zhangJqUESTC/iosProjectImg/blob/main/0.png" width=30%><img src="https://github.com/zhangJqUESTC/iosProjectImg/blob/main/1.png" width=30%></div>
-隐私协议：
 
 引导界面：
-<div align=center>  <img src="https://github.com/zhangJqUESTC/iosProjectImg/blob/main/2-1.png" width=30%><img src="https://github.com/zhangJqUESTC/iosProjectImg/blob/main/2-1.png" width=30%></div>
+<div align=center>  <img src="https://github.com/zhangJqUESTC/iosProjectImg/blob/main/2-1.png" width=30%><img src="https://github.com/zhangJqUESTC/iosProjectImg/blob/main/2-2.png" width=30%></div>
