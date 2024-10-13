@@ -1,4 +1,5 @@
 PODS:
+  - GKCycleScrollView (1.2.3)
   - MyLayout (1.9.10)
   - QMUIKit (4.8.0):
     - QMUIKit/QMUIComponents (= 4.8.0)
@@ -319,21 +320,24 @@ PODS:
   - R.objc (0.8.2)
 
 DEPENDENCIES:
+  - GKCycleScrollView
   - MyLayout
   - QMUIKit
   - R.objc
 
 SPEC REPOS:
   trunk:
+    - GKCycleScrollView
     - MyLayout
     - QMUIKit
     - R.objc
 
 SPEC CHECKSUMS:
+  GKCycleScrollView: 8ed79d2142e62895a701973358b6f94b661b4829
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
   R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
 
-PODFILE CHECKSUM: 1a9eed21121969771b443728f60bc8867da03c34
+PODFILE CHECKSUM: 80ed15987726aa7aa4e44c45627c3d0e3256bca3
 
 COCOAPODS: 1.15.2

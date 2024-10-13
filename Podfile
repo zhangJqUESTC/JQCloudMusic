@@ -19,6 +19,10 @@ target 'JQCloudMusic' do
   #作者说受R.swift的自由启发，获取自动完成的本地化字符串、资产目录图像名称和故事板对象
   pod 'R.objc'
 
+  #轮播图
+  #https://github.com/QuintGao/GKCycleScrollView
+  pod 'GKCycleScrollView'
+
   target 'JQCloudMusicTests' do
     inherit! :search_paths
     # Pods for testing

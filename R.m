@@ -443,7 +443,11 @@
 
 @interface RImages ()
 @property (nonatomic, strong) UIImage* splashLogo;
+@property (nonatomic, strong) UIImage* guide1;
+@property (nonatomic, strong) UIImage* guide4;
 @property (nonatomic, strong) UIImage* splashBanner;
+@property (nonatomic, strong) UIImage* guide2;
+@property (nonatomic, strong) UIImage* guide3;
 @property (nonatomic, strong) UIImage* qmuiIcloudDownloadFault;
 @property (nonatomic, strong) UIImage* qmuiEmotionDelete;
 @property (nonatomic, strong) UIImage* qmuiPreviewImageCheckboxChecked;
@@ -468,7 +472,11 @@
 
 @implementation RImages
 - (UIImage*)splashLogo { return [UIImage imageNamed:@"SplashLogo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)guide1 { return [UIImage imageNamed:@"guide1" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)guide4 { return [UIImage imageNamed:@"guide4" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashBanner { return [UIImage imageNamed:@"SplashBanner" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)guide2 { return [UIImage imageNamed:@"guide2" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)guide3 { return [UIImage imageNamed:@"guide3" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)qmuiIcloudDownloadFault { return [UIImage imageNamed:@"QMUI_icloud_download_fault" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)qmuiEmotionDelete { return [UIImage imageNamed:@"QMUI_emotion_delete" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)qmuiPreviewImageCheckboxChecked { return [UIImage imageNamed:@"QMUI_previewImage_checkbox_checked" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }

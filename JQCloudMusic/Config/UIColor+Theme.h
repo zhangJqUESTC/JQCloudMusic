@@ -12,7 +12,6 @@
 // iOS中也提供了命名颜色，例如：.systemBackground，但无法更改他的颜色，Android中就可以根据浅色，深色修改命名的颜色，更方便
 
 #import <UIKit/UIKit.h>
-#import "UIColor+Config.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

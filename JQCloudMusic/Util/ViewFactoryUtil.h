@@ -14,10 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewFactoryUtil : NSObject
 
++(QMUIButton *)primaryButton;
 /// 主色调半圆角按钮
 +(QMUIButton *)primaryHalfFilletButton;
 
 +(QMUIButton *)linkButton;
+
++ (QMUIButton *)primaryOutlineButton;
 
 @end
 

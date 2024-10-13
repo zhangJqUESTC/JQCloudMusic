@@ -5,11 +5,6 @@
 //  Created by zhangjq on 2024/10/12.
 //
 
-#import "ViewFactoryUtil.h"
-#import "Constant.h"
-
-#import "UIColor+Config.h"
-#import "UIColor+Theme.h"
 
 
 @implementation ViewFactoryUtil
@@ -38,6 +33,19 @@
     QMUIButton *result = [[QMUIButton alloc] init];
     result.adjustsTitleTintColorAutomatically = NO;
     result.titleLabel.font = UIFontMake(TEXT_MEDDLE);
+    
+    return result;
+}
+
++ (QMUIButton *)primaryOutlineButton{
+    QMUIButton *result = [self primaryButton];
+    result.layer.cornerRadius = SMALL_RADIUS;
+    
+    result.tintColor = [UIColor black130];
+    result.layer.borderWidth = 1;
+    result.layer.borderColor = [[UIColor black130] CGColor];
+    result.backgroundColor = [UIColor clearColor];
+    [result setTitleColor:[UIColor colorPrimary] forState:UIControlStateNormal];
     
     return result;
 }

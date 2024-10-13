@@ -6,10 +6,6 @@
 //
 
 #import "TermServiceDialogController.h"
-#import "UIColor+theme.h"
-#import "ViewFactoryUtil.h"
-#import "R.h"
-#import "Constant.h"
 @interface TermServiceDialogController () <QMUIModalPresentationContentViewControllerProtocol>
 
 @end
@@ -120,7 +116,6 @@
         [_primaryButton setTitle:R.string.localizable.agree forState:UIControlStateNormal];
     }
     return _primaryButton;
-
 }
 
 @end

@@ -2891,7 +2891,11 @@ en: "WiFi预加载"
 
 @interface RImages: NSObject
 - (UIImage*)splashLogo;
+- (UIImage*)guide1;
+- (UIImage*)guide4;
 - (UIImage*)splashBanner;
+- (UIImage*)guide2;
+- (UIImage*)guide3;
 - (UIImage*)qmuiIcloudDownloadFault;
 - (UIImage*)qmuiEmotionDelete;
 - (UIImage*)qmuiPreviewImageCheckboxChecked;

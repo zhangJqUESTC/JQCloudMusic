@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-JQCloudMusic/Pods-JQCloudMusic-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GKCycleScrollView/GKCycleScrollView.framework
 ${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework
 ${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
