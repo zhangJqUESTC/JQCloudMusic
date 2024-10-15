@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090CA4042CBE66B8005E9426 /* SuperHttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4032CBE66B8005E9426 /* SuperHttpUtil.m */; };
+		090CA4092CBE6906005E9426 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4082CBE6906005E9426 /* BaseResponse.m */; };
+		090CA40C2CBE6AB8005E9426 /* SuperBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA40B2CBE6AB8005E9426 /* SuperBase.m */; };
+		090CA40F2CBE6AF2005E9426 /* Meta.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA40E2CBE6AF2005E9426 /* Meta.m */; };
+		090CA4142CBEBAA9005E9426 /* SuperBaseId.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4132CBEBAA9005E9426 /* SuperBaseId.m */; };
+		090CA4172CBEBB3B005E9426 /* SuperCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4162CBEBB3B005E9426 /* SuperCommon.m */; };
+		090CA41A2CBEBC14005E9426 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4192CBEBC14005E9426 /* Video.m */; };
+		09515B932CBD57B100CA2AB6 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 09515B922CBD57B100CA2AB6 /* Config.m */; };
+		09515B972CBD5B4C00CA2AB6 /* MSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 09515B952CBD5B4C00CA2AB6 /* MSNetwork.m */; };
 		09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6902CB9501F004DEFCB /* AppDelegate.m */; };
 		09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6962CB9501F004DEFCB /* ViewController.m */; };
 		09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB69B2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld */; };
@@ -55,6 +64,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090CA4022CBE66B8005E9426 /* SuperHttpUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperHttpUtil.h; sourceTree = "<group>"; };
+		090CA4032CBE66B8005E9426 /* SuperHttpUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperHttpUtil.m; sourceTree = "<group>"; };
+		090CA4072CBE6906005E9426 /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		090CA4082CBE6906005E9426 /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		090CA40A2CBE6AB8005E9426 /* SuperBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperBase.h; sourceTree = "<group>"; };
+		090CA40B2CBE6AB8005E9426 /* SuperBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperBase.m; sourceTree = "<group>"; };
+		090CA40D2CBE6AF2005E9426 /* Meta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meta.h; sourceTree = "<group>"; };
+		090CA40E2CBE6AF2005E9426 /* Meta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meta.m; sourceTree = "<group>"; };
+		090CA4122CBEBAA9005E9426 /* SuperBaseId.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperBaseId.h; sourceTree = "<group>"; };
+		090CA4132CBEBAA9005E9426 /* SuperBaseId.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperBaseId.m; sourceTree = "<group>"; };
+		090CA4152CBEBB3B005E9426 /* SuperCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCommon.h; sourceTree = "<group>"; };
+		090CA4162CBEBB3B005E9426 /* SuperCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCommon.m; sourceTree = "<group>"; };
+		090CA4182CBEBC14005E9426 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		090CA4192CBEBC14005E9426 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		09515B912CBD57B100CA2AB6 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		09515B922CBD57B100CA2AB6 /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		09515B942CBD5B4C00CA2AB6 /* MSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNetwork.h; sourceTree = "<group>"; };
+		09515B952CBD5B4C00CA2AB6 /* MSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNetwork.m; sourceTree = "<group>"; };
 		09CAB68C2CB9501F004DEFCB /* JQCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CAB68F2CB9501F004DEFCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09CAB6902CB9501F004DEFCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,6 +184,66 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		090CA4012CBE668C005E9426 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				090CA4022CBE66B8005E9426 /* SuperHttpUtil.h */,
+				090CA4032CBE66B8005E9426 /* SuperHttpUtil.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		090CA4052CBE68DC005E9426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				090CA4062CBE68E4005E9426 /* Response */,
+				090CA40A2CBE6AB8005E9426 /* SuperBase.h */,
+				090CA40B2CBE6AB8005E9426 /* SuperBase.m */,
+				090CA4122CBEBAA9005E9426 /* SuperBaseId.h */,
+				090CA4132CBEBAA9005E9426 /* SuperBaseId.m */,
+				090CA4152CBEBB3B005E9426 /* SuperCommon.h */,
+				090CA4162CBEBB3B005E9426 /* SuperCommon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		090CA4062CBE68E4005E9426 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				090CA4072CBE6906005E9426 /* BaseResponse.h */,
+				090CA4082CBE6906005E9426 /* BaseResponse.m */,
+				090CA40D2CBE6AF2005E9426 /* Meta.h */,
+				090CA40E2CBE6AF2005E9426 /* Meta.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		090CA4102CBEBA01005E9426 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				090CA4112CBEBA0D005E9426 /* Model */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		090CA4112CBEBA0D005E9426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				090CA4182CBEBC14005E9426 /* Video.h */,
+				090CA4192CBEBC14005E9426 /* Video.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09515B962CBD5B4C00CA2AB6 /* MSNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				09515B942CBD5B4C00CA2AB6 /* MSNetwork.h */,
+				09515B952CBD5B4C00CA2AB6 /* MSNetwork.m */,
+			);
+			path = MSNetwork;
+			sourceTree = "<group>";
+		};
 		09CAB6832CB9501F004DEFCB = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +269,8 @@
 		09CAB68E2CB9501F004DEFCB /* JQCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				090CA4052CBE68DC005E9426 /* Model */,
+				090CA4012CBE668C005E9426 /* Network */,
 				09CAB7012CBAC3C7004DEFCB /* Util */,
 				09CAB6F12CBA61B6004DEFCB /* Contoller */,
 				09CAB6E72CBA525F004DEFCB /* Config */,
@@ -225,6 +314,7 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				090CA4102CBEBA01005E9426 /* Video */,
 				09CAB7072CBB9BE4004DEFCB /* Guide */,
 				09CAB6C82CB9572D004DEFCB /* Splash */,
 			);
@@ -253,6 +343,7 @@
 		09CAB6CD2CB97B86004DEFCB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				09515B962CBD5B4C00CA2AB6 /* MSNetwork */,
 				09CAB6CE2CB97B93004DEFCB /* SuperUI */,
 			);
 			path = Vender;
@@ -294,6 +385,8 @@
 				09CAB6E92CBA529C004DEFCB /* UIColor+Config.m */,
 				09CAB6EB2CBA5633004DEFCB /* UIColor+Theme.h */,
 				09CAB6EC2CBA5633004DEFCB /* UIColor+Theme.m */,
+				09515B912CBD57B100CA2AB6 /* Config.h */,
+				09515B922CBD57B100CA2AB6 /* Config.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -610,6 +703,7 @@
 			files = (
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
+				090CA4142CBEBAA9005E9426 /* SuperBaseId.m in Sources */,
 				09CAB6ED2CBA5633004DEFCB /* UIColor+Theme.m in Sources */,
 				09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */,
 				09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */,
@@ -620,12 +714,20 @@
 				09CAB6FD2CBA7C36004DEFCB /* TermServiceDialogController.m in Sources */,
 				09CAB6E62CBA5093004DEFCB /* UIColor+Hex.m in Sources */,
 				09CAB6F42CBA61E7004DEFCB /* BaseController.m in Sources */,
+				09515B972CBD5B4C00CA2AB6 /* MSNetwork.m in Sources */,
 				09CAB7052CBB8AE9004DEFCB /* DefaultPreferenceUtil.m in Sources */,
 				09CAB6DF2CBA280A004DEFCB /* R.m in Sources */,
 				09CAB6EA2CBA529C004DEFCB /* UIColor+Config.m in Sources */,
+				090CA40F2CBE6AF2005E9426 /* Meta.m in Sources */,
+				090CA4042CBE66B8005E9426 /* SuperHttpUtil.m in Sources */,
+				09515B932CBD57B100CA2AB6 /* Config.m in Sources */,
 				09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */,
+				090CA41A2CBEBC14005E9426 /* Video.m in Sources */,
 				09CAB6F02CBA5786004DEFCB /* UIColor+SuperUI.m in Sources */,
 				09CAB6D22CB97C46004DEFCB /* SuperDateUtil.m in Sources */,
+				090CA40C2CBE6AB8005E9426 /* SuperBase.m in Sources */,
+				090CA4172CBEBB3B005E9426 /* SuperCommon.m in Sources */,
+				090CA4092CBE6906005E9426 /* BaseResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

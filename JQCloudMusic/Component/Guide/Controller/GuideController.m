@@ -9,6 +9,8 @@
 //轮播图 
 #import <GKCycleScrollView/GKCycleScrollView.h>
 #import <GKCycleScrollView/GKPageControl.h>
+#import "SuperHttpUtil.h"
+#import "Video.h"
 @interface GuideController () <GKCycleScrollViewDataSource,GKCycleScrollViewDelegate>
 @property (nonatomic, strong) GKCycleScrollView *contentScrollView;
 @end
@@ -98,7 +100,13 @@
     [_contentScrollView reloadData];
 }
 
--(void)onPrimaryClick:(int)a{
+-(void)onPrimaryClick:(QMUIButton*)sender{
+    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos/98" parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodGET loading:NO controller:nil success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+        NSLog(@"success");
+    } failure:^BOOL(BaseResponse * _Nullable baseResponse, NSError * _Nonnull error) {
+        NSLog(@"failure");
+        return NO;
+    }];
     
 }
 -(void)onEnterClick:(int)a{
@@ -128,30 +136,3 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

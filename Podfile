@@ -23,6 +23,23 @@ target 'JQCloudMusic' do
   #https://github.com/QuintGao/GKCycleScrollView
   pod 'GKCycleScrollView'
 
+  #基于AFNetworking与YYCache的二次封装网络框架
+  #https://github.com/lztbwlkj/MSNetwork
+  #这样源码方式添加，因为在它基础上增加了功能
+  # pod 'MSNetwork'
+
+  #网络框架
+  #https://github.com/AFNetworking/AFNetworking
+  pod 'AFNetworking'
+
+  #缓存框架
+  #https://github.com/ibireme/YYCache
+  pod 'YYCache'
+
+  #JSON解析
+  #https://github.com/CoderMJLee/MJExtension
+  pod 'MJExtension'
+
   target 'JQCloudMusicTests' do
     inherit! :search_paths
     # Pods for testing
