@@ -10,6 +10,7 @@
 
 #import "DefaultRepository.h"
 #import "Video.h"
+#import "Ad.h"
 
 @implementation DefaultRepository
 +(instancetype)shared{
@@ -31,5 +32,26 @@
 /// 视频详情
 -(void)videoDetail:(NSString *)id success:(SuperHttpSuccess)success{
     [SuperHttpUtil requestObjectWith:[Video class] url:URL_VIDEO id:id success:success];
+}
+
+/// 视频详情，可以手动处理错误
+-(void)videoDetail:(NSString *)id success:(SuperHttpSuccess)success  failure:(_Nullable SuperHttpFail)failure{
+    
+    [SuperHttpUtil requestObjectWith:[Video class] url:[NSString stringWithFormat:@"%@/%@",URL_VIDEO,id] parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache loading:YES controller:nil success:success failure:failure];
+}
+
+#pragma mark - 广告
+
+-(void)bannerAdWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
+    [self adsWithPosition:VALUE0 controller:controller success:success];
+}
+
+-(void)splashAd:(SuperHttpListSuccess)success{
+    [self adsWithPosition:VALUE10 controller:nil success:success];
+}
+
+-(void)adsWithPosition:(int)position controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
+    //因为参数比较少，所以通过字典传递更方便
+    [SuperHttpUtil requestListObjectWith:[Ad class] url:URL_AD parameters:@{@"position":[NSNumber numberWithInt:position]} cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
 }
 @end

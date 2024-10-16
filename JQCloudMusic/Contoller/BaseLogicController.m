@@ -84,34 +84,34 @@
 //}
 
 /// 初始化TableView，四边都在安全区内
-//- (void)initTableViewSafeArea{
-//    //外面添加一层容器，是方便在真实内容控件前后添加内容
-//    [self initLinearLayoutSafeArea];
-//
-//    //tableView
-//    [self createTableView];
-//
-//    [self.container addSubview:self.tableView];
-//}
+- (void)initTableViewSafeArea{
+    //外面添加一层容器，是方便在真实内容控件前后添加内容
+    [self initLinearLayoutSafeArea];
+
+    //tableView
+    [self createTableView];
+
+    [self.container addSubview:self.tableView];
+}
 
 /// 设置状态栏为亮色(文字是白色)
 -(void)setStatusBarLight{
 }
 
 /// 创建TableView，不会添加到任何布局
-//-(void)createTableView{
-//    self.datum = [NSMutableArray array];
-//
-//    self.tableView = [ViewFactoryUtil tableView];
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
-//    self.tableView.weight=1;
-//}
+-(void)createTableView{
+    self.datum = [NSMutableArray array];
+
+    self.tableView = [ViewFactoryUtil tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.weight=1;
+}
 
 /// 使用默认分割线
-//- (void)initDefaultTableViewDivider{
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-//}
+- (void)initDefaultTableViewDivider{
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+}
 
 //- (void)initPlaceholderView{
 //    _placeholderView = [PlaceholderView new];
@@ -260,7 +260,7 @@
 }
 
 /// 关闭当前界面，并显示一个新界面
-/// @param newController <#newController description#>
+/// @param newController newController description
 -(void)startControllerAndFinishThis:(UIViewController *)newController{
     NSArray *vcs = self.navigationController.viewControllers;
 
@@ -282,8 +282,8 @@
 #pragma mark - 列表数据源
 
 /// 有多少个
-/// @param tableView <#tableView description#>
-/// @param section <#section description#>
+/// @param tableView tableView description
+/// @param section section description
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _datum.count;
 }
@@ -291,7 +291,7 @@
 #pragma mark - 加载数据
 
 /// 占位控件点击
-/// @param recognizer <#recognizer description#>
+/// @param recognizer recognizer description
 -(void)onPlaceholderViewTapGestureRecognizer:(UITapGestureRecognizer *)recognizer{
     [self loadData:YES];
 }
@@ -332,16 +332,7 @@
 - (void)initLinearLayoutInputSafeArea {
 }
 
-- (void)initDefaultTableViewDivider {
-}
 
 - (void)initPlaceholderView {
 }
-
-- (void)initTableViewSafeArea {
-}
-
-- (void)createTableView {
-}
-
 @end

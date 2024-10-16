@@ -70,7 +70,7 @@
 
 -(void)prepareNext{
 //    [self performSelector:@selector(next) withObject:nil afterDelay:3];
-//    [self next];
+    [self next];
     
 }
 

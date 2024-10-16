@@ -8,7 +8,7 @@
 #ifndef Constant_h
 #define Constant_h
 
-
+static NSString * const URL_AD = @"v1/ads";
 static NSString * const URL_VIDEO = @"v1/videos";
 
 #pragma mark - 文本尺寸
@@ -19,6 +19,25 @@ static float const TEXT_LARGE2 = 17;
 static float const TEXT_LARGE3 = 18;
 static float const TEXT_LARGE4 = 22;
 static float const TEXT_PRICE = 30;
+
+//Cell复用
+static NSString * const Cell = @"Cell";
+
+static NSString * const ANONYMOUS = @"anonymous";
+static NSString * const LOGIN_CLICK = @"LOGIN_CLICK";
+
+
+#pragma mark - 输入框尺寸
+static float const INPUT_SMALL = 30;
+static float const INPUT_MEDDLE = 46;
+
+static int const SIZE12 = 12;
+
+static int const VALUE_NO = -1;
+static int const VALUE0 = 0;
+static int const VALUE10 = 10;
+static int const VALUE20 = 20;
+static int const VALUE30 = 30;
 
 #pragma mark - 按钮尺寸
 static float const BUTTON_SMALL = 30;

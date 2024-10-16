@@ -334,7 +334,13 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.8.0)
   - QMUIKit/QMUIWeakObjectContainer (4.8.0)
+  - QTEventBus (0.4.1):
+    - QTEventBus/Core (= 0.4.1)
+  - QTEventBus/Core (0.4.1)
   - R.objc (0.8.2)
+  - SDWebImage (5.19.7):
+    - SDWebImage/Core (= 5.19.7)
+  - SDWebImage/Core (5.19.7)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
@@ -344,7 +350,9 @@ DEPENDENCIES:
   - MJExtension
   - MyLayout
   - QMUIKit
+  - QTEventBus
   - R.objc
+  - SDWebImage
   - YYCache
 
 SPEC REPOS:
@@ -355,7 +363,9 @@ SPEC REPOS:
     - MJExtension
     - MyLayout
     - QMUIKit
+    - QTEventBus
     - R.objc
+    - SDWebImage
     - YYCache
 
 SPEC CHECKSUMS:
@@ -365,9 +375,11 @@ SPEC CHECKSUMS:
   MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
+  QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
   R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
+  SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 6cf13c3f427b2a00afc9159fdf655e0c408579a0
+PODFILE CHECKSUM: d2a0a56bcd5f01cce7b6f6997161720243898815
 
 COCOAPODS: 1.15.2

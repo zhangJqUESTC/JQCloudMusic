@@ -44,6 +44,15 @@ target 'JQCloudMusic' do
   #https://github.com/jdg/MBProgressHUD
   pod 'MBProgressHUD'
 
+  #图片加载框架
+  #https://github.com/SDWebImage/SDWebImage
+  pod 'SDWebImage'
+
+  #发布订阅框架
+  #https://github.com/LeoMobileDeveloper/QTEventBus
+  pod 'QTEventBus'
+
+  #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths
     # Pods for testing

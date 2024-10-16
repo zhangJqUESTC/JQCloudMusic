@@ -13,9 +13,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseLogicController : BaseCommonController
+@interface BaseLogicController : BaseCommonController<UITableViewDataSource,UITableViewDelegate>
 /// TableView
-//@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *datum;
 
 /// 根容器

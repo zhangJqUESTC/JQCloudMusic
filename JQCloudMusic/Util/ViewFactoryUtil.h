@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (QMUIButton *)primaryOutlineButton;
 
++(UITableView *)tableView;
+
 @end
 
 NS_ASSUME_NONNULL_END
