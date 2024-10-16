@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - GKCycleScrollView (1.2.3)
+  - MBProgressHUD (1.2.0)
   - MJExtension (3.4.2)
   - MyLayout (1.9.10)
   - QMUIKit (4.8.0):
@@ -339,6 +340,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - GKCycleScrollView
+  - MBProgressHUD
   - MJExtension
   - MyLayout
   - QMUIKit
@@ -349,6 +351,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - GKCycleScrollView
+    - MBProgressHUD
     - MJExtension
     - MyLayout
     - QMUIKit
@@ -358,12 +361,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   GKCycleScrollView: 8ed79d2142e62895a701973358b6f94b661b4829
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
   R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: b7026e0af919bda0623ccefb1569dcb0277d4e7a
+PODFILE CHECKSUM: 6cf13c3f427b2a00afc9159fdf655e0c408579a0
 
 COCOAPODS: 1.15.2

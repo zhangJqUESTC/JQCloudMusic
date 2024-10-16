@@ -26,7 +26,30 @@ typedef void(^SuperHttpListSuccess)(BaseResponse *baseResponse,Meta *meta,NSArra
 
 ///请求的失败Block
 typedef BOOL(^SuperHttpFail)(BaseResponse * _Nullable baseResponse,NSError *error);
-#pragma mark 请求对象
+
+#pragma mark get请求对象
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url id:(NSString *)id  success:(SuperHttpSuccess)success;
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpSuccess)success;
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success;
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(nullable BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(nullable SuperHttpFail)failure;
+
+#pragma mark post请求对象
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters loading:(BOOL)loading controller:(nullable BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(nullable SuperHttpFail)failure;
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable id)parameter success:(SuperHttpSuccess)success;
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure;
+
+#pragma mark patch请求对象
++ (void)patchObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success;
+
+#pragma mark delete请求对象
++ (void)deleteWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpSuccess)success;
+
+
+#pragma mark 通用请求对象
 
 /// 请求对象
 /// @param clazz 对象模型class
@@ -39,7 +62,15 @@ typedef BOOL(^SuperHttpFail)(BaseResponse * _Nullable baseResponse,NSError *erro
 /// 由于这不是一个完整讲架构的课程，所以有些关于架构方面的就讲解很深
 /// @param success 成功回调
 /// @param failure 失败回调
-+ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy method:(MSRequestMethod)method loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(SuperHttpFail)failure;
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy method:(MSRequestMethod)method loading:(BOOL)loading controller:(nullable BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(nullable SuperHttpFail)failure;
+#pragma mark 请求列表
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success failure:(nullable SuperHttpFail)failure;
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success;
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url success:(SuperHttpListSuccess)success;
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpListSuccess)success;
 @end
 
 NS_ASSUME_NONNULL_END

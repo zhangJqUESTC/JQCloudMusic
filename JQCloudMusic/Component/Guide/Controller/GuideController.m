@@ -11,6 +11,7 @@
 #import <GKCycleScrollView/GKPageControl.h>
 #import "SuperHttpUtil.h"
 #import "Video.h"
+#import "AppDelegate.h"
 @interface GuideController () <GKCycleScrollViewDataSource,GKCycleScrollViewDelegate>
 @property (nonatomic, strong) GKCycleScrollView *contentScrollView;
 @end
@@ -101,16 +102,14 @@
 }
 
 -(void)onPrimaryClick:(QMUIButton*)sender{
-    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos/98" parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodGET loading:NO controller:nil success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos/789465" parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodGET loading:NO controller:nil success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
         NSLog(@"success");
-    } failure:^BOOL(BaseResponse * _Nullable baseResponse, NSError * _Nonnull error) {
-        NSLog(@"failure");
-        return NO;
-    }];
+    } failure:nil];
+//    [SuperToast showWithTitle:R.string.localizable.enterUsername];
     
 }
 -(void)onEnterClick:(int)a{
-    
+    [AppDelegate.shared toMain];
 }
 
 #pragma mark  轮播图数据源

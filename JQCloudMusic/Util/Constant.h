@@ -8,6 +8,9 @@
 #ifndef Constant_h
 #define Constant_h
 
+
+static NSString * const URL_VIDEO = @"v1/videos";
+
 #pragma mark - 文本尺寸
 static float const TEXT_SMALL = 12;
 static float const TEXT_MEDDLE = 14;

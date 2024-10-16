@@ -40,6 +40,10 @@ target 'JQCloudMusic' do
   #https://github.com/CoderMJLee/MJExtension
   pod 'MJExtension'
 
+  #指示器
+  #https://github.com/jdg/MBProgressHUD
+  pod 'MBProgressHUD'
+
   target 'JQCloudMusicTests' do
     inherit! :search_paths
     # Pods for testing

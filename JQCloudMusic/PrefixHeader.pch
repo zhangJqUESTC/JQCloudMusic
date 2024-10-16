@@ -16,4 +16,12 @@
 #import "Constant.h"
 #import "MSNetwork.h"
 #import "config.h"
+#import "SuperHttpUtil.h"
+#import "DefaultRepository.h"
+#import "StringUtil.h"
+#import "SuperToast.h"
+#import "TipUtil.h"
+#import "UIImage+SuperUI.h"
+
+
 #endif /* PrefixHeader_pch */

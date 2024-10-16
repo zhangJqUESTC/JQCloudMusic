@@ -69,13 +69,13 @@
 }
 
 -(void)prepareNext{
-    [self performSelector:@selector(next) withObject:nil afterDelay:3];
+//    [self performSelector:@selector(next) withObject:nil afterDelay:3];
 //    [self next];
     
 }
 
 -(void)next{
-    [AppDelegate.shared toGuide];
+    [AppDelegate.shared toMain];
 }
 
 /// 显示同意服务条款对话框
