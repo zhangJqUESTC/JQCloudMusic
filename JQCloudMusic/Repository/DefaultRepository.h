@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Sheet.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DefaultRepository : NSObject
@@ -35,6 +35,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 首页banner界面广告
 -(void)bannerAdWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success;
+
+#pragma mark - 歌单
+
+/// 歌单列表
+-(void)sheets:(int)size controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success;
+
+-(void)sheetDetailWithId:(NSString *)id success:(SuperHttpSuccess)success;
+
+/// 获取用户创建的歌单
+-(void)createSheets:(NSString *)userId success:(SuperHttpListSuccess)success;
+
+/// 获取用户收藏的歌单
+-(void)collectSheets:(NSString *)userId success:(SuperHttpListSuccess)success;
+
+/// 创建歌单
+/// @param success success description
+-(void)createSheet:(Sheet *)data success:(SuperHttpSuccess)success;
+
+#pragma mark - 单曲
+-(void)songsWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success;
+
+/// 歌曲详情
+-(void)songDetailWithId:(NSString *)id success:(SuperHttpSuccess)success;
 @end
 
 NS_ASSUME_NONNULL_END

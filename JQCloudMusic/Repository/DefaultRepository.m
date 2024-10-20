@@ -52,6 +52,37 @@
 
 -(void)adsWithPosition:(int)position controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
     //因为参数比较少，所以通过字典传递更方便
-    [SuperHttpUtil requestListObjectWith:[Ad class] url:URL_AD parameters:@{@"position":[NSNumber numberWithInt:position]} cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
+    [SuperHttpUtil requestListObjectWith:[Ad class] url:URL_AD parameters:@{@"position":[NSNumber numberWithInt:position]} cachePolicy:MSCachePolicyOnlyNetNoCache controller:controller success:success];
 }
+
+#pragma mark - 歌单
+-(void)sheets:(int)size controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
+    [SuperHttpUtil requestListObjectWith:[Sheet class] url:URL_SHEET parameters:@{@"size":[NSNumber numberWithInt:size]} cachePolicy:MSCachePolicyOnlyNetNoCache controller:controller success:success];
+}
+
+-(void)sheetDetailWithId:(NSString *)id success:(SuperHttpSuccess)success{
+    [SuperHttpUtil requestObjectWith:[Sheet class] url:URL_SHEET id:id success:success];
+}
+
+/// 获取用户创建的歌单
+-(void)createSheets:(NSString *)userId success:(SuperHttpListSuccess)success{
+    [SuperHttpUtil requestListObjectWith:[Sheet class] url:[NSString stringWithFormat:@"v1/users/%@/create",userId] parameters:nil success:success];
+}
+
+/// 获取用户收藏的歌单
+-(void)collectSheets:(NSString *)userId success:(SuperHttpListSuccess)success{
+    [SuperHttpUtil requestListObjectWith:[Sheet class] url:[NSString stringWithFormat:@"v1/users/%@/collect",userId] parameters:nil success:success];
+}
+
+/// 创建歌单
+/// @param success <#success description#>
+-(void)createSheet:(Sheet *)data success:(SuperHttpSuccess)success{
+    [SuperHttpUtil postObjectWith:[SuperBase class] url:URL_SHEET parameter:data success:success];
+}
+
+
+#pragma mark - 单曲
+//-(void)songsWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
+//    [SuperHttpUtil requestListObjectWith:[Song class] url:URL_SONG parameters:nil cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
+//}
 @end

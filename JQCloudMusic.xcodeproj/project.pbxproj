@@ -22,6 +22,18 @@
 		095E134E2CBFFC4C005A32D9 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 095E134D2CBFFC4C005A32D9 /* BannerCell.m */; };
 		095E13512CC0078B005A32D9 /* ResourceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 095E13502CC0078B005A32D9 /* ResourceUtil.m */; };
 		095E13552CC00ADE005A32D9 /* BannerClickEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 095E13542CC00ADE005A32D9 /* BannerClickEvent.m */; };
+		099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */; };
+		099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */; };
+		099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C02CC0EE16008A34D0 /* ButtonData.m */; };
+		099E08C42CC0EEAD008A34D0 /* IconTitleButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C32CC0EEAD008A34D0 /* IconTitleButtonData.m */; };
+		099E08C82CC0FDF6008A34D0 /* DiscoveryButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C72CC0FDF6008A34D0 /* DiscoveryButtonView.m */; };
+		099E08CB2CC10BF9008A34D0 /* SheetGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08CA2CC10BF9008A34D0 /* SheetGroupCell.m */; };
+		099E08CE2CC10C8D008A34D0 /* SheetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08CD2CC10C8D008A34D0 /* SheetData.m */; };
+		099E08D32CC10D7F008A34D0 /* Sheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08D22CC10D7F008A34D0 /* Sheet.m */; };
+		099E08D62CC13062008A34D0 /* ItemTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08D52CC13062008A34D0 /* ItemTitleView.m */; };
+		099E08DA2CC137EF008A34D0 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08D92CC137EF008A34D0 /* BaseCollectionViewCell.m */; };
+		099E08DD2CC13A7E008A34D0 /* SheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08DC2CC13A7E008A34D0 /* SheetCell.m */; };
+		099E08E02CC1458A008A34D0 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08DF2CC1458A008A34D0 /* ImageUtil.m */; };
 		09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6902CB9501F004DEFCB /* AppDelegate.m */; };
 		09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6962CB9501F004DEFCB /* ViewController.m */; };
 		09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB69B2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld */; };
@@ -112,6 +124,30 @@
 		095E13502CC0078B005A32D9 /* ResourceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResourceUtil.m; sourceTree = "<group>"; };
 		095E13532CC00ADE005A32D9 /* BannerClickEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerClickEvent.h; sourceTree = "<group>"; };
 		095E13542CC00ADE005A32D9 /* BannerClickEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerClickEvent.m; sourceTree = "<group>"; };
+		099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
+		099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
+		099E08BC2CC0EC5F008A34D0 /* DiscoveryButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonCell.h; sourceTree = "<group>"; };
+		099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryButtonCell.m; sourceTree = "<group>"; };
+		099E08BF2CC0EE16008A34D0 /* ButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonData.h; sourceTree = "<group>"; };
+		099E08C02CC0EE16008A34D0 /* ButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonData.m; sourceTree = "<group>"; };
+		099E08C22CC0EEAD008A34D0 /* IconTitleButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconTitleButtonData.h; sourceTree = "<group>"; };
+		099E08C32CC0EEAD008A34D0 /* IconTitleButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconTitleButtonData.m; sourceTree = "<group>"; };
+		099E08C62CC0FDF6008A34D0 /* DiscoveryButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonView.h; sourceTree = "<group>"; };
+		099E08C72CC0FDF6008A34D0 /* DiscoveryButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryButtonView.m; sourceTree = "<group>"; };
+		099E08C92CC10BF9008A34D0 /* SheetGroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheetGroupCell.h; sourceTree = "<group>"; };
+		099E08CA2CC10BF9008A34D0 /* SheetGroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetGroupCell.m; sourceTree = "<group>"; };
+		099E08CC2CC10C8D008A34D0 /* SheetData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheetData.h; sourceTree = "<group>"; };
+		099E08CD2CC10C8D008A34D0 /* SheetData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetData.m; sourceTree = "<group>"; };
+		099E08D12CC10D7F008A34D0 /* Sheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sheet.h; sourceTree = "<group>"; };
+		099E08D22CC10D7F008A34D0 /* Sheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sheet.m; sourceTree = "<group>"; };
+		099E08D42CC13062008A34D0 /* ItemTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemTitleView.h; sourceTree = "<group>"; };
+		099E08D52CC13062008A34D0 /* ItemTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemTitleView.m; sourceTree = "<group>"; };
+		099E08D82CC137EF008A34D0 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		099E08D92CC137EF008A34D0 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		099E08DB2CC13A7E008A34D0 /* SheetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheetCell.h; sourceTree = "<group>"; };
+		099E08DC2CC13A7E008A34D0 /* SheetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetCell.m; sourceTree = "<group>"; };
+		099E08DE2CC1458A008A34D0 /* ImageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		099E08DF2CC1458A008A34D0 /* ImageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 		09CAB68C2CB9501F004DEFCB /* JQCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CAB68F2CB9501F004DEFCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09CAB6902CB9501F004DEFCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -322,6 +358,12 @@
 			children = (
 				095E13442CBFF3F5005A32D9 /* BannerData.h */,
 				095E13452CBFF3F5005A32D9 /* BannerData.m */,
+				099E08BF2CC0EE16008A34D0 /* ButtonData.h */,
+				099E08C02CC0EE16008A34D0 /* ButtonData.m */,
+				099E08C22CC0EEAD008A34D0 /* IconTitleButtonData.h */,
+				099E08C32CC0EEAD008A34D0 /* IconTitleButtonData.m */,
+				099E08CC2CC10C8D008A34D0 /* SheetData.h */,
+				099E08CD2CC10C8D008A34D0 /* SheetData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +373,8 @@
 			children = (
 				095E13482CBFF9AA005A32D9 /* BaseTableViewCell.h */,
 				095E13492CBFF9AA005A32D9 /* BaseTableViewCell.m */,
+				099E08D82CC137EF008A34D0 /* BaseCollectionViewCell.h */,
+				099E08D92CC137EF008A34D0 /* BaseCollectionViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -340,6 +384,10 @@
 			children = (
 				095E134C2CBFFC4C005A32D9 /* BannerCell.h */,
 				095E134D2CBFFC4C005A32D9 /* BannerCell.m */,
+				099E08BC2CC0EC5F008A34D0 /* DiscoveryButtonCell.h */,
+				099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */,
+				099E08C92CC10BF9008A34D0 /* SheetGroupCell.h */,
+				099E08CA2CC10BF9008A34D0 /* SheetGroupCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -351,6 +399,53 @@
 				095E13542CC00ADE005A32D9 /* BannerClickEvent.m */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		099E08B82CC0E295008A34D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */,
+				099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		099E08C52CC0FDCF008A34D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				099E08C62CC0FDF6008A34D0 /* DiscoveryButtonView.h */,
+				099E08C72CC0FDF6008A34D0 /* DiscoveryButtonView.m */,
+				099E08D42CC13062008A34D0 /* ItemTitleView.h */,
+				099E08D52CC13062008A34D0 /* ItemTitleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		099E08CF2CC10D28008A34D0 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				099E08D72CC137B7008A34D0 /* Cell */,
+				099E08D02CC10D32008A34D0 /* Model */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		099E08D02CC10D32008A34D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				099E08D12CC10D7F008A34D0 /* Sheet.h */,
+				099E08D22CC10D7F008A34D0 /* Sheet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099E08D72CC137B7008A34D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				099E08DB2CC13A7E008A34D0 /* SheetCell.h */,
+				099E08DC2CC13A7E008A34D0 /* SheetCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		09CAB6832CB9501F004DEFCB = {
@@ -426,6 +521,7 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				099E08CF2CC10D28008A34D0 /* Sheet */,
 				095E133E2CBFF32B005A32D9 /* Ad */,
 				09E0B5BF2CBFB2D0006B65C1 /* Main */,
 				09E0B5BA2CBFB230006B65C1 /* Room */,
@@ -471,6 +567,7 @@
 		09CAB6CE2CB97B93004DEFCB /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				099E08B82CC0E295008A34D0 /* View */,
 				09E0B5C42CBFB6ED006B65C1 /* Image */,
 				09E0B5A02CBFA18A006B65C1 /* Toast */,
 				09CAB6E32CBA502A004DEFCB /* Color */,
@@ -537,6 +634,8 @@
 				09E0B5A52CBFA7CE006B65C1 /* TipUtil.m */,
 				095E134F2CC0078B005A32D9 /* ResourceUtil.h */,
 				095E13502CC0078B005A32D9 /* ResourceUtil.m */,
+				099E08DE2CC1458A008A34D0 /* ImageUtil.h */,
+				099E08DF2CC1458A008A34D0 /* ImageUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -605,6 +704,7 @@
 		09E0B5A72CBFAFCD006B65C1 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				099E08C52CC0FDCF008A34D0 /* View */,
 				095E134B2CBFFC1E005A32D9 /* Cell */,
 				095E13432CBFF3CC005A32D9 /* Model */,
 				09E0B5A82CBFAFED006B65C1 /* Controller */,
@@ -975,11 +1075,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099E08CB2CC10BF9008A34D0 /* SheetGroupCell.m in Sources */,
 				09E0B59A2CBF99B3006B65C1 /* PlaceholderView.m in Sources */,
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
 				09E0B5B92CBFB227006B65C1 /* FeedController.m in Sources */,
 				090CA4142CBEBAA9005E9426 /* SuperBaseId.m in Sources */,
+				099E08D62CC13062008A34D0 /* ItemTitleView.m in Sources */,
 				09E0B5C72CBFB71E006B65C1 /* UIImage+SuperUI.m in Sources */,
 				09CAB6ED2CBA5633004DEFCB /* UIColor+Theme.m in Sources */,
 				095E13512CC0078B005A32D9 /* ResourceUtil.m in Sources */,
@@ -991,9 +1093,12 @@
 				095E13552CC00ADE005A32D9 /* BannerClickEvent.m in Sources */,
 				095E134A2CBFF9AA005A32D9 /* BaseTableViewCell.m in Sources */,
 				095E13422CBFF35B005A32D9 /* Ad.m in Sources */,
+				099E08CE2CC10C8D008A34D0 /* SheetData.m in Sources */,
 				09E0B5A32CBFA1B7006B65C1 /* SuperToast.m in Sources */,
 				09E0B5AE2CBFB0ED006B65C1 /* VideoController.m in Sources */,
 				095E134E2CBFFC4C005A32D9 /* BannerCell.m in Sources */,
+				099E08C82CC0FDF6008A34D0 /* DiscoveryButtonView.m in Sources */,
+				099E08DD2CC13A7E008A34D0 /* SheetCell.m in Sources */,
 				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
 				095E13462CBFF3F5005A32D9 /* BannerData.m in Sources */,
 				09CAB6FA2CBA6485004DEFCB /* BaseLogicController.m in Sources */,
@@ -1007,17 +1112,24 @@
 				09CAB6DF2CBA280A004DEFCB /* R.m in Sources */,
 				09CAB6EA2CBA529C004DEFCB /* UIColor+Config.m in Sources */,
 				090CA40F2CBE6AF2005E9426 /* Meta.m in Sources */,
+				099E08E02CC1458A008A34D0 /* ImageUtil.m in Sources */,
+				099E08D32CC10D7F008A34D0 /* Sheet.m in Sources */,
+				099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */,
 				09E0B5BE2CBFB264006B65C1 /* RoomController.m in Sources */,
 				090CA4042CBE66B8005E9426 /* SuperHttpUtil.m in Sources */,
 				09515B932CBD57B100CA2AB6 /* Config.m in Sources */,
 				09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */,
 				090CA41A2CBEBC14005E9426 /* Video.m in Sources */,
 				09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */,
+				099E08C42CC0EEAD008A34D0 /* IconTitleButtonData.m in Sources */,
 				09CAB6F02CBA5786004DEFCB /* UIColor+SuperUI.m in Sources */,
 				09CAB6D22CB97C46004DEFCB /* SuperDateUtil.m in Sources */,
 				09E0B5B12CBFB13A006B65C1 /* MeController.m in Sources */,
+				099E08DA2CC137EF008A34D0 /* BaseCollectionViewCell.m in Sources */,
+				099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */,
 				090CA40C2CBE6AB8005E9426 /* SuperBase.m in Sources */,
 				090CA4172CBEBB3B005E9426 /* SuperCommon.m in Sources */,
+				099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */,
 				09E0B5C32CBFB2F8006B65C1 /* MainController.m in Sources */,
 				090CA4092CBE6906005E9426 /* BaseResponse.m in Sources */,
 			);

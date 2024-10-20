@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SuperDateUtil : NSObject
 /// 当前年
 + (NSInteger)getCurrentYear;
+/// 当前年
++ (NSInteger)currentDay;
 @end
 
 NS_ASSUME_NONNULL_END

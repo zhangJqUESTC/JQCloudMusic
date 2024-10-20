@@ -8,8 +8,6 @@
 #ifndef Constant_h
 #define Constant_h
 
-static NSString * const URL_AD = @"v1/ads";
-static NSString * const URL_VIDEO = @"v1/videos";
 
 #pragma mark - 文本尺寸
 static float const TEXT_SMALL = 12;
@@ -25,6 +23,16 @@ static NSString * const Cell = @"Cell";
 
 static NSString * const ANONYMOUS = @"anonymous";
 static NSString * const LOGIN_CLICK = @"LOGIN_CLICK";
+
+static NSString * const URL_VIDEO = @"v1/videos";
+static NSString * const URL_AD = @"v1/ads";
+static NSString * const URL_SHEET = @"v1/sheets";
+static NSString * const URL_SONG = @"v1/songs";
+static NSString * const URL_FEED = @"v1/feeds";
+static NSString * const URL_SESSION = @"v1/sessions";
+static NSString * const URL_COMMENT = @"v1/comments";
+static NSString * const URL_USER = @"v1/users";
+static NSString * const URL_UPLOADS = @"v1/files/multi";
 
 
 #pragma mark - 输入框尺寸

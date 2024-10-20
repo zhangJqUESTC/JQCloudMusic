@@ -2890,17 +2890,27 @@ en: "WiFi预加载"
 
 
 @interface RImages: NSObject
+- (UIImage*)rank;
+- (UIImage*)dayRecommend;
 - (UIImage*)me;
+- (UIImage*)defaultAvatar;
 - (UIImage*)video;
+- (UIImage*)superChevronRight;
+- (UIImage*)sheet;
 - (UIImage*)splashLogo;
 - (UIImage*)guide1;
 - (UIImage*)live;
+- (UIImage*)digitalAlbum;
 - (UIImage*)discovery;
 - (UIImage*)discoverySelect;
+- (UIImage*)alert;
 - (UIImage*)guide4;
+- (UIImage*)personFm;
 - (UIImage*)feed;
+- (UIImage*)buttonLive;
 - (UIImage*)videoSelected;
 - (UIImage*)feedSelected;
+- (UIImage*)placeholder;
 - (UIImage*)liveSelected;
 - (UIImage*)splashBanner;
 - (UIImage*)meSelect;

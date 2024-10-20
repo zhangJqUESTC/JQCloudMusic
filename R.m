@@ -442,17 +442,27 @@
 
 
 @interface RImages ()
+@property (nonatomic, strong) UIImage* rank;
+@property (nonatomic, strong) UIImage* dayRecommend;
 @property (nonatomic, strong) UIImage* me;
+@property (nonatomic, strong) UIImage* defaultAvatar;
 @property (nonatomic, strong) UIImage* video;
+@property (nonatomic, strong) UIImage* superChevronRight;
+@property (nonatomic, strong) UIImage* sheet;
 @property (nonatomic, strong) UIImage* splashLogo;
 @property (nonatomic, strong) UIImage* guide1;
 @property (nonatomic, strong) UIImage* live;
+@property (nonatomic, strong) UIImage* digitalAlbum;
 @property (nonatomic, strong) UIImage* discovery;
 @property (nonatomic, strong) UIImage* discoverySelect;
+@property (nonatomic, strong) UIImage* alert;
 @property (nonatomic, strong) UIImage* guide4;
+@property (nonatomic, strong) UIImage* personFm;
 @property (nonatomic, strong) UIImage* feed;
+@property (nonatomic, strong) UIImage* buttonLive;
 @property (nonatomic, strong) UIImage* videoSelected;
 @property (nonatomic, strong) UIImage* feedSelected;
+@property (nonatomic, strong) UIImage* placeholder;
 @property (nonatomic, strong) UIImage* liveSelected;
 @property (nonatomic, strong) UIImage* splashBanner;
 @property (nonatomic, strong) UIImage* meSelect;
@@ -481,17 +491,27 @@
 @end
 
 @implementation RImages
+- (UIImage*)rank { return [UIImage imageNamed:@"Rank" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)dayRecommend { return [UIImage imageNamed:@"DayRecommend" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)me { return [UIImage imageNamed:@"Me" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)defaultAvatar { return [UIImage imageNamed:@"DefaultAvatar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)video { return [UIImage imageNamed:@"Video" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)superChevronRight { return [UIImage imageNamed:@"SuperChevronRight" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)sheet { return [UIImage imageNamed:@"Sheet" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashLogo { return [UIImage imageNamed:@"SplashLogo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide1 { return [UIImage imageNamed:@"guide1" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)live { return [UIImage imageNamed:@"Live" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)digitalAlbum { return [UIImage imageNamed:@"DigitalAlbum" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)discovery { return [UIImage imageNamed:@"Discovery" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)discoverySelect { return [UIImage imageNamed:@"DiscoverySelect" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)alert { return [UIImage imageNamed:@"Alert" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide4 { return [UIImage imageNamed:@"guide4" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)personFm { return [UIImage imageNamed:@"PersonFm" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feed { return [UIImage imageNamed:@"Feed" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)buttonLive { return [UIImage imageNamed:@"ButtonLive" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)videoSelected { return [UIImage imageNamed:@"VideoSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feedSelected { return [UIImage imageNamed:@"FeedSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)placeholder { return [UIImage imageNamed:@"Placeholder" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)liveSelected { return [UIImage imageNamed:@"LiveSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashBanner { return [UIImage imageNamed:@"SplashBanner" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)meSelect { return [UIImage imageNamed:@"MeSelect" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }

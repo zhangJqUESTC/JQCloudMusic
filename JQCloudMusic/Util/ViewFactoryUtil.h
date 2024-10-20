@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(UITableView *)tableView;
 
++(UICollectionView *)collectionView;
++(UICollectionViewFlowLayout *)collectionViewFlowLayout;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,6 +9,7 @@
 //提供类似Android中更高层级的布局框架
 #import <MyLayout/MyLayout.h>
 #import "BaseCommonController.h"
+#import "PlaceholderView.h"
 //#import "PlaceholderView.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) MyBaseLayout *superFooterContentContainer;
 
 /// 占位控件
-//@property(nonatomic,strong) PlaceholderView *placeholderView;
+@property(nonatomic,strong) PlaceholderView *placeholderView;
 
 /// 内容容器，一般只有初始化ScrollView后，才有效
 @property (nonatomic, strong) MyLinearLayout *contentContainer;
@@ -106,11 +107,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)finish;
 
 /// 将主界面后面的界面全部关闭，不关闭主界面，并显示一个界面
-/// @param newController <#newController description#>
+/// @param newController newController description
 -(void)finishToMainController:(UIViewController *)newController;
 
 /// 关闭当前界面，并显示一个新界面
-/// @param newController <#newController description#>
+/// @param newController newController description
 -(void)startControllerAndFinishThis:(UIViewController *)newController;
 
 #pragma mark - 统计
