@@ -17,6 +17,7 @@ PODS:
   - GKCycleScrollView (1.2.3)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.4.2)
+  - MJRefresh (3.7.9)
   - MyLayout (1.9.10)
   - QMUIKit (4.8.0):
     - QMUIKit/QMUIComponents (= 4.8.0)
@@ -348,6 +349,7 @@ DEPENDENCIES:
   - GKCycleScrollView
   - MBProgressHUD
   - MJExtension
+  - MJRefresh
   - MyLayout
   - QMUIKit
   - QTEventBus
@@ -361,6 +363,7 @@ SPEC REPOS:
     - GKCycleScrollView
     - MBProgressHUD
     - MJExtension
+    - MJRefresh
     - MyLayout
     - QMUIKit
     - QTEventBus
@@ -373,6 +376,7 @@ SPEC CHECKSUMS:
   GKCycleScrollView: 8ed79d2142e62895a701973358b6f94b661b4829
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
   QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
@@ -380,6 +384,6 @@ SPEC CHECKSUMS:
   SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: d2a0a56bcd5f01cce7b6f6997161720243898815
+PODFILE CHECKSUM: 7a7239748a2ca97a12f78563fa16b92f6865f32e
 
 COCOAPODS: 1.15.2

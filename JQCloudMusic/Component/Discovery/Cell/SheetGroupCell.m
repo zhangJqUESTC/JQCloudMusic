@@ -25,7 +25,7 @@
 - (void)initViews{
     [super initViews];
     //分割线
-//    [self.container addSubview:[ViewFactoryUtil smallDivider]];
+    [self.container addSubview:[ViewFactoryUtil smallDivider]];
     
     //标题
     [self.container addSubview:self.titleView];

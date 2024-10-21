@@ -52,6 +52,10 @@ target 'JQCloudMusic' do
   #https://github.com/LeoMobileDeveloper/QTEventBus
   pod 'QTEventBus'
 
+  #下拉刷新
+  #https://github.com/CoderMJLee/MJRefresh
+  pod 'MJRefresh'
+
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths

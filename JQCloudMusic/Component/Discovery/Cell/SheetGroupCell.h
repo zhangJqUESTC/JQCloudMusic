@@ -19,10 +19,6 @@ static NSString * const SheetGroupCellName = @"SheetGroupCellName";
 /// @param data 点击的歌单对象
 - (void)sheetClick:(Sheet *)data;
 
-@optional
-
-/// 这是一个可选方法，在这里没有任何作用，只是演示可选语法
-- (void)testOptionalMethod;
 @end
 
 @interface SheetGroupCell : BaseTableViewCell

@@ -27,7 +27,8 @@
 /// 显示主界面
 -(void)toMain{
     MainController *controller = [MainController new];
-    [self setRootViewController:controller];
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self setRootViewController:navigationController];
 }
 
 -(void)setRootViewController:(UIViewController *)controller{

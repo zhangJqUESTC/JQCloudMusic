@@ -82,7 +82,8 @@
 
 
 #pragma mark - 单曲
-//-(void)songsWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
-//    [SuperHttpUtil requestListObjectWith:[Song class] url:URL_SONG parameters:nil cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
-//}
+-(void)songsWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
+    [SuperHttpUtil requestListObjectWith:[Song class] url:URL_SONG parameters:nil cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
+}
+
 @end

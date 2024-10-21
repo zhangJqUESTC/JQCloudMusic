@@ -9,6 +9,8 @@
 
 @implementation ViewFactoryUtil
 
+#pragma mark Button
+
 +(QMUIButton *)primaryButton{
     QMUIButton *result = [[QMUIButton alloc] init];
     result.adjustsTitleTintColorAutomatically = NO;
@@ -49,6 +51,31 @@
     
     return result;
 }
+
++ (QMUIButton *)secondHalfFilletSmallButton{
+    QMUIButton *result = [[QMUIButton alloc] init];
+    result.titleLabel.font = UIFontMake(TEXT_SMALL);
+    result.myWidth = 90;
+    result.myHeight = BUTTON_SMALL;
+    result.tintColor = [UIColor black80];
+    result.layer.cornerRadius = BUTTON_SMALL_RADIUS;
+    result.layer.borderWidth = 1;
+    result.layer.borderColor = [[UIColor black80] CGColor];
+    [result setTitleColor:[UIColor black80] forState:UIControlStateNormal];
+    return result;
+}
+
++(QMUIButton *)buttonWithImage:(UIImage *)data{
+    QMUIButton *result = [[QMUIButton alloc] init];
+    result.adjustsTitleTintColorAutomatically = YES;
+    result.myWidth = 30;
+    result.myHeight = 30;
+    result.tintColor = [UIColor colorOnSurface];
+    [result setImage:data forState:UIControlStateNormal];
+    return result;
+}
+
+#pragma mark View
 
 +(UITableView *)tableView{
     QMUITableView *result = [[QMUITableView alloc] init];
@@ -112,6 +139,15 @@
     //每个Cell的列间距
     result.minimumInteritemSpacing = 0;
 
+    return result;
+}
+
++(UIView *)smallDivider{
+    UIView *result = [UIView new];
+    result.myWidth = MyLayoutSize.fill;
+    result.myHeight = 0.5;
+    result.backgroundColor = [UIColor colorDivider];
+    
     return result;
 }
 @end

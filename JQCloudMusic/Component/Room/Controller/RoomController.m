@@ -15,7 +15,7 @@
 
 -(void)initViews{
     [super initViews];
-    [self setBackgroundColor:[UIColor blueColor]];
+    [self initTableViewSafeArea];
 }
 
 @end

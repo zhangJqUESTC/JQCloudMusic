@@ -27,6 +27,8 @@
 #import "ImageUtil.h"
 #import <SDWebImage/SDWebImage.h>
 #import "ResourceUtil.h"
+#import "Song.h"
+#import "UIImage+SuperUI.h"
 
 
 

@@ -13,7 +13,17 @@
 #import "ButtonData.h"
 #import "SheetData.h"
 #import "SheetGroupCell.h"
-@interface DiscoveryController ()
+#import "SongData.h"
+#import "SongGroupCell.h"
+#import "DiscoveryFooterCell.h"
+#import "FooterData.h"
+#import "ClickEvent.h"
+#import "SuperWebController.h"
+//下拉刷新
+#import <MJRefresh/MJRefresh.h>
+
+
+@interface DiscoveryController () <SheetGroupDelegate>
 
 @end
 
@@ -21,9 +31,10 @@
 
 -(void)initViews{
     [super initViews];
-    [self setBackgroundColor:[UIColor whiteColor]];
+
     //初始化tableView结构
     [self initTableViewSafeArea];
+    
     
     //初始化占位控件
     [self initPlaceholderView];
@@ -36,13 +47,42 @@
     [self.tableView registerClass:[DiscoveryButtonCell class] forCellReuseIdentifier:DiscoveryButtonCellName];
     //注册歌单groupCell
     [self.tableView registerClass:[SheetGroupCell class] forCellReuseIdentifier:SheetGroupCellName];
+    //注册单曲groupCell
+    [self.tableView registerClass:[SongGroupCell class] forCellReuseIdentifier:SongGroupCellName];
+    //注册FooterCell
+    [self.tableView registerClass:[DiscoveryFooterCell class] forCellReuseIdentifier:DiscoveryFooterCellName];
     
+    //下拉刷新
+    MJRefreshNormalHeader *header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self loadData:YES];
+    }];
+
+//    //隐藏标题
+    header.stateLabel.hidden = YES;
+
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    self.tableView.mj_header=header;
+    
+}
+
+-(void)endRefresh{
+    [self.tableView.mj_header endRefreshing];
 }
 
 -(void)initDatum{
     [super initDatum];
     [self loadData:YES];
     
+}
+
+-(void)onLeftClick:(QMUIButton *)sender{
+//    [self.navigationController popViewControllerAnimated:YES];
+    NSLog(@"DiscoveryController onLeftClick");
+}
+
+-(void)onRightClick:(QMUIButton *)sender{
+    NSLog(@"DiscoveryController onRightClick");
 }
 
 - (void)initListeners{
@@ -54,19 +94,56 @@
         @strongify(self);
         [self processAdClick:event.data];
     }];
+    
+    //订阅banner点击事件
+    [QTSubMain(self,ClickEvent) next:^(ClickEvent *event) {
+        @strongify(self);
+        [self processClick:event.style];
+    }];
 
 }
 
 - (void)processAdClick:(Ad *)data{
     NSLog(@"processAdClick %@",data.uri);
+    if ([data.uri hasPrefix:@"http"]) {
+        [SuperWebController start:self.navigationController title:data.title uri:data.uri];
+    }else{
+        
+    }
+}
+
+-(void)processClick:(ListStyle)style{
+    switch (style) {
+        case StyleRerfresh:
+            [self autoRefresh];
+            break;
+        default:
+            break;
+    }
+}
+
+-(void)autoRefresh{
+    //滚动到顶部
+    NSIndexPath *indexPath=[NSIndexPath indexPathForItem:0 inSection:0];
+    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    
+    //延时200毫秒，执行加载数据，目的是让列表先向上滚动到顶部
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(200 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+        [self startRefresh];
+     });
+}
+
+-(void)startRefresh{
+    //进入界面后自动刷新，会调用回调方法
+    [self.tableView.mj_header beginRefreshing];
 }
 
 -(void)loadData:(BOOL)isPlaceholder{
-    [self.datum removeAllObjects];
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
         
     //广告API
     [[DefaultRepository shared] bannerAdWithController:self success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+        [self.datum removeAllObjects];
         
         //添加轮播图
         BannerData *bannerData=[BannerData new];
@@ -91,14 +168,28 @@
         SheetData *sheetData=[SheetData new];
         sheetData.datum = data;
         [self.datum addObject:sheetData];
-        [self.tableView reloadData];
         //请求单曲数据
         [self loadSongData];
     }];
 }
 
 -(void)loadSongData{
-    
+    [[DefaultRepository shared] songsWithController:self success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+        [self endRefresh];
+        
+        //添加单曲数据
+        SongData *result=[SongData new];
+        result.datum = data;
+        [self.datum addObject:result];
+//        
+        //添加尾部数据
+        [self.datum addObject:[FooterData new]];
+        
+        [self.tableView reloadData];
+        
+//        //请求启动界面广告，当然也可以和轮播图接口一起返回
+//        [self loadSplashAd];
+    }];
 }
 
 #pragma mark - 列表数据源
@@ -140,10 +231,10 @@
             
             return cell;
         }
-//        case StyleSong:{
-//            //单曲组
-//            SongGroupCell *cell = [tableView dequeueReusableCellWithIdentifier:SongGroupCellName forIndexPath:indexPath];
-//            
+        case StyleSong:{
+            //单曲组
+            SongGroupCell *cell = [tableView dequeueReusableCellWithIdentifier:SongGroupCellName forIndexPath:indexPath];
+            
 //            [cell setClickBlock:^(Song * _Nonnull result) {
 //                @strongify(self);
 //                [[MusicListManager shared] setDatum:@[result]];
@@ -153,24 +244,16 @@
 //                
 //                [self startMusicPlayerController];
 //            }];
-//            
-//            [cell bind:data];
-//            
-//            return cell;
-//        }
+            
+            [cell bind:data];
+            
+            return cell;
+        }
         default:{
-//            DiscoveryFooterCell *cell = [tableView dequeueReusableCellWithIdentifier:DiscoveryFooterCellName forIndexPath:indexPath];
-            return nil;
+            DiscoveryFooterCell *cell = [tableView dequeueReusableCellWithIdentifier:DiscoveryFooterCellName forIndexPath:indexPath];
+            return cell;
         }
     }
-    
-    //轮播图
-    BannerCell *cell = [tableView dequeueReusableCellWithIdentifier:BannerCellName forIndexPath:indexPath];
-    
-    //绑定数据
-    [cell bind:data];
-    
-    return cell;
 }
 
 /// Cell类型
@@ -189,14 +272,19 @@
         //歌单
         return StyleSheet;
     }
-//    else if ([data isKindOfClass:[SongData class]]){
-//        //单曲
-//        return StyleSong;
-//    }
+    else if ([data isKindOfClass:[SongData class]]){
+        //单曲
+        return StyleSong;
+    }
 //
     //TODO 更多的类型，在这里扩展就行了
     
     //尾部类型
     return -1;
+}
+
+#pragma mark - 歌单组代理
+- (void)sheetClick:(Sheet *)data{
+    NSLog(@"sheetClick %@",data.title);
 }
 @end

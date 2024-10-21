@@ -206,6 +206,21 @@
 - (NSString*)loginNow { return NSLocalizedStringFromTableInBundle(@"LoginNow", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
 - (NSString*)loginOrRegister { return NSLocalizedStringFromTableInBundle(@"LoginOrRegister", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
 - (NSString*)logout { return NSLocalizedStringFromTableInBundle(@"Logout", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshAutoFooterIdleText { return NSLocalizedStringFromTableInBundle(@"MJRefreshAutoFooterIdleText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshAutoFooterNoMoreDataText { return NSLocalizedStringFromTableInBundle(@"MJRefreshAutoFooterNoMoreDataText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshAutoFooterRefreshingText { return NSLocalizedStringFromTableInBundle(@"MJRefreshAutoFooterRefreshingText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshBackFooterIdleText { return NSLocalizedStringFromTableInBundle(@"MJRefreshBackFooterIdleText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshBackFooterNoMoreDataText { return NSLocalizedStringFromTableInBundle(@"MJRefreshBackFooterNoMoreDataText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshBackFooterPullingText { return NSLocalizedStringFromTableInBundle(@"MJRefreshBackFooterPullingText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshBackFooterRefreshingText { return NSLocalizedStringFromTableInBundle(@"MJRefreshBackFooterRefreshingText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshHeaderDateTodayText { return NSLocalizedStringFromTableInBundle(@"MJRefreshHeaderDateTodayText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshHeaderIdleText { return NSLocalizedStringFromTableInBundle(@"MJRefreshHeaderIdleText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshHeaderLastTimeText { return NSLocalizedStringFromTableInBundle(@"MJRefreshHeaderLastTimeText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshHeaderNoneLastDateText { return NSLocalizedStringFromTableInBundle(@"MJRefreshHeaderNoneLastDateText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshHeaderPullingText { return NSLocalizedStringFromTableInBundle(@"MJRefreshHeaderPullingText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshHeaderRefreshingText { return NSLocalizedStringFromTableInBundle(@"MJRefreshHeaderRefreshingText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshTrailerIdleText { return NSLocalizedStringFromTableInBundle(@"MJRefreshTrailerIdleText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
+- (NSString*)mjRefreshTrailerPullingText { return NSLocalizedStringFromTableInBundle(@"MJRefreshTrailerPullingText", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
 - (NSString*)mall { return NSLocalizedStringFromTableInBundle(@"Mall", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
 - (NSString*)mapAMap { return NSLocalizedStringFromTableInBundle(@"MapAMap", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
 - (NSString*)mapBaidu { return NSLocalizedStringFromTableInBundle(@"MapBaidu", @"Localizable", [NSBundle bundleForClass:self.class], nil); }
@@ -445,6 +460,7 @@
 @property (nonatomic, strong) UIImage* rank;
 @property (nonatomic, strong) UIImage* dayRecommend;
 @property (nonatomic, strong) UIImage* me;
+@property (nonatomic, strong) UIImage* mic;
 @property (nonatomic, strong) UIImage* defaultAvatar;
 @property (nonatomic, strong) UIImage* video;
 @property (nonatomic, strong) UIImage* superChevronRight;
@@ -456,12 +472,18 @@
 @property (nonatomic, strong) UIImage* discovery;
 @property (nonatomic, strong) UIImage* discoverySelect;
 @property (nonatomic, strong) UIImage* alert;
+@property (nonatomic, strong) UIImage* close;
+@property (nonatomic, strong) UIImage* fire;
 @property (nonatomic, strong) UIImage* guide4;
 @property (nonatomic, strong) UIImage* personFm;
+@property (nonatomic, strong) UIImage* menu;
 @property (nonatomic, strong) UIImage* feed;
 @property (nonatomic, strong) UIImage* buttonLive;
 @property (nonatomic, strong) UIImage* videoSelected;
 @property (nonatomic, strong) UIImage* feedSelected;
+@property (nonatomic, strong) UIImage* refresh;
+@property (nonatomic, strong) UIImage* arrowLeft;
+@property (nonatomic, strong) UIImage* search;
 @property (nonatomic, strong) UIImage* placeholder;
 @property (nonatomic, strong) UIImage* liveSelected;
 @property (nonatomic, strong) UIImage* splashBanner;
@@ -488,12 +510,15 @@
 @property (nonatomic, strong) UIImage* qmuiPickerImageFavorite;
 @property (nonatomic, strong) UIImage* qmuiHiddenAlbum;
 @property (nonatomic, strong) UIImage* qmuiCheckbox16;
+@property (nonatomic, strong) UIImage* arrow2x;
+@property (nonatomic, strong) UIImage* trailArrow2x;
 @end
 
 @implementation RImages
 - (UIImage*)rank { return [UIImage imageNamed:@"Rank" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)dayRecommend { return [UIImage imageNamed:@"DayRecommend" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)me { return [UIImage imageNamed:@"Me" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)mic { return [UIImage imageNamed:@"Mic" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)defaultAvatar { return [UIImage imageNamed:@"DefaultAvatar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)video { return [UIImage imageNamed:@"Video" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)superChevronRight { return [UIImage imageNamed:@"SuperChevronRight" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
@@ -505,12 +530,18 @@
 - (UIImage*)discovery { return [UIImage imageNamed:@"Discovery" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)discoverySelect { return [UIImage imageNamed:@"DiscoverySelect" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)alert { return [UIImage imageNamed:@"Alert" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)close { return [UIImage imageNamed:@"Close" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)fire { return [UIImage imageNamed:@"Fire" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide4 { return [UIImage imageNamed:@"guide4" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)personFm { return [UIImage imageNamed:@"PersonFm" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)menu { return [UIImage imageNamed:@"Menu" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feed { return [UIImage imageNamed:@"Feed" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)buttonLive { return [UIImage imageNamed:@"ButtonLive" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)videoSelected { return [UIImage imageNamed:@"VideoSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feedSelected { return [UIImage imageNamed:@"FeedSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)refresh { return [UIImage imageNamed:@"Refresh" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)arrowLeft { return [UIImage imageNamed:@"ArrowLeft" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)search { return [UIImage imageNamed:@"Search" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)placeholder { return [UIImage imageNamed:@"Placeholder" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)liveSelected { return [UIImage imageNamed:@"LiveSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashBanner { return [UIImage imageNamed:@"SplashBanner" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
@@ -537,6 +568,8 @@
 - (UIImage*)qmuiPickerImageFavorite { return [UIImage imageNamed:@"QMUI_pickerImage_favorite" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)qmuiHiddenAlbum { return [UIImage imageNamed:@"QMUI_hiddenAlbum" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)qmuiCheckbox16 { return [UIImage imageNamed:@"QMUI_checkbox16" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)arrow2x { return [UIImage imageNamed:@"arrow@2x.png" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)trailArrow2x { return [UIImage imageNamed:@"trail_arrow@2x.png" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 @end
 
 

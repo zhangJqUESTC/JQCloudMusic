@@ -98,7 +98,12 @@
     Ad *data=[self.datum objectAtIndex:index];
     
     //将地址转为绝对地址
-    NSString *uri = [ResourceUtil resourceUri:data.icon];
+    NSString *uri = @"";
+    if ([data.icon hasPrefix:@"http"]){
+        uri = data.icon;
+    }else{
+        uri = [ResourceUtil resourceUri:data.icon];
+    }
 
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:uri]];
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;

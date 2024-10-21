@@ -17,7 +17,7 @@
 - (void)initViews{
     [super initViews];
     //隐藏系统导航栏
-//    [self.navigationController.navigationBar setHidden:YES];
+    [self.navigationController.navigationBar setHidden:YES];
     
     //默认颜色，如果某些界面不一样，在单独设置
     [self setBackgroundColor:[UIColor colorBackground]];
