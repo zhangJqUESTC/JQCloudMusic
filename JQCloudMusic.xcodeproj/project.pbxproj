@@ -71,6 +71,7 @@
 		09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB6FF2CBAC3B8004DEFCB /* ViewFactoryUtil.m */; };
 		09CAB7052CBB8AE9004DEFCB /* DefaultPreferenceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB7042CBB8AE9004DEFCB /* DefaultPreferenceUtil.m */; };
 		09CAB70B2CBB9C38004DEFCB /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB70A2CBB9C38004DEFCB /* GuideController.m */; };
+		09D1652F2CD1C8BF00B6E336 /* LogFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D1652E2CD1C8BF00B6E336 /* LogFormater.m */; };
 		09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5952CBF8BCD006B65C1 /* DefaultRepository.m */; };
 		09E0B59A2CBF99B3006B65C1 /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5992CBF99B3006B65C1 /* PlaceholderView.m */; };
 		09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B59E2CBF9AAD006B65C1 /* StringUtil.m */; };
@@ -234,6 +235,9 @@
 		09CAB7062CBB8D13004DEFCB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		09CAB7092CBB9C38004DEFCB /* GuideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideController.h; sourceTree = "<group>"; };
 		09CAB70A2CBB9C38004DEFCB /* GuideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideController.m; sourceTree = "<group>"; };
+		09D1652C2CD1296F00B6E336 /* SuperLogConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperLogConfig.h; sourceTree = "<group>"; };
+		09D1652D2CD1C8BF00B6E336 /* LogFormater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogFormater.h; sourceTree = "<group>"; };
+		09D1652E2CD1C8BF00B6E336 /* LogFormater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogFormater.m; sourceTree = "<group>"; };
 		09E0B5942CBF8BCD006B65C1 /* DefaultRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultRepository.h; sourceTree = "<group>"; };
 		09E0B5952CBF8BCD006B65C1 /* DefaultRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultRepository.m; sourceTree = "<group>"; };
 		09E0B5982CBF99B3006B65C1 /* PlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderView.h; sourceTree = "<group>"; };
@@ -677,6 +681,7 @@
 		09CAB6CE2CB97B93004DEFCB /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				09D1652B2CD128E300B6E336 /* Log */,
 				09162CFC2CC690C8000A21C7 /* Web */,
 				09162CF22CC52ABA000A21C7 /* ToolbarView */,
 				099E08B82CC0E295008A34D0 /* View */,
@@ -769,6 +774,16 @@
 				09CAB70A2CBB9C38004DEFCB /* GuideController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		09D1652B2CD128E300B6E336 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				09D1652C2CD1296F00B6E336 /* SuperLogConfig.h */,
+				09D1652D2CD1C8BF00B6E336 /* LogFormater.h */,
+				09D1652E2CD1C8BF00B6E336 /* LogFormater.m */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		09E0B5932CBF8B78006B65C1 /* Repository */ = {
@@ -1231,6 +1246,7 @@
 				09162CF52CC52AD3000A21C7 /* SuperToolbarView.m in Sources */,
 				09E0B5A62CBFA7CE006B65C1 /* TipUtil.m in Sources */,
 				09CAB6F42CBA61E7004DEFCB /* BaseController.m in Sources */,
+				09D1652F2CD1C8BF00B6E336 /* LogFormater.m in Sources */,
 				09515B972CBD5B4C00CA2AB6 /* MSNetwork.m in Sources */,
 				09CAB7052CBB8AE9004DEFCB /* DefaultPreferenceUtil.m in Sources */,
 				09CAB6DF2CBA280A004DEFCB /* R.m in Sources */,

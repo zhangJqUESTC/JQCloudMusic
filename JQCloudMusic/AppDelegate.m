@@ -9,6 +9,7 @@
 #import "SplashController.h"
 #import "GuideController.h"
 #import "MainController.h"
+#import "LogFormater.h"
 @interface AppDelegate ()
 
 @end
@@ -38,6 +39,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //设置默认显示界面
+    [self initLog];
     [self initNetwork];
     SplashController *controller = [SplashController new];
     
@@ -46,6 +48,53 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+-(void)initLog{
+    //日志级别
+    #ifdef DEBUG
+        //调试状态下，日志打印到控制台
+        DDOSLogger *ddosLogger=[DDOSLogger sharedInstance];
+        [self setLogFormat:ddosLogger];
+        [DDLog addLogger:ddosLogger];
+    #endif
+
+    //所有环境，日志打印的文件
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+
+    //每一个文件保存24小时的日志；也就是一个文件保存一天的日志
+    fileLogger.rollingFrequency = 60 * 60 * 24;
+
+    //总共保存最近30天的日志
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 30;
+    [self setLogFormat:fileLogger];
+
+    //文件中只保存警告及以上等级日志
+    [DDLog addLogger:fileLogger withLevel:DDLogLevelWarning];
+    
+//    LogVerboseTag(@"TAG",@"JQCloudMusic Verbose");
+//    LogDebugTag(@"TAG",@"JQCloudMusic Debug");
+//    LogInfoTag(@"TAG",@"JQCloudMusic Info");
+//    LogWarnTag(@"TAG",@"JQCloudMusic Warn");
+//    LogErrorTag(@"TAG",@"JQCloudMusic Error");
+    
+    //获取log文件夹路径
+    NSString *logDirectory = [fileLogger.logFileManager logsDirectory];
+    NSLog(@"app delegate log path:%@", logDirectory);
+
+    //获取排序后的日志名称
+    NSArray <NSString *>*logFilenames = [fileLogger.logFileManager sortedLogFileNames];
+    DDLogDebug(@"app delegate log files:%lu", (unsigned long)[logFilenames count]);
+}
+
+/// 设置日志格式
+/// @param logger logger description
+- (void)setLogFormat:(DDAbstractLogger *)logger{
+    //设置日志格式；可以根据版本设置不同的格式
+    //例如：debug模式下，日志格式信息更丰富，可以有方法名，行号；这样更容易查找错误
+    //release：格式更紧凑，只能有用的
+    logger.logFormatter = [[LogFormater alloc] init];
+}
+
 /// 初始化网络框架
 - (void)initNetwork{
   #ifdef DEBUG

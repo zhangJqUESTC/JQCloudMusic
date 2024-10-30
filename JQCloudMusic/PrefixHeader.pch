@@ -29,7 +29,8 @@
 #import "ResourceUtil.h"
 #import "Song.h"
 #import "UIImage+SuperUI.h"
-
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "SuperLogConfig.h"
 
 
 

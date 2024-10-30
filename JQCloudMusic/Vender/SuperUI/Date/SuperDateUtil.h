@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSInteger)getCurrentYear;
 /// 当前年
 + (NSInteger)currentDay;
++ (NSString *)yearMonthDayHourMinuteSecondMillisecond:(NSDate *)data;
 @end
 
 NS_ASSUME_NONNULL_END

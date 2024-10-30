@@ -30,4 +30,12 @@
     
     return [d day];
 }
+
++ (NSString *)yearMonthDayHourMinuteSecondMillisecond:(NSDate *)data{
+    NSDateFormatter *dateFomatter =[[NSDateFormatter alloc] init];
+    [dateFomatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
+    NSString *result=[dateFomatter stringFromDate:data];
+    return result;
+}
+
 @end

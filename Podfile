@@ -56,6 +56,10 @@ target 'JQCloudMusic' do
   #https://github.com/CoderMJLee/MJRefresh
   pod 'MJRefresh'
 
+  #日志框架
+  #https://github.com/CocoaLumberjack/CocoaLumberjack
+  pod 'CocoaLumberjack'
+
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths

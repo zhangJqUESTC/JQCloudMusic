@@ -5,6 +5,7 @@
 * 布局：MyLayout
 * 网络：
 * 下拉刷新：MJRefresh
+* 集成日志框架：CocoaLumberjack
 
 
 启动页与隐私协议：
