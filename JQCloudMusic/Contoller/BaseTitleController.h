@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)onLeftClick:(QMUIButton *)sender;
 
 /// 右侧按钮点击
-/// @param sender <#sender description#>
+/// @param sender sender description
 -(void)onRightClick:(QMUIButton *)sender;
 @end
 

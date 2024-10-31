@@ -458,6 +458,7 @@
 
 @interface RImages ()
 @property (nonatomic, strong) UIImage* rank;
+@property (nonatomic, strong) UIImage* message;
 @property (nonatomic, strong) UIImage* dayRecommend;
 @property (nonatomic, strong) UIImage* me;
 @property (nonatomic, strong) UIImage* mic;
@@ -466,20 +467,32 @@
 @property (nonatomic, strong) UIImage* superChevronRight;
 @property (nonatomic, strong) UIImage* sheet;
 @property (nonatomic, strong) UIImage* splashLogo;
+@property (nonatomic, strong) UIImage* shopCart;
+@property (nonatomic, strong) UIImage* mode;
 @property (nonatomic, strong) UIImage* guide1;
 @property (nonatomic, strong) UIImage* live;
 @property (nonatomic, strong) UIImage* digitalAlbum;
 @property (nonatomic, strong) UIImage* discovery;
+@property (nonatomic, strong) UIImage* setting;
 @property (nonatomic, strong) UIImage* discoverySelect;
 @property (nonatomic, strong) UIImage* alert;
+@property (nonatomic, strong) UIImage* friends;
 @property (nonatomic, strong) UIImage* close;
+@property (nonatomic, strong) UIImage* decorate;
+@property (nonatomic, strong) UIImage* checked;
 @property (nonatomic, strong) UIImage* fire;
+@property (nonatomic, strong) UIImage* fans;
+@property (nonatomic, strong) UIImage* shop;
 @property (nonatomic, strong) UIImage* guide4;
 @property (nonatomic, strong) UIImage* personFm;
 @property (nonatomic, strong) UIImage* menu;
+@property (nonatomic, strong) UIImage* check;
+@property (nonatomic, strong) UIImage* downloadBySound;
 @property (nonatomic, strong) UIImage* feed;
 @property (nonatomic, strong) UIImage* buttonLive;
 @property (nonatomic, strong) UIImage* videoSelected;
+@property (nonatomic, strong) UIImage* scan;
+@property (nonatomic, strong) UIImage* timer;
 @property (nonatomic, strong) UIImage* feedSelected;
 @property (nonatomic, strong) UIImage* refresh;
 @property (nonatomic, strong) UIImage* arrowLeft;
@@ -516,6 +529,7 @@
 
 @implementation RImages
 - (UIImage*)rank { return [UIImage imageNamed:@"Rank" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)message { return [UIImage imageNamed:@"Message" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)dayRecommend { return [UIImage imageNamed:@"DayRecommend" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)me { return [UIImage imageNamed:@"Me" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)mic { return [UIImage imageNamed:@"Mic" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
@@ -524,20 +538,32 @@
 - (UIImage*)superChevronRight { return [UIImage imageNamed:@"SuperChevronRight" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)sheet { return [UIImage imageNamed:@"Sheet" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashLogo { return [UIImage imageNamed:@"SplashLogo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)shopCart { return [UIImage imageNamed:@"ShopCart" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)mode { return [UIImage imageNamed:@"Mode" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide1 { return [UIImage imageNamed:@"guide1" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)live { return [UIImage imageNamed:@"Live" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)digitalAlbum { return [UIImage imageNamed:@"DigitalAlbum" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)discovery { return [UIImage imageNamed:@"Discovery" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)setting { return [UIImage imageNamed:@"Setting" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)discoverySelect { return [UIImage imageNamed:@"DiscoverySelect" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)alert { return [UIImage imageNamed:@"Alert" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)friends { return [UIImage imageNamed:@"Friends" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)close { return [UIImage imageNamed:@"Close" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)decorate { return [UIImage imageNamed:@"Decorate" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)checked { return [UIImage imageNamed:@"Checked" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)fire { return [UIImage imageNamed:@"Fire" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)fans { return [UIImage imageNamed:@"Fans" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)shop { return [UIImage imageNamed:@"Shop" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide4 { return [UIImage imageNamed:@"guide4" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)personFm { return [UIImage imageNamed:@"PersonFm" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)menu { return [UIImage imageNamed:@"Menu" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)check { return [UIImage imageNamed:@"Check" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)downloadBySound { return [UIImage imageNamed:@"DownloadBySound" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feed { return [UIImage imageNamed:@"Feed" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)buttonLive { return [UIImage imageNamed:@"ButtonLive" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)videoSelected { return [UIImage imageNamed:@"VideoSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)scan { return [UIImage imageNamed:@"Scan" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)timer { return [UIImage imageNamed:@"Timer" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feedSelected { return [UIImage imageNamed:@"FeedSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)refresh { return [UIImage imageNamed:@"Refresh" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)arrowLeft { return [UIImage imageNamed:@"ArrowLeft" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }

@@ -241,7 +241,7 @@ key: "BuyVip"
 
 zh-Hans: "开通黑胶VIP"
 
-en: "开通黑胶VIP"
+en: "开通黑钻VIP"
 */
 - (NSString*)buyVip;
 /**
@@ -2610,7 +2610,7 @@ key: "ShareApp"
 
 zh-Hans: "分享我的云音乐"
 
-en: "分享我的云音乐"
+en: "分享JQ云音乐"
 */
 - (NSString*)shareApp;
 /**
@@ -2995,7 +2995,7 @@ key: "VipHint"
 
 zh-Hans: "加入黑胶VIP，彰显语种不同"
 
-en: "加入黑胶VIP，彰显语种不同"
+en: "加入黑钻VIP，彰显语种不同"
 */
 - (NSString*)vipHint;
 /**
@@ -3003,7 +3003,7 @@ key: "VipHintPrice"
 
 zh-Hans: "专享特惠，黑胶首月仅0.01元！"
 
-en: "专享特惠，黑胶首月仅0.01元！"
+en: "专享特惠，黑钻首月仅0.01元！"
 */
 - (NSString*)vipHintPrice;
 /**
@@ -3115,6 +3115,7 @@ en: "WiFi预加载"
 
 @interface RImages: NSObject
 - (UIImage*)rank;
+- (UIImage*)message;
 - (UIImage*)dayRecommend;
 - (UIImage*)me;
 - (UIImage*)mic;
@@ -3123,20 +3124,32 @@ en: "WiFi预加载"
 - (UIImage*)superChevronRight;
 - (UIImage*)sheet;
 - (UIImage*)splashLogo;
+- (UIImage*)shopCart;
+- (UIImage*)mode;
 - (UIImage*)guide1;
 - (UIImage*)live;
 - (UIImage*)digitalAlbum;
 - (UIImage*)discovery;
+- (UIImage*)setting;
 - (UIImage*)discoverySelect;
 - (UIImage*)alert;
+- (UIImage*)friends;
 - (UIImage*)close;
+- (UIImage*)decorate;
+- (UIImage*)checked;
 - (UIImage*)fire;
+- (UIImage*)fans;
+- (UIImage*)shop;
 - (UIImage*)guide4;
 - (UIImage*)personFm;
 - (UIImage*)menu;
+- (UIImage*)check;
+- (UIImage*)downloadBySound;
 - (UIImage*)feed;
 - (UIImage*)buttonLive;
 - (UIImage*)videoSelected;
+- (UIImage*)scan;
+- (UIImage*)timer;
 - (UIImage*)feedSelected;
 - (UIImage*)refresh;
 - (UIImage*)arrowLeft;

@@ -72,6 +72,8 @@
 		09CAB7052CBB8AE9004DEFCB /* DefaultPreferenceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB7042CBB8AE9004DEFCB /* DefaultPreferenceUtil.m */; };
 		09CAB70B2CBB9C38004DEFCB /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CAB70A2CBB9C38004DEFCB /* GuideController.m */; };
 		09D1652F2CD1C8BF00B6E336 /* LogFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D1652E2CD1C8BF00B6E336 /* LogFormater.m */; };
+		09D165342CD1D14300B6E336 /* DrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165332CD1D14300B6E336 /* DrawerController.m */; };
+		09D165382CD1E7A100B6E336 /* SuperSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165372CD1E7A100B6E336 /* SuperSettingView.m */; };
 		09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5952CBF8BCD006B65C1 /* DefaultRepository.m */; };
 		09E0B59A2CBF99B3006B65C1 /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5992CBF99B3006B65C1 /* PlaceholderView.m */; };
 		09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B59E2CBF9AAD006B65C1 /* StringUtil.m */; };
@@ -238,6 +240,10 @@
 		09D1652C2CD1296F00B6E336 /* SuperLogConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperLogConfig.h; sourceTree = "<group>"; };
 		09D1652D2CD1C8BF00B6E336 /* LogFormater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogFormater.h; sourceTree = "<group>"; };
 		09D1652E2CD1C8BF00B6E336 /* LogFormater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogFormater.m; sourceTree = "<group>"; };
+		09D165322CD1D14300B6E336 /* DrawerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerController.h; sourceTree = "<group>"; };
+		09D165332CD1D14300B6E336 /* DrawerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerController.m; sourceTree = "<group>"; };
+		09D165362CD1E7A100B6E336 /* SuperSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperSettingView.h; sourceTree = "<group>"; };
+		09D165372CD1E7A100B6E336 /* SuperSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSettingView.m; sourceTree = "<group>"; };
 		09E0B5942CBF8BCD006B65C1 /* DefaultRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultRepository.h; sourceTree = "<group>"; };
 		09E0B5952CBF8BCD006B65C1 /* DefaultRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultRepository.m; sourceTree = "<group>"; };
 		09E0B5982CBF99B3006B65C1 /* PlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderView.h; sourceTree = "<group>"; };
@@ -633,6 +639,7 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				09D165302CD1D07300B6E336 /* Drawer */,
 				09162CE32CC50316000A21C7 /* User */,
 				09162CDB2CC4F369000A21C7 /* Song */,
 				099E08CF2CC10D28008A34D0 /* Sheet */,
@@ -681,6 +688,7 @@
 		09CAB6CE2CB97B93004DEFCB /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				09D165352CD1E76800B6E336 /* Setting */,
 				09D1652B2CD128E300B6E336 /* Log */,
 				09162CFC2CC690C8000A21C7 /* Web */,
 				09162CF22CC52ABA000A21C7 /* ToolbarView */,
@@ -784,6 +792,32 @@
 				09D1652E2CD1C8BF00B6E336 /* LogFormater.m */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		09D165302CD1D07300B6E336 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				09D165312CD1D0EB00B6E336 /* Controller */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		09D165312CD1D0EB00B6E336 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09D165322CD1D14300B6E336 /* DrawerController.h */,
+				09D165332CD1D14300B6E336 /* DrawerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09D165352CD1E76800B6E336 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				09D165362CD1E7A100B6E336 /* SuperSettingView.h */,
+				09D165372CD1E7A100B6E336 /* SuperSettingView.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		09E0B5932CBF8B78006B65C1 /* Repository */ = {
@@ -1227,6 +1261,7 @@
 				09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */,
 				09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */,
 				09CAB70B2CBB9C38004DEFCB /* GuideController.m in Sources */,
+				09D165382CD1E7A100B6E336 /* SuperSettingView.m in Sources */,
 				095E13552CC00ADE005A32D9 /* BannerClickEvent.m in Sources */,
 				095E134A2CBFF9AA005A32D9 /* BaseTableViewCell.m in Sources */,
 				095E13422CBFF35B005A32D9 /* Ad.m in Sources */,
@@ -1260,6 +1295,7 @@
 				090CA4042CBE66B8005E9426 /* SuperHttpUtil.m in Sources */,
 				09515B932CBD57B100CA2AB6 /* Config.m in Sources */,
 				09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */,
+				09D165342CD1D14300B6E336 /* DrawerController.m in Sources */,
 				090CA41A2CBEBC14005E9426 /* Video.m in Sources */,
 				09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */,
 				09162CFB2CC5399D000A21C7 /* BaseMainController.m in Sources */,

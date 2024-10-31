@@ -75,6 +75,12 @@
     return result;
 }
 
++ (QMUIButton *)primaryHalfFilletOutlineButton{
+    QMUIButton *result = [self primaryOutlineButton];
+    result.layer.cornerRadius = BUTTON_MEDDLE_RADIUS;
+    return result;
+}
+
 #pragma mark View
 
 +(UITableView *)tableView{
@@ -147,6 +153,20 @@
     result.myWidth = MyLayoutSize.fill;
     result.myHeight = 0.5;
     result.backgroundColor = [UIColor colorDivider];
+    
+    return result;
+}
+
++(UIImageView *)moreIconView{
+    UIImageView *result = [UIImageView new];
+    result.myWidth = 15;
+    result.myHeight = 15;
+    result.image = [R.image.superChevronRight withTintColor];
+    result.tintColor = [UIColor black80];
+    result.centerYPos.equalTo(@(0));
+    
+    //图片完全显示到控件里面
+    result.contentMode = UIViewContentModeScaleAspectFit;
     
     return result;
 }

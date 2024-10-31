@@ -17,6 +17,7 @@ PODS:
   - CocoaLumberjack (3.8.5):
     - CocoaLumberjack/Core (= 3.8.5)
   - CocoaLumberjack/Core (3.8.5)
+  - CWLateralSlide (1.6.5)
   - GKCycleScrollView (1.2.3)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.4.2)
@@ -350,6 +351,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
+  - CWLateralSlide
   - GKCycleScrollView
   - MBProgressHUD
   - MJExtension
@@ -365,6 +367,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - CocoaLumberjack
+    - CWLateralSlide
     - GKCycleScrollView
     - MBProgressHUD
     - MJExtension
@@ -379,6 +382,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
+  CWLateralSlide: 8939c8dea91a24e40d0793553118cb57cd67f64b
   GKCycleScrollView: 8ed79d2142e62895a701973358b6f94b661b4829
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
@@ -390,6 +394,6 @@ SPEC CHECKSUMS:
   SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: cef78b351e570661fd3a9e8f6a7e586a72252fdb
+PODFILE CHECKSUM: e739e4b75ae03d868c9ed08e0ada3afab3bdc21b
 
 COCOAPODS: 1.15.2

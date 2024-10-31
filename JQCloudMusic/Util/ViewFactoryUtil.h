@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(QMUIButton *)secondHalfFilletSmallButton;
 
++ (QMUIButton *)primaryHalfFilletOutlineButton;
+
 /// 创建图片按钮
 +(QMUIButton *)buttonWithImage:(UIImage *)data;
 
@@ -32,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(UICollectionView *)collectionView;
 +(UICollectionViewFlowLayout *)collectionViewFlowLayout;
 +(UIView *)smallDivider;
+
++(UIImageView *)moreIconView;
 @end
 
 NS_ASSUME_NONNULL_END

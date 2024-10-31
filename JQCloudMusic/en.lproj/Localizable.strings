@@ -47,10 +47,10 @@ ChangeContent="换一批内容";
 CustomDiscovery="自定义首页";
 ActivityDetails="活动详情";
 
-BuyVip="开通黑胶VIP";
+BuyVip="开通黑钻VIP";
 MemberCenter="会员中心";
-VipHint="加入黑胶VIP，彰显语种不同";
-VipHintPrice="专享特惠，黑胶首月仅0.01元！";
+VipHint="加入黑钻VIP，彰显语种不同";
+VipHintPrice="专享特惠，黑钻首月仅0.01元！";
 SecurityVerification="安全验证";
 CompleteUserDataTip="完善资料，账号更好安全";
 UpdateSuccess="完善资料成功";
@@ -89,7 +89,7 @@ CacheWhileList="边听边缓存";
 MusicAlarmClock="音乐闹钟";
 
 MyCustomerService="我的客服";
-ShareApp="分享我的云音乐";
+ShareApp="分享JQ云音乐";
 Share="分享";
 About="关于";
 AboutCode="关于（纯代码布局）";

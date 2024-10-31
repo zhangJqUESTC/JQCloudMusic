@@ -76,14 +76,14 @@
     
 }
 
--(void)onLeftClick:(QMUIButton *)sender{
-//    [self.navigationController popViewControllerAnimated:YES];
-    NSLog(@"DiscoveryController onLeftClick");
-}
-
--(void)onRightClick:(QMUIButton *)sender{
-    NSLog(@"DiscoveryController onRightClick");
-}
+//-(void)onLeftClick:(QMUIButton *)sender{
+////    [self.navigationController popViewControllerAnimated:YES];
+//    NSLog(@"DiscoveryController onLeftClick");
+//}
+//
+//-(void)onRightClick:(QMUIButton *)sender{
+//    NSLog(@"DiscoveryController onRightClick");
+//}
 
 - (void)initListeners{
     [super initListeners];

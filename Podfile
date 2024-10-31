@@ -60,6 +60,10 @@ target 'JQCloudMusic' do
   #https://github.com/CocoaLumberjack/CocoaLumberjack
   pod 'CocoaLumberjack'
 
+  #https://github.com/ChavezChen/CWLateralSlide
+  #侧滑菜单
+  pod 'CWLateralSlide'
+
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths
