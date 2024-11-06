@@ -1,0 +1,6 @@
+framework module ZXCountDownView {
+  umbrella header "ZXCountDownView-umbrella.h"
+
+  export *
+  module * { export * }
+}

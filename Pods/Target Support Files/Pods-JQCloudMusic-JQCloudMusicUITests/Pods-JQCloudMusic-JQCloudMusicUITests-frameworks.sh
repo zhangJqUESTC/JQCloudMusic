@@ -177,31 +177,43 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CRBoxInputView/CRBoxInputView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CWLateralSlide/CWLateralSlide.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKCycleScrollView/GKCycleScrollView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/QTEventBus/QTEventBus.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXCountDownView/ZXCountDownView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CRBoxInputView/CRBoxInputView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CWLateralSlide/CWLateralSlide.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKCycleScrollView/GKCycleScrollView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/QTEventBus/QTEventBus.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXCountDownView/ZXCountDownView.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

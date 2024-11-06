@@ -26,8 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (QMUIButton *)primaryHalfFilletOutlineButton;
 
++(QMUIButton *)title:(NSString *)title color:(UIColor *)color;
+
 /// 创建图片按钮
 +(QMUIButton *)buttonWithImage:(UIImage *)data;
+
++(QMUIButton *)buttonWithImage:(UIImage *)data selectedImage:(UIImage *)selectedImage;
 
 +(UITableView *)tableView;
 

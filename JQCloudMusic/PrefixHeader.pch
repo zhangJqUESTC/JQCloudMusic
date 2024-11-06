@@ -32,6 +32,11 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import "SuperLogConfig.h"
 #import "UIColor+Hex.h"
+#import "NSString+SuperOC.h"
+#import "SuperRegularUtil.h"
+#import "User.h"
+#import "Session.h"
+#import "PreferenceUtil.h"
 
 
 

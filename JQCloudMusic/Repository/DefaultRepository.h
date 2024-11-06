@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Sheet.h"
+#import "User.h"
+#import "CodeRequest.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DefaultRepository : NSObject
@@ -58,6 +61,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 歌曲详情
 -(void)songDetailWithId:(NSString *)id success:(SuperHttpSuccess)success;
+
+#pragma mark - 用户名登录
+-(void)loginWithController:(nullable BaseLogicController *)controller data:(User *)data success:(SuperHttpSuccess)success;
+
+#pragma mark - 用户
+
+/// 用户详情
+-(void)userDetailWithId:(NSString *)id success:(SuperHttpSuccess)success;
+
+-(void)userDetailWithId:(NSString *)id nickname:(NSString *)nickname success:(SuperHttpSuccess)success;
+
+#pragma mark - 注册
+-(void)userRegister:(User *)data success:(SuperHttpSuccess)success;
+
+-(void)sendCode:(int)style data:(CodeRequest *)data success:(SuperHttpSuccess)success;
+
+/// 校验验证码
+-(void)checkCode:(CodeRequest *)data success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure;
+
+/// 重置密码
+/// @param data data description
+/// @param success success description
+-(void)resetPassword:(User *)data success:(SuperHttpSuccess)success;
 @end
 
 NS_ASSUME_NONNULL_END

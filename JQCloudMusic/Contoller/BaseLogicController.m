@@ -330,6 +330,10 @@
     return nil;
 }
 - (void)initLinearLayoutInputSafeArea {
+    [self initLinearLayoutSafeArea];
+    
+    self.container.padding = UIEdgeInsetsMake(PADDING_LARGE, PADDING_OUTER, 0, PADDING_OUTER);
+    self.container.subviewSpace = PADDING_LARGE;
 }
 
 

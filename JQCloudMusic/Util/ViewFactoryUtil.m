@@ -75,9 +75,42 @@
     return result;
 }
 
++(QMUIButton *)buttonWithImage:(UIImage *)data selectedImage:(UIImage *)selectedImage{
+    QMUIButton *result = [[QMUIButton alloc] init];
+//    result.adjustsTitleTintColorAutomatically = NO;
+    result.adjustsImageWhenHighlighted = NO;
+    result.myWidth = 40;
+    result.myHeight = 40;
+//    result.tintColor = [UIColor colorOnSurface];
+    [result setImage:data forState:UIControlStateNormal];
+    [result setImage:selectedImage forState:UIControlStateHighlighted];
+    
+    //图片完全显示到控件里面
+    result.contentMode = UIViewContentModeScaleAspectFit;
+    
+    return result;
+}
+
 + (QMUIButton *)primaryHalfFilletOutlineButton{
     QMUIButton *result = [self primaryOutlineButton];
     result.layer.cornerRadius = BUTTON_MEDDLE_RADIUS;
+    return result;
+}
+
++(QMUIButton *)title:(NSString *)title color:(UIColor *)color{
+    QMUIButton *result = [[QMUIButton alloc] init];
+    result.myWidth = MyLayoutSize.fill;
+    result.myHeight = BUTTON_MEDDLE;
+    result.adjustsTitleTintColorAutomatically = NO;
+    result.titleLabel.font = UIFontMake(TEXT_LARGE3);
+    result.backgroundColor = [UIColor colorBackground];
+    [result setTitleColor:color forState:UIControlStateNormal];
+    
+    //按下高亮时的背景色
+    result.highlightedBackgroundColor = [UIColor colorSurfaceClick];
+    
+    [result setTitle:title forState:UIControlStateNormal];
+    
     return result;
 }
 

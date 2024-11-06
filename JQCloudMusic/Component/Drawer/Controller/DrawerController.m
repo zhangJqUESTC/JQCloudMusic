@@ -7,6 +7,9 @@
 
 #import "DrawerController.h"
 #import "SuperSettingView.h"
+#import "LoginHomeController.h"
+#import "SuperDialogController.h"
+#import "AppDelegate.h"
 
 @interface DrawerController ()
 /// 我的消息item，之所有放到字段，是因为要实现在该控件，显示红点
@@ -24,7 +27,7 @@
 @property(nonatomic, strong) QMUIButton *primaryButton;
 
 /// 退出确认对话框
-//@property(nonatomic, strong) SuperDialogController *logoutConfirmController;
+@property(nonatomic, strong) SuperDialogController *logoutConfirmController;
 @end
 
 @implementation DrawerController
@@ -54,6 +57,41 @@
     [self.primaryButton addTarget:self action:@selector(onPrimaryClick:) forControlEvents:UIControlEventTouchUpInside];
 //    [self.primaryButton hide];
     [self.contentContainer addSubview:self.primaryButton];
+}
+
+//界面即将显示
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self showUserInfo];
+}
+
+-(void)showUserInfo{
+    if ([PreferenceUtil isLogin]){
+        [self loadUserData];
+        [self.primaryButton show];
+    }else{
+        [self showNotLogin];
+    }
+}
+
+-(void)loadUserData{
+    [[DefaultRepository shared] userDetailWithId:[PreferenceUtil getUserId] success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+        [self show:data];
+    }];
+}
+
+-(void)show:(User *)data{
+    //显示头像
+    [ImageUtil showAvatar:self.iconView uri:data.icon];
+  
+    //显示昵称
+    self.nicknameView.text = data.nickname;
+}
+
+-(void)showNotLogin{
+    self.iconView.image = R.image.defaultAvatar;
+    self.nicknameView.text = R.string.localizable.loginNow;
+    [self.primaryButton hide];
 }
 
 #pragma mark - 创建控件 用户
@@ -92,6 +130,7 @@
 
 -(void)onUserClick:(UITapGestureRecognizer *)gestureRecognizer{
     [self closeDrawer];
+    [self startController:[LoginHomeController class]];
 }
 
 -(void)closeDrawer{
@@ -357,7 +396,16 @@
 ///退出点击
 /// @param sender sender description
 - (void)onPrimaryClick:(QMUIButton *)sender{
-//    [self.logoutConfirmController show];
+    [self.logoutConfirmController show];
+}
+
+///退出确认点击
+/// @param sender sender description
+- (void)onPrimaryConfirmClick:(QMUIButton *)sender{
+    [self.logoutConfirmController hide];
+    [self showNotLogin];
+    [self closeDrawer];
+    [[AppDelegate shared] logout];
 }
 
 
@@ -415,18 +463,18 @@
     return _scanView;
 }
 
-//- (SuperDialogController *)logoutConfirmController{
-//    if (!_logoutConfirmController) {
-//        _logoutConfirmController=[SuperDialogController new];
-//        _logoutConfirmController.titleText = R.string.localizable.confirmLogout;
-//        [_logoutConfirmController setCancelButton:R.string.localizable.superCancel target:nil action:nil];
-//        [_logoutConfirmController setWarningButton:R.string.localizable.confirm target:self action:@selector(onPrimaryConfirmClick:)];
-//    }
-//    return _logoutConfirmController;
-//}
-//
-//- (NSString *)pageId{
-//    return @"Drawer";
-//}
+- (SuperDialogController *)logoutConfirmController{
+    if (!_logoutConfirmController) {
+        _logoutConfirmController=[SuperDialogController new];
+        _logoutConfirmController.titleText = R.string.localizable.confirmLogout;
+        [_logoutConfirmController setCancelButton:R.string.localizable.superCancel target:nil action:nil];
+        [_logoutConfirmController setWarningButton:R.string.localizable.confirm target:self action:@selector(onPrimaryConfirmClick:)];
+    }
+    return _logoutConfirmController;
+}
+
+- (NSString *)pageId{
+    return @"Drawer";
+}
 
 @end

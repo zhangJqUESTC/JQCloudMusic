@@ -5,11 +5,17 @@
 //  Created by zhangjq on 2024/10/11.
 //
 
+//腾讯开源的偏好存储框架
+#import <MMKV/MMKV.h>
+
 #import "AppDelegate.h"
 #import "SplashController.h"
 #import "GuideController.h"
 #import "MainController.h"
 #import "LogFormater.h"
+#import "LoginStatusChangedEvent.h"
+#import "LoginHomeController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -37,6 +43,9 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self initMMKV];
+    
     // Override point for customization after application launch.
     //设置默认显示界面
     [self initLog];
@@ -119,6 +128,58 @@
   
   //请求数据为json
   [MSNetwork setRequestSerializer:MSRequestSerializerJSON];
+}
+
+-(void)onLogin:(Session *)data{
+    //关闭登陆相关界面
+    UINavigationController *navigationController=self.window.rootViewController;
+    NSArray *vcs = navigationController.viewControllers;
+
+    NSMutableArray *newVCS = [NSMutableArray array];
+
+    for (int i=0; i < [vcs count]; i++) {
+        UIViewController *it = [vcs objectAtIndex:i];
+        if ([it isKindOfClass:[LoginHomeController class]]) {
+            break;
+        }
+        [newVCS addObject:[vcs objectAtIndex:i]];
+    }
+
+    [navigationController setViewControllers:newVCS animated:YES];
+    [self loginStatusChanged];
+}
+
+-(void)initMMKV{
+    [MMKV initializeMMKV:nil];
+}
+
+
+//-(void)onLogin:(Session *)data{
+//    [self loginStatusChanged];
+//}
+
+-(void)loginStatusChanged{
+    LoginStatusChangedEvent *event = [[LoginStatusChangedEvent alloc] init];
+    [QTEventBus.shared dispatch:event];
+}
+
+- (void)logout{
+    [self logoutSilence];
+}
+
+/// 静默退出
+- (void)logoutSilence{
+    //清除登录相关信息
+    [PreferenceUtil logout];
+    
+    //退出聊天服务器
+//    [[RCIMClient sharedRCIMClient] logout];
+//    
+//    [self otherLogout];
+//    
+//    [DownloadManager destroy];
+    
+    [self loginStatusChanged];
 }
 
 

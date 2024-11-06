@@ -11,6 +11,7 @@
 #import "DefaultRepository.h"
 #import "Video.h"
 #import "Ad.h"
+#import "Session.h"
 
 @implementation DefaultRepository
 +(instancetype)shared{
@@ -75,7 +76,7 @@
 }
 
 /// 创建歌单
-/// @param success <#success description#>
+/// @param success success description
 -(void)createSheet:(Sheet *)data success:(SuperHttpSuccess)success{
     [SuperHttpUtil postObjectWith:[SuperBase class] url:URL_SHEET parameter:data success:success];
 }
@@ -84,6 +85,52 @@
 #pragma mark - 单曲
 -(void)songsWithController:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
     [SuperHttpUtil requestListObjectWith:[Song class] url:URL_SONG parameters:nil cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
+}
+
+#pragma mark - 登陆
+-(void)loginWithController:(nullable BaseLogicController *)controller data:(User *)data success:(SuperHttpSuccess)success{
+    
+    //参数转为字典
+    NSDictionary *parameters=[data mj_keyValues];
+    
+    [SuperHttpUtil postObjectWith:[Session class] url:URL_SESSION parameters:parameters loading:YES controller:controller success:success failure:nil];
+}
+
+
+#pragma mark - 用户
+
+-(void)userDetailWithId:(NSString *)id success:(SuperHttpSuccess)success{
+    [SuperHttpUtil requestObjectWith:[User class] url:URL_USER id:id success:success];
+}
+
+-(void)userDetailWithId:(NSString *)id nickname:(NSString *)nickname success:(SuperHttpSuccess)success{
+    NSString *uri=[NSString stringWithFormat:@"%@/%@",URL_USER,id];
+    
+    NSDictionary *params = nil;
+    if ([StringUtil isNotBlank:nickname]){
+        params=@{@"nickname":nickname};
+    }
+    
+    [SuperHttpUtil requestObjectWith:[User class] url:uri parameters:params success:success];
+}
+
+#pragma mark - 注册
+-(void)userRegister:(User *)data success:(SuperHttpSuccess)success{
+    [SuperHttpUtil postObjectWith:[SuperBase class] url:@"v1/users" parameter:data success:success];
+}
+
+-(void)sendCode:(int)style data:(CodeRequest *)data success:(SuperHttpSuccess)success{
+    NSString *uri = [NSString stringWithFormat:@"v1/codes?style=%d",style];
+    
+    [SuperHttpUtil postObjectWith:[SuperBase class] url:uri parameter:data success:success];
+}
+
+-(void)checkCode:(CodeRequest *)data success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure{
+    [SuperHttpUtil postObjectWith:[SuperBase class] url:@"v1/codes/check" parameter:data success:success failure:failure];
+}
+
+-(void)resetPassword:(User *)data success:(SuperHttpSuccess)success{
+    [SuperHttpUtil postObjectWith:[SuperBase class] url:@"v1/users/reset_password" parameter:data success:success];
 }
 
 @end

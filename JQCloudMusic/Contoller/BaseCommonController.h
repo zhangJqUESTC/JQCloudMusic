@@ -6,6 +6,7 @@
 //
 
 #import "BaseController.h"
+#import "UIViewController+SuperUI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

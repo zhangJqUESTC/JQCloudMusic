@@ -22,5 +22,9 @@
 -(void)toGuide;
 
 -(void)toMain;
+// 登录成功后需要执行的动作
+-(void)onLogin:(Session *)data;
+
+- (void)logout;
 @end
 

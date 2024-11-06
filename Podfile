@@ -64,6 +64,22 @@ target 'JQCloudMusic' do
   #侧滑菜单
   pod 'CWLateralSlide'
 
+  #富文本
+  #https://github.com/ibireme/YYText
+  pod 'YYText'
+
+  #腾讯开源的偏好存储框架
+  #https://github.com/Tencent/MMKV
+  pod 'MMKV'
+  
+  #验证码输入框
+  #https://github.com/CRAnimation/CRBoxInputView
+  pod 'CRBoxInputView'
+  
+  #倒计时框架，可以不依赖view使用
+  #https://github.com/SmileZXLee/ZXCountDownView
+  pod 'ZXCountDownView'
+  
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths

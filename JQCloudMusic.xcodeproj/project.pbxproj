@@ -34,6 +34,21 @@
 		095E134E2CBFFC4C005A32D9 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 095E134D2CBFFC4C005A32D9 /* BannerCell.m */; };
 		095E13512CC0078B005A32D9 /* ResourceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 095E13502CC0078B005A32D9 /* ResourceUtil.m */; };
 		095E13552CC00ADE005A32D9 /* BannerClickEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 095E13542CC00ADE005A32D9 /* BannerClickEvent.m */; };
+		099B50982CDA42E800F33013 /* NSString+SuperOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50972CDA42E800F33013 /* NSString+SuperOC.m */; };
+		099B509B2CDA45A600F33013 /* SuperRegularUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B509A2CDA45A600F33013 /* SuperRegularUtil.m */; };
+		099B509E2CDA4B6E00F33013 /* BaseLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B509D2CDA4B6E00F33013 /* BaseLoginController.m */; };
+		099B50A22CDA4EE000F33013 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50A12CDA4EE000F33013 /* Session.m */; };
+		099B50A52CDA52AE00F33013 /* PreferenceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50A42CDA52AE00F33013 /* PreferenceUtil.m */; };
+		099B50A92CDB314F00F33013 /* LoginStatusChangedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50A82CDB314F00F33013 /* LoginStatusChangedEvent.m */; };
+		099B50AD2CDB4EBA00F33013 /* SuperBase+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50AC2CDB4EBA00F33013 /* SuperBase+MJExtension.m */; };
+		099B50B12CDB5A0E00F33013 /* SuperDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50B02CDB5A0E00F33013 /* SuperDialogController.m */; };
+		099B50B62CDB635400F33013 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50B52CDB635400F33013 /* RegisterController.m */; };
+		099B50BB2CDBA25A00F33013 /* InputUserIdentityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50BA2CDBA25A00F33013 /* InputUserIdentityController.m */; };
+		099B50BE2CDBAD5900F33013 /* InputCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50BD2CDBAD5900F33013 /* InputCodeController.m */; };
+		099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50C22CDBAE1800F33013 /* InputCodePageData.m */; };
+		099B50C62CDBB84B00F33013 /* CodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50C52CDBB84B00F33013 /* CodeRequest.m */; };
+		099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50CA2CDBBAF900F33013 /* SetPasswordController.m */; };
+		099B50D02CDBBC4500F33013 /* SetPasswordPageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50CF2CDBBC4500F33013 /* SetPasswordPageData.m */; };
 		099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */; };
 		099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */; };
 		099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C02CC0EE16008A34D0 /* ButtonData.m */; };
@@ -74,6 +89,11 @@
 		09D1652F2CD1C8BF00B6E336 /* LogFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D1652E2CD1C8BF00B6E336 /* LogFormater.m */; };
 		09D165342CD1D14300B6E336 /* DrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165332CD1D14300B6E336 /* DrawerController.m */; };
 		09D165382CD1E7A100B6E336 /* SuperSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165372CD1E7A100B6E336 /* SuperSettingView.m */; };
+		09D1653D2CD3622900B6E336 /* LoginHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D1653C2CD3622900B6E336 /* LoginHomeController.m */; };
+		09D165412CD365F800B6E336 /* UIViewController+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165402CD365F800B6E336 /* UIViewController+SuperUI.m */; };
+		09D165442CD3756B00B6E336 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165432CD3756B00B6E336 /* LoginController.m */; };
+		09D165472CD376C300B6E336 /* BaseRelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165462CD376C300B6E336 /* BaseRelativeLayout.m */; };
+		09D1654A2CD377E100B6E336 /* SuperInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D165492CD377E100B6E336 /* SuperInputView.m */; };
 		09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5952CBF8BCD006B65C1 /* DefaultRepository.m */; };
 		09E0B59A2CBF99B3006B65C1 /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5992CBF99B3006B65C1 /* PlaceholderView.m */; };
 		09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B59E2CBF9AAD006B65C1 /* StringUtil.m */; };
@@ -163,6 +183,36 @@
 		095E13502CC0078B005A32D9 /* ResourceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResourceUtil.m; sourceTree = "<group>"; };
 		095E13532CC00ADE005A32D9 /* BannerClickEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerClickEvent.h; sourceTree = "<group>"; };
 		095E13542CC00ADE005A32D9 /* BannerClickEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerClickEvent.m; sourceTree = "<group>"; };
+		099B50962CDA42E800F33013 /* NSString+SuperOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SuperOC.h"; sourceTree = "<group>"; };
+		099B50972CDA42E800F33013 /* NSString+SuperOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SuperOC.m"; sourceTree = "<group>"; };
+		099B50992CDA45A600F33013 /* SuperRegularUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperRegularUtil.h; sourceTree = "<group>"; };
+		099B509A2CDA45A600F33013 /* SuperRegularUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperRegularUtil.m; sourceTree = "<group>"; };
+		099B509C2CDA4B6E00F33013 /* BaseLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLoginController.h; sourceTree = "<group>"; };
+		099B509D2CDA4B6E00F33013 /* BaseLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLoginController.m; sourceTree = "<group>"; };
+		099B50A02CDA4EE000F33013 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		099B50A12CDA4EE000F33013 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		099B50A32CDA52AE00F33013 /* PreferenceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceUtil.h; sourceTree = "<group>"; };
+		099B50A42CDA52AE00F33013 /* PreferenceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferenceUtil.m; sourceTree = "<group>"; };
+		099B50A72CDB314F00F33013 /* LoginStatusChangedEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginStatusChangedEvent.h; sourceTree = "<group>"; };
+		099B50A82CDB314F00F33013 /* LoginStatusChangedEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginStatusChangedEvent.m; sourceTree = "<group>"; };
+		099B50AB2CDB4EBA00F33013 /* SuperBase+MJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperBase+MJExtension.h"; sourceTree = "<group>"; };
+		099B50AC2CDB4EBA00F33013 /* SuperBase+MJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SuperBase+MJExtension.m"; sourceTree = "<group>"; };
+		099B50AF2CDB5A0E00F33013 /* SuperDialogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperDialogController.h; sourceTree = "<group>"; };
+		099B50B02CDB5A0E00F33013 /* SuperDialogController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDialogController.m; sourceTree = "<group>"; };
+		099B50B42CDB635400F33013 /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		099B50B52CDB635400F33013 /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		099B50B92CDBA25A00F33013 /* InputUserIdentityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputUserIdentityController.h; sourceTree = "<group>"; };
+		099B50BA2CDBA25A00F33013 /* InputUserIdentityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputUserIdentityController.m; sourceTree = "<group>"; };
+		099B50BC2CDBAD5900F33013 /* InputCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputCodeController.h; sourceTree = "<group>"; };
+		099B50BD2CDBAD5900F33013 /* InputCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCodeController.m; sourceTree = "<group>"; };
+		099B50C12CDBAE1800F33013 /* InputCodePageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputCodePageData.h; sourceTree = "<group>"; };
+		099B50C22CDBAE1800F33013 /* InputCodePageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCodePageData.m; sourceTree = "<group>"; };
+		099B50C42CDBB84B00F33013 /* CodeRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeRequest.h; sourceTree = "<group>"; };
+		099B50C52CDBB84B00F33013 /* CodeRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeRequest.m; sourceTree = "<group>"; };
+		099B50C92CDBBAF900F33013 /* SetPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPasswordController.h; sourceTree = "<group>"; };
+		099B50CA2CDBBAF900F33013 /* SetPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPasswordController.m; sourceTree = "<group>"; };
+		099B50CE2CDBBC4500F33013 /* SetPasswordPageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPasswordPageData.h; sourceTree = "<group>"; };
+		099B50CF2CDBBC4500F33013 /* SetPasswordPageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPasswordPageData.m; sourceTree = "<group>"; };
 		099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
 		099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
 		099E08BC2CC0EC5F008A34D0 /* DiscoveryButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonCell.h; sourceTree = "<group>"; };
@@ -244,6 +294,16 @@
 		09D165332CD1D14300B6E336 /* DrawerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerController.m; sourceTree = "<group>"; };
 		09D165362CD1E7A100B6E336 /* SuperSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperSettingView.h; sourceTree = "<group>"; };
 		09D165372CD1E7A100B6E336 /* SuperSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSettingView.m; sourceTree = "<group>"; };
+		09D1653B2CD3622900B6E336 /* LoginHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHomeController.h; sourceTree = "<group>"; };
+		09D1653C2CD3622900B6E336 /* LoginHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHomeController.m; sourceTree = "<group>"; };
+		09D1653F2CD365F800B6E336 /* UIViewController+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SuperUI.h"; sourceTree = "<group>"; };
+		09D165402CD365F800B6E336 /* UIViewController+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SuperUI.m"; sourceTree = "<group>"; };
+		09D165422CD3756B00B6E336 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		09D165432CD3756B00B6E336 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		09D165452CD376C300B6E336 /* BaseRelativeLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRelativeLayout.h; sourceTree = "<group>"; };
+		09D165462CD376C300B6E336 /* BaseRelativeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRelativeLayout.m; sourceTree = "<group>"; };
+		09D165482CD377E100B6E336 /* SuperInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperInputView.h; sourceTree = "<group>"; };
+		09D165492CD377E100B6E336 /* SuperInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperInputView.m; sourceTree = "<group>"; };
 		09E0B5942CBF8BCD006B65C1 /* DefaultRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultRepository.h; sourceTree = "<group>"; };
 		09E0B5952CBF8BCD006B65C1 /* DefaultRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultRepository.m; sourceTree = "<group>"; };
 		09E0B5982CBF99B3006B65C1 /* PlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderView.h; sourceTree = "<group>"; };
@@ -519,11 +579,152 @@
 			path = Event;
 			sourceTree = "<group>";
 		};
+		099B50952CDA42BB00F33013 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				099B50962CDA42E800F33013 /* NSString+SuperOC.h */,
+				099B50972CDA42E800F33013 /* NSString+SuperOC.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		099B509F2CDA4EBB00F33013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				099B50A62CDB312D00F33013 /* Event */,
+				099B50A02CDA4EE000F33013 /* Session.h */,
+				099B50A12CDA4EE000F33013 /* Session.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099B50A62CDB312D00F33013 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				099B50A72CDB314F00F33013 /* LoginStatusChangedEvent.h */,
+				099B50A82CDB314F00F33013 /* LoginStatusChangedEvent.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		099B50AA2CDB4E8D00F33013 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				099B50AB2CDB4EBA00F33013 /* SuperBase+MJExtension.h */,
+				099B50AC2CDB4EBA00F33013 /* SuperBase+MJExtension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		099B50AE2CDB59D500F33013 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				099B50AF2CDB5A0E00F33013 /* SuperDialogController.h */,
+				099B50B02CDB5A0E00F33013 /* SuperDialogController.m */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		099B50B22CDB630E00F33013 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				099B50B32CDB632100F33013 /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		099B50B32CDB632100F33013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				099B50B42CDB635400F33013 /* RegisterController.h */,
+				099B50B52CDB635400F33013 /* RegisterController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		099B50B72CDBA23500F33013 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				099B50BF2CDBADFD00F33013 /* Model */,
+				099B50B82CDBA24500F33013 /* Controller */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		099B50B82CDBA24500F33013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				099B50B92CDBA25A00F33013 /* InputUserIdentityController.h */,
+				099B50BA2CDBA25A00F33013 /* InputUserIdentityController.m */,
+				099B50BC2CDBAD5900F33013 /* InputCodeController.h */,
+				099B50BD2CDBAD5900F33013 /* InputCodeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		099B50BF2CDBADFD00F33013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				099B50C02CDBAE0400F33013 /* UI */,
+				099B50C42CDBB84B00F33013 /* CodeRequest.h */,
+				099B50C52CDBB84B00F33013 /* CodeRequest.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099B50C02CDBAE0400F33013 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				099B50C12CDBAE1800F33013 /* InputCodePageData.h */,
+				099B50C22CDBAE1800F33013 /* InputCodePageData.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		099B50C72CDBBACE00F33013 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				099B50CC2CDBBBFB00F33013 /* Model */,
+				099B50C82CDBBADC00F33013 /* Controller */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		099B50C82CDBBADC00F33013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				099B50C92CDBBAF900F33013 /* SetPasswordController.h */,
+				099B50CA2CDBBAF900F33013 /* SetPasswordController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		099B50CC2CDBBBFB00F33013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				099B50CD2CDBBC3400F33013 /* UI */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099B50CD2CDBBC3400F33013 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				099B50CE2CDBBC4500F33013 /* SetPasswordPageData.h */,
+				099B50CF2CDBBC4500F33013 /* SetPasswordPageData.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		099E08B82CC0E295008A34D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */,
 				099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */,
+				09D165452CD376C300B6E336 /* BaseRelativeLayout.h */,
+				09D165462CD376C300B6E336 /* BaseRelativeLayout.m */,
+				09D165482CD377E100B6E336 /* SuperInputView.h */,
+				09D165492CD377E100B6E336 /* SuperInputView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,6 +792,7 @@
 		09CAB68E2CB9501F004DEFCB /* JQCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				099B50AA2CDB4E8D00F33013 /* Extension */,
 				095E13472CBFF971005A32D9 /* Cell */,
 				09E0B5972CBF9983006B65C1 /* View */,
 				09E0B5932CBF8B78006B65C1 /* Repository */,
@@ -639,6 +841,10 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				099B50C72CDBBACE00F33013 /* Password */,
+				099B50B72CDBA23500F33013 /* Input */,
+				099B50B22CDB630E00F33013 /* Register */,
+				09D165392CD3613D00B6E336 /* Login */,
 				09D165302CD1D07300B6E336 /* Drawer */,
 				09162CE32CC50316000A21C7 /* User */,
 				09162CDB2CC4F369000A21C7 /* Song */,
@@ -688,6 +894,7 @@
 		09CAB6CE2CB97B93004DEFCB /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				09D1653E2CD365BD00B6E336 /* Controller */,
 				09D165352CD1E76800B6E336 /* Setting */,
 				09D1652B2CD128E300B6E336 /* Log */,
 				09162CFC2CC690C8000A21C7 /* Web */,
@@ -763,6 +970,8 @@
 				095E13502CC0078B005A32D9 /* ResourceUtil.m */,
 				099E08DE2CC1458A008A34D0 /* ImageUtil.h */,
 				099E08DF2CC1458A008A34D0 /* ImageUtil.m */,
+				099B50A32CDA52AE00F33013 /* PreferenceUtil.h */,
+				099B50A42CDA52AE00F33013 /* PreferenceUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -820,6 +1029,37 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		09D165392CD3613D00B6E336 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				099B509F2CDA4EBB00F33013 /* Model */,
+				09D1653A2CD3614700B6E336 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		09D1653A2CD3614700B6E336 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09D1653B2CD3622900B6E336 /* LoginHomeController.h */,
+				09D1653C2CD3622900B6E336 /* LoginHomeController.m */,
+				09D165422CD3756B00B6E336 /* LoginController.h */,
+				09D165432CD3756B00B6E336 /* LoginController.m */,
+				099B509C2CDA4B6E00F33013 /* BaseLoginController.h */,
+				099B509D2CDA4B6E00F33013 /* BaseLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09D1653E2CD365BD00B6E336 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09D1653F2CD365F800B6E336 /* UIViewController+SuperUI.h */,
+				09D165402CD365F800B6E336 /* UIViewController+SuperUI.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		09E0B5932CBF8B78006B65C1 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +1081,8 @@
 		09E0B59B2CBF9A6A006B65C1 /* SuperOC */ = {
 			isa = PBXGroup;
 			children = (
+				099B50AE2CDB59D500F33013 /* Dialog */,
+				099B50952CDA42BB00F33013 /* String */,
 				09E0B59C2CBF9A7C006B65C1 /* Util */,
 			);
 			path = SuperOC;
@@ -851,6 +1093,8 @@
 			children = (
 				09E0B59D2CBF9AAD006B65C1 /* StringUtil.h */,
 				09E0B59E2CBF9AAD006B65C1 /* StringUtil.m */,
+				099B50992CDA45A600F33013 /* SuperRegularUtil.h */,
+				099B509A2CDA45A600F33013 /* SuperRegularUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1244,8 +1488,15 @@
 				09162CEA2CC51E7F000A21C7 /* DiscoveryFooterCell.m in Sources */,
 				099E08CB2CC10BF9008A34D0 /* SheetGroupCell.m in Sources */,
 				09162CDA2CC4F2FD000A21C7 /* SongData.m in Sources */,
+				09D165472CD376C300B6E336 /* BaseRelativeLayout.m in Sources */,
 				09E0B59A2CBF99B3006B65C1 /* PlaceholderView.m in Sources */,
+				099B50C62CDBB84B00F33013 /* CodeRequest.m in Sources */,
+				09D165442CD3756B00B6E336 /* LoginController.m in Sources */,
 				09162CD72CC4F1AD000A21C7 /* SongGroupCell.m in Sources */,
+				099B50A52CDA52AE00F33013 /* PreferenceUtil.m in Sources */,
+				099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */,
+				099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */,
+				099B50A22CDA4EE000F33013 /* Session.m in Sources */,
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
 				09E0B5B92CBFB227006B65C1 /* FeedController.m in Sources */,
@@ -1259,9 +1510,11 @@
 				09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */,
 				09162CED2CC52398000A21C7 /* FooterData.m in Sources */,
 				09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */,
+				099B50AD2CDB4EBA00F33013 /* SuperBase+MJExtension.m in Sources */,
 				09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */,
 				09CAB70B2CBB9C38004DEFCB /* GuideController.m in Sources */,
 				09D165382CD1E7A100B6E336 /* SuperSettingView.m in Sources */,
+				099B509E2CDA4B6E00F33013 /* BaseLoginController.m in Sources */,
 				095E13552CC00ADE005A32D9 /* BannerClickEvent.m in Sources */,
 				095E134A2CBFF9AA005A32D9 /* BaseTableViewCell.m in Sources */,
 				095E13422CBFF35B005A32D9 /* Ad.m in Sources */,
@@ -1274,6 +1527,7 @@
 				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
 				095E13462CBFF3F5005A32D9 /* BannerData.m in Sources */,
 				09CAB6FA2CBA6485004DEFCB /* BaseLogicController.m in Sources */,
+				099B50B12CDB5A0E00F33013 /* SuperDialogController.m in Sources */,
 				09162CF12CC5245A000A21C7 /* ClickEvent.m in Sources */,
 				09CAB6FD2CBA7C36004DEFCB /* TermServiceDialogController.m in Sources */,
 				09E0B5AB2CBFB066006B65C1 /* DiscoveryController.m in Sources */,
@@ -1295,22 +1549,32 @@
 				090CA4042CBE66B8005E9426 /* SuperHttpUtil.m in Sources */,
 				09515B932CBD57B100CA2AB6 /* Config.m in Sources */,
 				09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */,
+				099B50BB2CDBA25A00F33013 /* InputUserIdentityController.m in Sources */,
+				099B50D02CDBBC4500F33013 /* SetPasswordPageData.m in Sources */,
+				099B50982CDA42E800F33013 /* NSString+SuperOC.m in Sources */,
 				09D165342CD1D14300B6E336 /* DrawerController.m in Sources */,
+				099B50B62CDB635400F33013 /* RegisterController.m in Sources */,
 				090CA41A2CBEBC14005E9426 /* Video.m in Sources */,
 				09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */,
 				09162CFB2CC5399D000A21C7 /* BaseMainController.m in Sources */,
 				099E08C42CC0EEAD008A34D0 /* IconTitleButtonData.m in Sources */,
+				09D1654A2CD377E100B6E336 /* SuperInputView.m in Sources */,
 				09CAB6F02CBA5786004DEFCB /* UIColor+SuperUI.m in Sources */,
 				09CAB6D22CB97C46004DEFCB /* SuperDateUtil.m in Sources */,
 				09E0B5B12CBFB13A006B65C1 /* MeController.m in Sources */,
 				099E08DA2CC137EF008A34D0 /* BaseCollectionViewCell.m in Sources */,
+				09D165412CD365F800B6E336 /* UIViewController+SuperUI.m in Sources */,
 				099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */,
 				090CA40C2CBE6AB8005E9426 /* SuperBase.m in Sources */,
 				090CA4172CBEBB3B005E9426 /* SuperCommon.m in Sources */,
+				099B50BE2CDBAD5900F33013 /* InputCodeController.m in Sources */,
+				099B509B2CDA45A600F33013 /* SuperRegularUtil.m in Sources */,
 				099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */,
+				099B50A92CDB314F00F33013 /* LoginStatusChangedEvent.m in Sources */,
 				09162CFF2CC690EF000A21C7 /* SuperWebController.m in Sources */,
 				09162CE22CC4F4B2000A21C7 /* DiscoverySongCell.m in Sources */,
 				09E0B5C32CBFB2F8006B65C1 /* MainController.m in Sources */,
+				09D1653D2CD3622900B6E336 /* LoginHomeController.m in Sources */,
 				090CA4092CBE6906005E9426 /* BaseResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
