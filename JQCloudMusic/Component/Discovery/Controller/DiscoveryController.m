@@ -21,6 +21,7 @@
 #import "SuperWebController.h"
 //下拉刷新
 #import <MJRefresh/MJRefresh.h>
+#import "SheetDetailController.h"
 
 
 @interface DiscoveryController () <SheetGroupDelegate>
@@ -285,6 +286,6 @@
 
 #pragma mark - 歌单组代理
 - (void)sheetClick:(Sheet *)data{
-    NSLog(@"sheetClick %@",data.title);
+    [SheetDetailController start:self.navigationController id:data.id];
 }
 @end

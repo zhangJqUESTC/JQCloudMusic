@@ -352,6 +352,7 @@ PODS:
   - SDWebImage (5.19.7):
     - SDWebImage/Core (= 5.19.7)
   - SDWebImage/Core (5.19.7)
+  - YCShadowView (1.2.0)
   - YYCache (1.0.4)
   - YYText (1.0.7)
   - ZXCountDownView (1.0.6)
@@ -371,6 +372,7 @@ DEPENDENCIES:
   - QTEventBus
   - R.objc
   - SDWebImage
+  - YCShadowView
   - YYCache
   - YYText
   - ZXCountDownView
@@ -393,6 +395,7 @@ SPEC REPOS:
     - QTEventBus
     - R.objc
     - SDWebImage
+    - YCShadowView
     - YYCache
     - YYText
     - ZXCountDownView
@@ -414,10 +417,11 @@ SPEC CHECKSUMS:
   QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
   R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
   SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
+  YCShadowView: cbd3215cefcd2a985ce3827e9f32152609968480
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXCountDownView: 486d888558551210c6790855ec24e82853a31d9e
 
-PODFILE CHECKSUM: b52e41de619b02a6e3c131d81fe2873223f69618
+PODFILE CHECKSUM: 4cb3f04a2afd15ed8f022cb0ca606e78be3c2b0e
 
 COCOAPODS: 1.15.2

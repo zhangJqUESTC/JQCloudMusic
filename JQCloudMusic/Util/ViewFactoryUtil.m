@@ -114,6 +114,20 @@
     return result;
 }
 
++(QMUIButton *)buttonWithImage:(UIImage *)image title:(NSString *)title{
+    QMUIButton *result = [[QMUIButton alloc] init];
+//    result.myWidth = MyLayoutSize.wrap;
+    result.myHeight = 46;
+    result.adjustsTitleTintColorAutomatically = YES;
+    result.titleLabel.font = UIFontMake(TEXT_MEDDLE);
+    result.tintColor =[UIColor colorOnSurface];
+    [result setTitle:title forState:UIControlStateNormal];
+    [result setTitleColor:[UIColor colorOnSurface] forState:UIControlStateNormal];
+    [result setImage:[image withTintColor] forState:UIControlStateNormal];
+    result.imagePosition = QMUIButtonImagePositionLeft;
+    return result;
+}
+
 #pragma mark View
 
 +(UITableView *)tableView{
@@ -201,6 +215,35 @@
     //图片完全显示到控件里面
     result.contentMode = UIViewContentModeScaleAspectFit;
     
+    return result;
+}
+
++(QMUIButton *)secoundButtonWithImage:(UIImage *)image title:(NSString *)title{
+    QMUIButton *result = [self buttonWithImage:image title:title];
+    
+    //设置图片和文本距离
+    [result setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 5)];
+    
+    result.backgroundColor = [UIColor clearColor];
+    result.tintColor = [UIColor colorOnSurface];
+    
+    return result;
+}
+
++(UIView *)smallVerticalDivider{
+    UIView *result = [UIView new];
+    result.myWidth = 0.5;
+    result.myHeight = MyLayoutSize.fill;
+    result.backgroundColor = [UIColor colorDivider];
+    
+    return result;
+}
+
++(MyLinearLayout *)orientationContainer{
+    MyLinearLayout *result = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
+    result.myWidth = MyLayoutSize.fill;
+    result.myHeight = MyLayoutSize.wrap;
+
     return result;
 }
 @end

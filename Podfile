@@ -80,6 +80,10 @@ target 'JQCloudMusic' do
   #https://github.com/SmileZXLee/ZXCountDownView
   pod 'ZXCountDownView'
   
+  #阴影，边框
+  #https://github.com/YotrolZ/YCShadowView
+  pod 'YCShadowView'
+  
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths

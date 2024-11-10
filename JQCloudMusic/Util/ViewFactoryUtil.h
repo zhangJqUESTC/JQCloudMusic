@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(QMUIButton *)title:(NSString *)title color:(UIColor *)color;
 
++(QMUIButton *)buttonWithImage:(UIImage *)image title:(NSString *)title;
+
 /// 创建图片按钮
 +(QMUIButton *)buttonWithImage:(UIImage *)data;
 
@@ -40,6 +42,13 @@ NS_ASSUME_NONNULL_BEGIN
 +(UIView *)smallDivider;
 
 +(UIImageView *)moreIconView;
+
++(QMUIButton *)secoundButtonWithImage:(UIImage *)image title:(NSString *)title;
+
+//小垂直分割线
++(UIView *)smallVerticalDivider;
+
++(MyLinearLayout *)orientationContainer;
 @end
 
 NS_ASSUME_NONNULL_END

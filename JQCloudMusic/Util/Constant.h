@@ -8,6 +8,9 @@
 #ifndef Constant_h
 #define Constant_h
 
+///点击block
+typedef void(^SuperClick)(void);
+
 
 #pragma mark - 文本尺寸
 static float const TEXT_SMALL = 12;

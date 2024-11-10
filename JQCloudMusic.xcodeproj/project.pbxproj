@@ -49,6 +49,12 @@
 		099B50C62CDBB84B00F33013 /* CodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50C52CDBB84B00F33013 /* CodeRequest.m */; };
 		099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50CA2CDBBAF900F33013 /* SetPasswordController.m */; };
 		099B50D02CDBBC4500F33013 /* SetPasswordPageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50CF2CDBBC4500F33013 /* SetPasswordPageData.m */; };
+		099B50D42CDCA83E00F33013 /* SheetDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50D32CDCA83E00F33013 /* SheetDetailController.m */; };
+		099B50D82CDCB94300F33013 /* SongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50D72CDCB94300F33013 /* SongCell.m */; };
+		099B50DB2CE092C000F33013 /* SheetInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50DA2CE092C000F33013 /* SheetInfoCell.m */; };
+		099B50DE2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50DD2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m */; };
+		099B50E22CE09F1D00F33013 /* SongGroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50E12CE09F1D00F33013 /* SongGroupHeaderView.m */; };
+		099B50E52CE0A25300F33013 /* SongGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50E42CE0A25300F33013 /* SongGroupData.m */; };
 		099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */; };
 		099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */; };
 		099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C02CC0EE16008A34D0 /* ButtonData.m */; };
@@ -213,6 +219,18 @@
 		099B50CA2CDBBAF900F33013 /* SetPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPasswordController.m; sourceTree = "<group>"; };
 		099B50CE2CDBBC4500F33013 /* SetPasswordPageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPasswordPageData.h; sourceTree = "<group>"; };
 		099B50CF2CDBBC4500F33013 /* SetPasswordPageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPasswordPageData.m; sourceTree = "<group>"; };
+		099B50D22CDCA83E00F33013 /* SheetDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheetDetailController.h; sourceTree = "<group>"; };
+		099B50D32CDCA83E00F33013 /* SheetDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetDetailController.m; sourceTree = "<group>"; };
+		099B50D62CDCB94300F33013 /* SongCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongCell.h; sourceTree = "<group>"; };
+		099B50D72CDCB94300F33013 /* SongCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongCell.m; sourceTree = "<group>"; };
+		099B50D92CE092C000F33013 /* SheetInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheetInfoCell.h; sourceTree = "<group>"; };
+		099B50DA2CE092C000F33013 /* SheetInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetInfoCell.m; sourceTree = "<group>"; };
+		099B50DC2CE09E9500F33013 /* BaseTableViewHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		099B50DD2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		099B50E02CE09F1D00F33013 /* SongGroupHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongGroupHeaderView.h; sourceTree = "<group>"; };
+		099B50E12CE09F1D00F33013 /* SongGroupHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongGroupHeaderView.m; sourceTree = "<group>"; };
+		099B50E32CE0A25300F33013 /* SongGroupData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongGroupData.h; sourceTree = "<group>"; };
+		099B50E42CE0A25300F33013 /* SongGroupData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongGroupData.m; sourceTree = "<group>"; };
 		099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
 		099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
 		099E08BC2CC0EC5F008A34D0 /* DiscoveryButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonCell.h; sourceTree = "<group>"; };
@@ -435,6 +453,7 @@
 		09162CDB2CC4F369000A21C7 /* Song */ = {
 			isa = PBXGroup;
 			children = (
+				099B50D52CDCB92700F33013 /* Cell */,
 				09162CDC2CC4F374000A21C7 /* Model */,
 			);
 			path = Song;
@@ -716,6 +735,33 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		099B50D12CDCA80C00F33013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				099B50D22CDCA83E00F33013 /* SheetDetailController.h */,
+				099B50D32CDCA83E00F33013 /* SheetDetailController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		099B50D52CDCB92700F33013 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				099B50D62CDCB94300F33013 /* SongCell.h */,
+				099B50D72CDCB94300F33013 /* SongCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		099B50DF2CE09EF100F33013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				099B50E02CE09F1D00F33013 /* SongGroupHeaderView.h */,
+				099B50E12CE09F1D00F33013 /* SongGroupHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		099E08B82CC0E295008A34D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -743,6 +789,8 @@
 		099E08CF2CC10D28008A34D0 /* Sheet */ = {
 			isa = PBXGroup;
 			children = (
+				099B50DF2CE09EF100F33013 /* View */,
+				099B50D12CDCA80C00F33013 /* Controller */,
 				099E08D72CC137B7008A34D0 /* Cell */,
 				099E08D02CC10D32008A34D0 /* Model */,
 			);
@@ -754,6 +802,8 @@
 			children = (
 				099E08D12CC10D7F008A34D0 /* Sheet.h */,
 				099E08D22CC10D7F008A34D0 /* Sheet.m */,
+				099B50E32CE0A25300F33013 /* SongGroupData.h */,
+				099B50E42CE0A25300F33013 /* SongGroupData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -763,6 +813,8 @@
 			children = (
 				099E08DB2CC13A7E008A34D0 /* SheetCell.h */,
 				099E08DC2CC13A7E008A34D0 /* SheetCell.m */,
+				099B50D92CE092C000F33013 /* SheetInfoCell.h */,
+				099B50DA2CE092C000F33013 /* SheetInfoCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1074,6 +1126,8 @@
 			children = (
 				09E0B5982CBF99B3006B65C1 /* PlaceholderView.h */,
 				09E0B5992CBF99B3006B65C1 /* PlaceholderView.m */,
+				099B50DC2CE09E9500F33013 /* BaseTableViewHeaderFooterView.h */,
+				099B50DD2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1484,6 +1538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099B50D82CDCB94300F33013 /* SongCell.m in Sources */,
 				09162CDF2CC4F392000A21C7 /* Song.m in Sources */,
 				09162CEA2CC51E7F000A21C7 /* DiscoveryFooterCell.m in Sources */,
 				099E08CB2CC10BF9008A34D0 /* SheetGroupCell.m in Sources */,
@@ -1493,7 +1548,9 @@
 				099B50C62CDBB84B00F33013 /* CodeRequest.m in Sources */,
 				09D165442CD3756B00B6E336 /* LoginController.m in Sources */,
 				09162CD72CC4F1AD000A21C7 /* SongGroupCell.m in Sources */,
+				099B50E52CE0A25300F33013 /* SongGroupData.m in Sources */,
 				099B50A52CDA52AE00F33013 /* PreferenceUtil.m in Sources */,
+				099B50DE2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m in Sources */,
 				099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */,
 				099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */,
 				099B50A22CDA4EE000F33013 /* Session.m in Sources */,
@@ -1540,14 +1597,17 @@
 				09CAB7052CBB8AE9004DEFCB /* DefaultPreferenceUtil.m in Sources */,
 				09CAB6DF2CBA280A004DEFCB /* R.m in Sources */,
 				09CAB6EA2CBA529C004DEFCB /* UIColor+Config.m in Sources */,
+				099B50E22CE09F1D00F33013 /* SongGroupHeaderView.m in Sources */,
 				090CA40F2CBE6AF2005E9426 /* Meta.m in Sources */,
 				099E08E02CC1458A008A34D0 /* ImageUtil.m in Sources */,
+				099B50DB2CE092C000F33013 /* SheetInfoCell.m in Sources */,
 				099E08D32CC10D7F008A34D0 /* Sheet.m in Sources */,
 				09162CE72CC50347000A21C7 /* User.m in Sources */,
 				099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */,
 				09E0B5BE2CBFB264006B65C1 /* RoomController.m in Sources */,
 				090CA4042CBE66B8005E9426 /* SuperHttpUtil.m in Sources */,
 				09515B932CBD57B100CA2AB6 /* Config.m in Sources */,
+				099B50D42CDCA83E00F33013 /* SheetDetailController.m in Sources */,
 				09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */,
 				099B50BB2CDBA25A00F33013 /* InputUserIdentityController.m in Sources */,
 				099B50D02CDBBC4500F33013 /* SetPasswordPageData.m in Sources */,
