@@ -200,6 +200,7 @@
 /// @param tableView tableView description
 /// @param indexPath indexPath description
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    @weakify(self);
     NSObject *data= self.datum[indexPath.row];
     //获取类型
     ListStyle style=[self typeForItemAtIndexPath:indexPath];
@@ -236,15 +237,15 @@
             //单曲组
             SongGroupCell *cell = [tableView dequeueReusableCellWithIdentifier:SongGroupCellName forIndexPath:indexPath];
             
-//            [cell setClickBlock:^(Song * _Nonnull result) {
-//                @strongify(self);
-//                [[MusicListManager shared] setDatum:@[result]];
-//                
-//                //播放当前音乐
-//                [[MusicListManager shared] play:result];
-//                
-//                [self startMusicPlayerController];
-//            }];
+            [cell setClickBlock:^(Song * _Nonnull result) {
+                @strongify(self);
+                [[MusicListManager shared] setDatum:@[result]];
+                
+                //播放当前音乐
+                [[MusicListManager shared] play:result];
+                
+                [self startMusicPlayerController];
+            }];
             
             [cell bind:data];
             

@@ -5,11 +5,11 @@
 //  Created by zhangjq on 2024/10/16.
 //
 
-#import "BaseMainController.h"
+#import "BasePlayerController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DiscoveryController : BaseMainController
+@interface DiscoveryController : BasePlayerController
 
 @end
 

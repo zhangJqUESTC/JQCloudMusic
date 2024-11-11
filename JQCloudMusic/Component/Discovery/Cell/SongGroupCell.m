@@ -96,9 +96,9 @@ static float const HEIGHT_DISCOVERY_SONG = 51+10*2;
 /// 点击了cell
 /// @param indexPath indexPath description
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (self.clickBlock) {
-//        self.clickBlock(self.datum[indexPath.row]);
-//    }
+    if (self.clickBlock) {
+        self.clickBlock(self.datum[indexPath.row]);
+    }
 }
 
 @end

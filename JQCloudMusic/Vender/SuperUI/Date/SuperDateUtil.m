@@ -38,4 +38,10 @@
     return result;
 }
 
++ (NSString *)second2MinuteSecond:(float)data{
+    int minute=data/60;
+    int second=((int)data)%60;
+    return [NSString stringWithFormat:@"%02d:%02d",minute,second];
+}
+
 @end

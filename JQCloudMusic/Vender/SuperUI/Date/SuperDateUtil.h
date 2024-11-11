@@ -15,6 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当前年
 + (NSInteger)currentDay;
 + (NSString *)yearMonthDayHourMinuteSecondMillisecond:(NSDate *)data;
+
+/**
+ 将float秒（3.867312）格式化为：150:11
+ @return return value description
+ */
++ (NSString *)second2MinuteSecond:(float)data;
 @end
 
 NS_ASSUME_NONNULL_END

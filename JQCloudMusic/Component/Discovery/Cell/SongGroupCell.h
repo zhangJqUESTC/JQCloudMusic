@@ -15,7 +15,7 @@ static NSString * const SongGroupCellName = @"SongGroupCellName";
 
 @interface SongGroupCell : BaseTableViewCell
 ///// 点击block
-//@property void (^clickBlock)(Song *);
+@property void (^clickBlock)(Song *);
 
 /// 标题控件
 @property(nonatomic,strong) ItemTitleView *titleView;

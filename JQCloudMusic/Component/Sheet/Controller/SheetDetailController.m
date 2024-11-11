@@ -196,12 +196,12 @@
     //把当前歌单所有音乐设置到播放列表
     //有些应用
     //可能会实现添加到已经播放列表功能
-//    [[MusicListManager shared] setDatum:self.data.songs];
-//
-//    //播放当前音乐
-//    [[MusicListManager shared] play:data];
+    [[MusicListManager shared] setDatum:self.data.songs];
+
+    //播放当前音乐
+    [[MusicListManager shared] play:data];
 //    
-//    [self startMusicPlayerController];
+    [self startMusicPlayerController];
 }
 
 /// 有多少组
@@ -228,6 +228,20 @@
     
     //其他组不显示section
     return 0;
+}
+
+/// cell点击
+/// @param tableView tableView description
+/// @param indexPath indexPath description
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SongGroupData *groupData=self.datum[indexPath.section];
+    NSObject *data= groupData.datum[indexPath.row];
+    
+    //获取类型
+    ListStyle style=[self typeForItemAtData:data];
+    if (style==StyleSong) {
+        [self play:data];
+    }
 }
 
 + (void)start:(UINavigationController *)controller id:(NSString *)id{

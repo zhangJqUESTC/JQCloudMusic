@@ -55,6 +55,10 @@
 		099B50DE2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50DD2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m */; };
 		099B50E22CE09F1D00F33013 /* SongGroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50E12CE09F1D00F33013 /* SongGroupHeaderView.m */; };
 		099B50E52CE0A25300F33013 /* SongGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50E42CE0A25300F33013 /* SongGroupData.m */; };
+		099B50EA2CE0B31400F33013 /* BasePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50E92CE0B31400F33013 /* BasePlayerController.m */; };
+		099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50EC2CE0B33D00F33013 /* SimplePlayerController.m */; };
+		099B50F12CE0F19800F33013 /* MusicPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50F02CE0F19800F33013 /* MusicPlayerManager.m */; };
+		099B50F42CE2213700F33013 /* MusicListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50F32CE2213700F33013 /* MusicListManager.m */; };
 		099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */; };
 		099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */; };
 		099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C02CC0EE16008A34D0 /* ButtonData.m */; };
@@ -231,6 +235,14 @@
 		099B50E12CE09F1D00F33013 /* SongGroupHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongGroupHeaderView.m; sourceTree = "<group>"; };
 		099B50E32CE0A25300F33013 /* SongGroupData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongGroupData.h; sourceTree = "<group>"; };
 		099B50E42CE0A25300F33013 /* SongGroupData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongGroupData.m; sourceTree = "<group>"; };
+		099B50E82CE0B31400F33013 /* BasePlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePlayerController.h; sourceTree = "<group>"; };
+		099B50E92CE0B31400F33013 /* BasePlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePlayerController.m; sourceTree = "<group>"; };
+		099B50EB2CE0B33D00F33013 /* SimplePlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePlayerController.h; sourceTree = "<group>"; };
+		099B50EC2CE0B33D00F33013 /* SimplePlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePlayerController.m; sourceTree = "<group>"; };
+		099B50EF2CE0F19800F33013 /* MusicPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayerManager.h; sourceTree = "<group>"; };
+		099B50F02CE0F19800F33013 /* MusicPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerManager.m; sourceTree = "<group>"; };
+		099B50F22CE2213700F33013 /* MusicListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListManager.h; sourceTree = "<group>"; };
+		099B50F32CE2213700F33013 /* MusicListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListManager.m; sourceTree = "<group>"; };
 		099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
 		099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
 		099E08BC2CC0EC5F008A34D0 /* DiscoveryButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonCell.h; sourceTree = "<group>"; };
@@ -762,6 +774,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		099B50E62CE0B2B900F33013 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				099B50E72CE0B2C500F33013 /* Controller */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		099B50E72CE0B2C500F33013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				099B50E82CE0B31400F33013 /* BasePlayerController.h */,
+				099B50E92CE0B31400F33013 /* BasePlayerController.m */,
+				099B50EB2CE0B33D00F33013 /* SimplePlayerController.h */,
+				099B50EC2CE0B33D00F33013 /* SimplePlayerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		099B50EE2CE0F16900F33013 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				099B50EF2CE0F19800F33013 /* MusicPlayerManager.h */,
+				099B50F02CE0F19800F33013 /* MusicPlayerManager.m */,
+				099B50F22CE2213700F33013 /* MusicListManager.h */,
+				099B50F32CE2213700F33013 /* MusicListManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		099E08B82CC0E295008A34D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -844,6 +886,7 @@
 		09CAB68E2CB9501F004DEFCB /* JQCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				099B50EE2CE0F16900F33013 /* Manager */,
 				099B50AA2CDB4E8D00F33013 /* Extension */,
 				095E13472CBFF971005A32D9 /* Cell */,
 				09E0B5972CBF9983006B65C1 /* View */,
@@ -893,6 +936,7 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				099B50E62CE0B2B900F33013 /* Player */,
 				099B50C72CDBBACE00F33013 /* Password */,
 				099B50B72CDBA23500F33013 /* Input */,
 				099B50B22CDB630E00F33013 /* Register */,
@@ -1547,6 +1591,7 @@
 				09E0B59A2CBF99B3006B65C1 /* PlaceholderView.m in Sources */,
 				099B50C62CDBB84B00F33013 /* CodeRequest.m in Sources */,
 				09D165442CD3756B00B6E336 /* LoginController.m in Sources */,
+				099B50EA2CE0B31400F33013 /* BasePlayerController.m in Sources */,
 				09162CD72CC4F1AD000A21C7 /* SongGroupCell.m in Sources */,
 				099B50E52CE0A25300F33013 /* SongGroupData.m in Sources */,
 				099B50A52CDA52AE00F33013 /* PreferenceUtil.m in Sources */,
@@ -1555,6 +1600,7 @@
 				099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */,
 				099B50A22CDA4EE000F33013 /* Session.m in Sources */,
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
+				099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
 				09E0B5B92CBFB227006B65C1 /* FeedController.m in Sources */,
 				09162CF82CC52C63000A21C7 /* BaseTitleController.m in Sources */,
@@ -1610,6 +1656,7 @@
 				099B50D42CDCA83E00F33013 /* SheetDetailController.m in Sources */,
 				09CAB7002CBAC3B8004DEFCB /* ViewFactoryUtil.m in Sources */,
 				099B50BB2CDBA25A00F33013 /* InputUserIdentityController.m in Sources */,
+				099B50F12CE0F19800F33013 /* MusicPlayerManager.m in Sources */,
 				099B50D02CDBBC4500F33013 /* SetPasswordPageData.m in Sources */,
 				099B50982CDA42E800F33013 /* NSString+SuperOC.m in Sources */,
 				09D165342CD1D14300B6E336 /* DrawerController.m in Sources */,
@@ -1624,6 +1671,7 @@
 				09E0B5B12CBFB13A006B65C1 /* MeController.m in Sources */,
 				099E08DA2CC137EF008A34D0 /* BaseCollectionViewCell.m in Sources */,
 				09D165412CD365F800B6E336 /* UIViewController+SuperUI.m in Sources */,
+				099B50F42CE2213700F33013 /* MusicListManager.m in Sources */,
 				099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */,
 				090CA40C2CBE6AB8005E9426 /* SuperBase.m in Sources */,
 				090CA4172CBEBB3B005E9426 /* SuperCommon.m in Sources */,

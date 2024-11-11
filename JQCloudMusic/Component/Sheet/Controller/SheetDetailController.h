@@ -5,11 +5,11 @@
 //  Created by zhangjq on 2024/11/7.
 //
 
-#import "BaseTitleController.h"
+#import "BasePlayerController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SheetDetailController : BaseTitleController
+@interface SheetDetailController : BasePlayerController
 /// 数据id
 @property(nonatomic, strong) NSString *id;
 
