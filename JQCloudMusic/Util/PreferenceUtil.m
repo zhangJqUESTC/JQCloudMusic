@@ -63,4 +63,25 @@ static NSString * const UNPLUG_HEADSET_STOP_MUSIC = @"UNPLUG_HEADSET_STOP_MUSIC"
 +(void)logout{
     [[MMKV defaultMMKV] removeValuesForKeys:@[USER_ID,SESSION]];
 }
+
+#pragma mark - 播放
+
++(NSString *)getLastPlaySongId{
+    return [[MMKV defaultMMKV] getStringForKey:LAST_PLAY_SONG_ID];
+}
+
++(void)setLastPlaySongId:(NSString *)data{
+    [[MMKV defaultMMKV] setString:data forKey:LAST_PLAY_SONG_ID];
+}
+
+/// 移除音频输出设备（包括蓝牙耳机，音响）是否暂停音乐播放
++(BOOL)isUnplugHeadsetStopMusic{
+    return [[MMKV defaultMMKV] getBoolForKey:UNPLUG_HEADSET_STOP_MUSIC defaultValue:YES];
+}
+
+/// 设置移除音频输出设备（包括蓝牙耳机，音响）是否暂停音乐播放
+/// @param data data description
++(void)setUnplugHeadsetStopMusic:(BOOL)data{
+    [[MMKV defaultMMKV] setBool:data forKey:UNPLUG_HEADSET_STOP_MUSIC];
+}
 @end

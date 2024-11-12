@@ -325,7 +325,7 @@ static NSString * const SimplePlayerControllerTag = @"SimplePlayerController";
 /// 显示初始化数据
 -(void)showInitData{
     //获取当前播放的音乐
-   Song *data = [MusicPlayerManager shared].data;
+   Song *data = [[MusicListManager shared] getData];
 
    //显示标题
     [self setTitle:data.title];
@@ -333,7 +333,7 @@ static NSString * const SimplePlayerControllerTag = @"SimplePlayerController";
 
 /// 显示音乐时长
 -(void)showDuration{
-    float duration = [MusicPlayerManager shared].data.duration;
+    float duration = [[MusicListManager shared] getData].duration;
     
     if (duration > 0) {
         _endView.text = [SuperDateUtil second2MinuteSecond:duration];
@@ -378,7 +378,7 @@ static NSString * const SimplePlayerControllerTag = @"SimplePlayerController";
         return;
     }
     
-    float progress = [MusicPlayerManager shared].data.progress;
+    float progress = [[MusicListManager shared] getData].progress;
     
     if (progress > 0) {
         _startView.text = [SuperDateUtil second2MinuteSecond:progress];

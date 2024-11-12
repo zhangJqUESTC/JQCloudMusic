@@ -84,6 +84,10 @@ target 'JQCloudMusic' do
   #https://github.com/YotrolZ/YCShadowView
   pod 'YCShadowView'
   
+  #腾讯WCDB是一个高效、完整、易用的移动数据库框架，基于SQLCipher，支持iOS, macOS和Android
+  #https://github.com/Tencent/wcdb
+  pod 'WCDB.objc'
+  
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths

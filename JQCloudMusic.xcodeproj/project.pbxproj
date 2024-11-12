@@ -16,7 +16,7 @@
 		090CA41A2CBEBC14005E9426 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4192CBEBC14005E9426 /* Video.m */; };
 		09162CD72CC4F1AD000A21C7 /* SongGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CD62CC4F1AD000A21C7 /* SongGroupCell.m */; };
 		09162CDA2CC4F2FD000A21C7 /* SongData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CD92CC4F2FD000A21C7 /* SongData.m */; };
-		09162CDF2CC4F392000A21C7 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CDE2CC4F392000A21C7 /* Song.m */; };
+		09162CDF2CC4F392000A21C7 /* Song.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09162CDE2CC4F392000A21C7 /* Song.mm */; };
 		09162CE22CC4F4B2000A21C7 /* DiscoverySongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CE12CC4F4B2000A21C7 /* DiscoverySongCell.m */; };
 		09162CE72CC50347000A21C7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CE62CC50347000A21C7 /* User.m */; };
 		09162CEA2CC51E7F000A21C7 /* DiscoveryFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CE92CC51E7F000A21C7 /* DiscoveryFooterCell.m */; };
@@ -59,6 +59,7 @@
 		099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50EC2CE0B33D00F33013 /* SimplePlayerController.m */; };
 		099B50F12CE0F19800F33013 /* MusicPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50F02CE0F19800F33013 /* MusicPlayerManager.m */; };
 		099B50F42CE2213700F33013 /* MusicListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B50F32CE2213700F33013 /* MusicListManager.m */; };
+		099B50F92CE2F8B000F33013 /* SearchHistory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B50F82CE2F8B000F33013 /* SearchHistory.mm */; };
 		099E08BB2CC0E2B9008A34D0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */; };
 		099E08BE2CC0EC5F008A34D0 /* DiscoveryButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08BD2CC0EC5F008A34D0 /* DiscoveryButtonCell.m */; };
 		099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E08C02CC0EE16008A34D0 /* ButtonData.m */; };
@@ -116,6 +117,9 @@
 		09E0B5BE2CBFB264006B65C1 /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5BD2CBFB264006B65C1 /* RoomController.m */; };
 		09E0B5C32CBFB2F8006B65C1 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5C22CBFB2F8006B65C1 /* MainController.m */; };
 		09E0B5C72CBFB71E006B65C1 /* UIImage+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0B5C62CBFB71E006B65C1 /* UIImage+SuperUI.m */; };
+		09E28ECD2CE3415D00B39B0A /* SuperDatabaseManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09E28ECC2CE3415D00B39B0A /* SuperDatabaseManager.mm */; };
+		09E28ED62CE378D900B39B0A /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28ED52CE378D900B39B0A /* DataUtil.m */; };
+		09E28EDC2CE379EC00B39B0A /* MusicListChangedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EDB2CE379EC00B39B0A /* MusicListChangedEvent.m */; };
 		32A0BAB8888FBAE1B965A80C /* Pods_JQCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */; };
 		6B60053BE17049B245EF5391 /* Pods_JQCloudMusic_JQCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */; };
 		F27B5E00385567DA3A0285E6 /* Pods_JQCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */; };
@@ -158,7 +162,7 @@
 		09162CD82CC4F2FD000A21C7 /* SongData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongData.h; sourceTree = "<group>"; };
 		09162CD92CC4F2FD000A21C7 /* SongData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongData.m; sourceTree = "<group>"; };
 		09162CDD2CC4F392000A21C7 /* Song.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
-		09162CDE2CC4F392000A21C7 /* Song.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		09162CDE2CC4F392000A21C7 /* Song.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Song.mm; sourceTree = "<group>"; };
 		09162CE02CC4F4B2000A21C7 /* DiscoverySongCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverySongCell.h; sourceTree = "<group>"; };
 		09162CE12CC4F4B2000A21C7 /* DiscoverySongCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverySongCell.m; sourceTree = "<group>"; };
 		09162CE52CC50347000A21C7 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 		099B50F02CE0F19800F33013 /* MusicPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerManager.m; sourceTree = "<group>"; };
 		099B50F22CE2213700F33013 /* MusicListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListManager.h; sourceTree = "<group>"; };
 		099B50F32CE2213700F33013 /* MusicListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListManager.m; sourceTree = "<group>"; };
+		099B50F72CE2F8B000F33013 /* SearchHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchHistory.h; sourceTree = "<group>"; };
+		099B50F82CE2F8B000F33013 /* SearchHistory.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SearchHistory.mm; sourceTree = "<group>"; };
 		099E08B92CC0E2B9008A34D0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
 		099E08BA2CC0E2B9008A34D0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
 		099E08BC2CC0EC5F008A34D0 /* DiscoveryButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonCell.h; sourceTree = "<group>"; };
@@ -358,6 +364,14 @@
 		09E0B5C22CBFB2F8006B65C1 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		09E0B5C52CBFB71E006B65C1 /* UIImage+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SuperUI.h"; sourceTree = "<group>"; };
 		09E0B5C62CBFB71E006B65C1 /* UIImage+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SuperUI.m"; sourceTree = "<group>"; };
+		09E28ECB2CE3415D00B39B0A /* SuperDatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperDatabaseManager.h; sourceTree = "<group>"; };
+		09E28ECC2CE3415D00B39B0A /* SuperDatabaseManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperDatabaseManager.mm; sourceTree = "<group>"; };
+		09E28ECE2CE3470000B39B0A /* SearchHistory+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SearchHistory+WCTTableCoding.h"; sourceTree = "<group>"; };
+		09E28ED12CE3533600B39B0A /* Song+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Song+WCTTableCoding.h"; sourceTree = "<group>"; };
+		09E28ED42CE378D900B39B0A /* DataUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		09E28ED52CE378D900B39B0A /* DataUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		09E28EDA2CE379EC00B39B0A /* MusicListChangedEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListChangedEvent.h; sourceTree = "<group>"; };
+		09E28EDB2CE379EC00B39B0A /* MusicListChangedEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListChangedEvent.m; sourceTree = "<group>"; };
 		34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusicTests/Pods-JQCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -475,7 +489,8 @@
 			isa = PBXGroup;
 			children = (
 				09162CDD2CC4F392000A21C7 /* Song.h */,
-				09162CDE2CC4F392000A21C7 /* Song.m */,
+				09162CDE2CC4F392000A21C7 /* Song.mm */,
+				09E28ED12CE3533600B39B0A /* Song+WCTTableCoding.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -800,8 +815,28 @@
 				099B50F02CE0F19800F33013 /* MusicPlayerManager.m */,
 				099B50F22CE2213700F33013 /* MusicListManager.h */,
 				099B50F32CE2213700F33013 /* MusicListManager.m */,
+				09E28ECB2CE3415D00B39B0A /* SuperDatabaseManager.h */,
+				09E28ECC2CE3415D00B39B0A /* SuperDatabaseManager.mm */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		099B50F52CE2F87900F33013 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				099B50F62CE2F88600F33013 /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		099B50F62CE2F88600F33013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				099B50F72CE2F8B000F33013 /* SearchHistory.h */,
+				099B50F82CE2F8B000F33013 /* SearchHistory.mm */,
+				09E28ECE2CE3470000B39B0A /* SearchHistory+WCTTableCoding.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		099E08B82CC0E295008A34D0 /* View */ = {
@@ -936,6 +971,8 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				09E28ED72CE3796800B39B0A /* Music */,
+				099B50F52CE2F87900F33013 /* Search */,
 				099B50E62CE0B2B900F33013 /* Player */,
 				099B50C72CDBBACE00F33013 /* Password */,
 				099B50B72CDBA23500F33013 /* Input */,
@@ -1068,6 +1105,8 @@
 				099E08DF2CC1458A008A34D0 /* ImageUtil.m */,
 				099B50A32CDA52AE00F33013 /* PreferenceUtil.h */,
 				099B50A42CDA52AE00F33013 /* PreferenceUtil.m */,
+				09E28ED42CE378D900B39B0A /* DataUtil.h */,
+				09E28ED52CE378D900B39B0A /* DataUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1312,6 +1351,31 @@
 				09E0B5C62CBFB71E006B65C1 /* UIImage+SuperUI.m */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		09E28ED72CE3796800B39B0A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				09E28ED82CE3796E00B39B0A /* Model */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		09E28ED82CE3796E00B39B0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09E28ED92CE3797700B39B0A /* Event */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E28ED92CE3797700B39B0A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				09E28EDA2CE379EC00B39B0A /* MusicListChangedEvent.h */,
+				09E28EDB2CE379EC00B39B0A /* MusicListChangedEvent.m */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		262DC25882317B543228A00F /* Frameworks */ = {
@@ -1583,7 +1647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099B50D82CDCB94300F33013 /* SongCell.m in Sources */,
-				09162CDF2CC4F392000A21C7 /* Song.m in Sources */,
+				09162CDF2CC4F392000A21C7 /* Song.mm in Sources */,
 				09162CEA2CC51E7F000A21C7 /* DiscoveryFooterCell.m in Sources */,
 				099E08CB2CC10BF9008A34D0 /* SheetGroupCell.m in Sources */,
 				09162CDA2CC4F2FD000A21C7 /* SongData.m in Sources */,
@@ -1598,6 +1662,7 @@
 				099B50DE2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m in Sources */,
 				099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */,
 				099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */,
+				09E28ECD2CE3415D00B39B0A /* SuperDatabaseManager.mm in Sources */,
 				099B50A22CDA4EE000F33013 /* Session.m in Sources */,
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
 				099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */,
@@ -1617,12 +1682,14 @@
 				09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */,
 				09CAB70B2CBB9C38004DEFCB /* GuideController.m in Sources */,
 				09D165382CD1E7A100B6E336 /* SuperSettingView.m in Sources */,
+				09E28ED62CE378D900B39B0A /* DataUtil.m in Sources */,
 				099B509E2CDA4B6E00F33013 /* BaseLoginController.m in Sources */,
 				095E13552CC00ADE005A32D9 /* BannerClickEvent.m in Sources */,
 				095E134A2CBFF9AA005A32D9 /* BaseTableViewCell.m in Sources */,
 				095E13422CBFF35B005A32D9 /* Ad.m in Sources */,
 				099E08CE2CC10C8D008A34D0 /* SheetData.m in Sources */,
 				09E0B5A32CBFA1B7006B65C1 /* SuperToast.m in Sources */,
+				099B50F92CE2F8B000F33013 /* SearchHistory.mm in Sources */,
 				09E0B5AE2CBFB0ED006B65C1 /* VideoController.m in Sources */,
 				095E134E2CBFFC4C005A32D9 /* BannerCell.m in Sources */,
 				099E08C82CC0FDF6008A34D0 /* DiscoveryButtonView.m in Sources */,
@@ -1658,6 +1725,7 @@
 				099B50BB2CDBA25A00F33013 /* InputUserIdentityController.m in Sources */,
 				099B50F12CE0F19800F33013 /* MusicPlayerManager.m in Sources */,
 				099B50D02CDBBC4500F33013 /* SetPasswordPageData.m in Sources */,
+				09E28EDC2CE379EC00B39B0A /* MusicListChangedEvent.m in Sources */,
 				099B50982CDA42E800F33013 /* NSString+SuperOC.m in Sources */,
 				09D165342CD1D14300B6E336 /* DrawerController.m in Sources */,
 				099B50B62CDB635400F33013 /* RegisterController.m in Sources */,

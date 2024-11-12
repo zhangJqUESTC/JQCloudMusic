@@ -200,7 +200,7 @@
 
     //播放当前音乐
     [[MusicListManager shared] play:data];
-//    
+    
     [self startMusicPlayerController];
 }
 

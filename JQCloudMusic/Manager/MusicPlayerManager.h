@@ -50,9 +50,6 @@ typedef void(^MusicPlayerManagerComplete)(Song *data);
 /// 播放完毕block
 @property (nonatomic, strong, nullable) MusicPlayerManagerComplete complete;
 
-/// 当前音乐
-@property(nonatomic, strong) Song *data;
-
 /// 获取单例对象
 +(instancetype)shared;
 

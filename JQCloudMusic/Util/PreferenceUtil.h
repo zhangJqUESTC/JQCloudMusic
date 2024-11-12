@@ -38,6 +38,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 退出
 +(void)logout;
+
+#pragma mark - 播放
+
+/// 获取最后播放的音乐Id
++(NSString *)getLastPlaySongId;
+
+/// 设置当前播放音乐的id
+/// @param data data description
++(void)setLastPlaySongId:(NSString *)data;
+
+/// 移除音频输出设备（包括蓝牙耳机，音响）是否暂停音乐播放
++(BOOL)isUnplugHeadsetStopMusic;
+
+/// 设置移除音频输出设备（包括蓝牙耳机，音响）是否暂停音乐播放
+/// @param data data description
++(void)setUnplugHeadsetStopMusic:(BOOL)data;
 @end
 
 NS_ASSUME_NONNULL_END

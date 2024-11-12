@@ -6,6 +6,7 @@
 //
 
 #import "MusicPlayerManager.h"
+#import "SuperDatabaseManager.h"
 
 //当前类日志Tag
 static NSString * const MusicPlayerManagerTag = @"MusicPlayerManager";
@@ -34,7 +35,8 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
 /// 上一次保存播放进度时间
 @property(nonatomic, assign) NSTimeInterval lastSaveProgressTime;
 
-
+/// 当前音乐
+@property(nonatomic, strong) Song *data;
 
 @end
 
@@ -276,19 +278,19 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
         //当然可以监听应用退出在保存
         
         //获取当前时间0秒后的时间，就是当前
-//        NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
-//
-//        NSTimeInterval currentTimeMillis=[date timeIntervalSince1970];
-//        NSTimeInterval d=currentTimeMillis - self.lastSaveProgressTime;
-//        //        NSLog(@"current time:%f last time:%f result:%f",currentTimeMillis,self.lastTime,d);
-//        if (d > SAVE_PROGRESS_TIME_INTERVAL) {
-//            //间隔大于2秒才保存，这样做是避免频繁操作
-//            //具体的存储时间，存储间隔根据业务需求来更改
-////            [PreferenceUtil setLastSongProgress:self.data.progress];
-//            [[SuperDatabaseManager shared] saveSong:self.data];
-//
-//            self.lastSaveProgressTime = currentTimeMillis;
-//        }
+        NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
+
+        NSTimeInterval currentTimeMillis=[date timeIntervalSince1970];
+        NSTimeInterval d=currentTimeMillis - self.lastSaveProgressTime;
+        //        NSLog(@"current time:%f last time:%f result:%f",currentTimeMillis,self.lastTime,d);
+        if (d > SAVE_PROGRESS_TIME_INTERVAL) {
+            //间隔大于2秒才保存，这样做是避免频繁操作
+            //具体的存储时间，存储间隔根据业务需求来更改
+//            [PreferenceUtil setLastSongProgress:self.data.progress];
+            [[SuperDatabaseManager shared] saveSong:self.data];
+
+            self.lastSaveProgressTime = currentTimeMillis;
+        }
     }];
 }
 

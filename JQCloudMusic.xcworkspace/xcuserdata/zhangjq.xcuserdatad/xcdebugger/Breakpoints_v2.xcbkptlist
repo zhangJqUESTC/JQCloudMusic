@@ -128,7 +128,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "377"
             endingLineNumber = "377"
-            landmarkName = "-onLyricReady:"
+            landmarkName = "-showProgress"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

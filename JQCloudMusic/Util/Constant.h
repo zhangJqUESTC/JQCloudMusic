@@ -8,6 +8,9 @@
 #ifndef Constant_h
 #define Constant_h
 
+//保存音乐播放进度的间隔
+static float const SAVE_PROGRESS_TIME_INTERVAL = 2;
+
 ///点击block
 typedef void(^SuperClick)(void);
 

@@ -22,6 +22,7 @@
 //下拉刷新
 #import <MJRefresh/MJRefresh.h>
 #import "SheetDetailController.h"
+#import "SuperDatabaseManager.h"
 
 
 @interface DiscoveryController () <SheetGroupDelegate>
@@ -74,6 +75,34 @@
 -(void)initDatum{
     [super initDatum];
     [self loadData:YES];
+    
+    //测试数据库使用
+
+    SearchHistory *searchHistory=[SearchHistory new];
+    searchHistory.title=@"爱学啊1";
+    searchHistory.createdAt = [[NSDate new] timeIntervalSince1970];
+
+    //保存
+    [[SuperDatabaseManager shared] saveSearchHistory:searchHistory];
+
+    searchHistory=[SearchHistory new];
+    searchHistory.title=@"爱学啊3";
+    searchHistory.createdAt = [[NSDate new] timeIntervalSince1970];
+    [[SuperDatabaseManager shared] saveSearchHistory:searchHistory];
+
+    //查询所有
+    NSArray *results=[[SuperDatabaseManager shared] getSearchHistoryAll];
+    for (SearchHistory *it in results) {
+        NSLog(@"test database find %@",it.title);
+    }
+
+    //删除第二次添加的对象
+    [[SuperDatabaseManager shared] deleteSearchHistory:searchHistory];
+
+    results=[[SuperDatabaseManager shared] getSearchHistoryAll];
+    for (SearchHistory *it in results) {
+        NSLog(@"test database find %@",it.title);
+    }
     
 }
 

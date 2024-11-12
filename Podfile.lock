@@ -352,6 +352,9 @@ PODS:
   - SDWebImage (5.19.7):
     - SDWebImage/Core (= 5.19.7)
   - SDWebImage/Core (5.19.7)
+  - WCDB.objc (2.1.9):
+    - WCDBOptimizedSQLCipher (= 1.4.6)
+  - WCDBOptimizedSQLCipher (1.4.6)
   - YCShadowView (1.2.0)
   - YYCache (1.0.4)
   - YYText (1.0.7)
@@ -372,6 +375,7 @@ DEPENDENCIES:
   - QTEventBus
   - R.objc
   - SDWebImage
+  - WCDB.objc
   - YCShadowView
   - YYCache
   - YYText
@@ -395,6 +399,8 @@ SPEC REPOS:
     - QTEventBus
     - R.objc
     - SDWebImage
+    - WCDB.objc
+    - WCDBOptimizedSQLCipher
     - YCShadowView
     - YYCache
     - YYText
@@ -417,11 +423,13 @@ SPEC CHECKSUMS:
   QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
   R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
   SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
+  WCDB.objc: c9d4209573120213de93d6436cb7e72fb0c64343
+  WCDBOptimizedSQLCipher: c6451e1dead7ec53e1344a2545aaed2c4c139fc0
   YCShadowView: cbd3215cefcd2a985ce3827e9f32152609968480
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXCountDownView: 486d888558551210c6790855ec24e82853a31d9e
 
-PODFILE CHECKSUM: 4cb3f04a2afd15ed8f022cb0ca606e78be3c2b0e
+PODFILE CHECKSUM: d3a3debedae747216a43dd2217f0b4471ceda718
 
 COCOAPODS: 1.15.2

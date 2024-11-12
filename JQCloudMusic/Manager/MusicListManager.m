@@ -7,6 +7,9 @@
 
 #import "MusicListManager.h"
 #import "MusicPlayerManager.h"
+#import "SuperDatabaseManager.h"
+#import "DataUtil.h"
+#import "MusicListChangedEvent.h"
 //当前类日志Tag
 static NSString * const MusicListManagerTag = @"MusicListManager";
 
@@ -75,48 +78,52 @@ static MusicListManager *sharedInstance = nil;
     [_datum removeAllObjects];
 
     //查询播放列表
-//    NSArray *datum=[[SuperDatabaseManager shared] findPlayList];
-//
-//    if (datum.count > 0) {
-//        //添加到现在的播放列表
-//        [_datum addObjectsFromArray:datum];
-//
-//        //获取最后播放音乐id
-//        NSString *id = [PreferenceUtil getLastPlaySongId];
-//        if ([StringUtil isNotBlank:id]) {
-//            //有最后播放音乐的id
-//
-//            //在播放列表中找到该音乐
-//            for (Song *s in _datum) {
-//                if ([id isEqualToString:s.id]) {
-//                    _data = s;
-//                    break;
-//                }
-//            }
-//
-//            if (_data == nil) {
-//                //表示没找到
-//                //可能各种原因
-//                [self defaultPlaySong];
-//            } else {
-//                //找到了
-//            }
-//        } else {
-//            //如果没有最后播放音乐奥迪
-//            //默认就是第一首
-//            [self defaultPlaySong];
-//        }
-//    }
+    NSArray *datum=[[SuperDatabaseManager shared] findPlayList];
 
+    if (datum.count > 0) {
+        //添加到现在的播放列表
+        [_datum addObjectsFromArray:datum];
+
+        //获取最后播放音乐id
+        NSString *id = [PreferenceUtil getLastPlaySongId];
+        if ([StringUtil isNotBlank:id]) {
+            //有最后播放音乐的id
+
+            //在播放列表中找到该音乐
+            for (Song *s in _datum) {
+                if ([id isEqualToString:s.id]) {
+                    _data = s;
+                    break;
+                }
+            }
+
+            if (_data == nil) {
+                //表示没找到
+                //可能各种原因
+                [self defaultPlaySong];
+            } else {
+                //找到了
+            }
+        } else {
+            //如果没有最后播放音乐奥迪
+            //默认就是第一首
+            [self defaultPlaySong];
+        }
+    }
+
+}
+
+-(void)defaultPlaySong{
+    _data=_datum[0];
 }
 
 /// 设置播放列表
 - (void)setDatum:(NSArray *)datum{
     //将原来数据playList标志设置为false
-//    [DataUtil changePlayListFlag:_datum inList:NO];
-//
-//    //保存到数据库
-//    [self saveAll];
+    [DataUtil changePlayListFlag:_datum inList:NO];
+
+    //保存到数据库
+    [self saveAll];
 
     //清空原来的数据
     [_datum removeAllObjects];
@@ -125,14 +132,23 @@ static MusicListManager *sharedInstance = nil;
     [_datum addObjectsFromArray:datum];
 
     //更改播放列表标志
-//    [DataUtil changePlayListFlag:_datum inList:YES];
-//
-//    //保存到数据库
-//    [self saveAll];
-//
-//    [self sendMusicListChanged];
+    [DataUtil changePlayListFlag:_datum inList:YES];
+
+    //保存到数据库
+    [self saveAll];
+
+    [self sendMusicListChanged];
 }
 
+/// 保存当前播放列表到数据库
+-(void)saveAll{
+    [[SuperDatabaseManager shared] saveAllSong:_datum];
+}
+
+-(void)sendMusicListChanged{
+    MusicListChangedEvent *event = [[MusicListChangedEvent alloc] init];
+    [QTEventBus.shared dispatch:event];
+}
 
 // 获取播放列表
 - (NSArray *)getDatum{
@@ -168,7 +184,7 @@ static MusicListManager *sharedInstance = nil;
     [_musicPlayerManager play:path data:data];
     
     //设置最后播放音乐的Id
-//    [PreferenceUtil setLastPlaySongId:_data.id];
+    [PreferenceUtil setLastPlaySongId:_data.id];
 }
 
 // 暂停

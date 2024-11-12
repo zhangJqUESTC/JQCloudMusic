@@ -14,6 +14,8 @@ ${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework
 ${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
 ${BUILT_PRODUCTS_DIR}/QTEventBus/QTEventBus.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/WCDB.objc/WCDBObjc.framework
+${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework
 ${BUILT_PRODUCTS_DIR}/YCShadowView/YCShadowView.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
 ${BUILT_PRODUCTS_DIR}/YYText/YYText.framework
