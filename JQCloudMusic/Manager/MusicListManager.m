@@ -35,8 +35,7 @@ static NSString * const MusicListManagerTag = @"MusicListManager";
 
 @implementation MusicListManager
 static MusicListManager *sharedInstance = nil;
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         _datum=[[NSMutableArray alloc] init];
@@ -70,6 +69,11 @@ static MusicListManager *sharedInstance = nil;
 +(instancetype)shared{
     if (!sharedInstance) {
         sharedInstance = [[self alloc] init];
+    }
+    if (!sharedInstance){
+        NSLog(@"zjqtest: 0");
+    }else{
+        NSLog(@"zjqtest: 1");
     }
     return sharedInstance;
 }

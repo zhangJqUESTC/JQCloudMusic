@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)initListeners;
 
 /// 获取根容器布局方向
-//-(MyOrientation)getContainerOrientation;
+-(MyOrientation)getContainerOrientation;
 @end
 
 NS_ASSUME_NONNULL_END

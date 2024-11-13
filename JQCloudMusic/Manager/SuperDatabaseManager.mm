@@ -101,10 +101,10 @@ static SuperDatabaseManager *sharedInstance = nil;
 }
 
 -(NSArray *)findPlayList{
-    NSArray * results = [self.database getObjectOfClass:Song.class 
-                                              fromTable:SongName
-                                                  where:Song.list == YES
-                                                 orders:Song.createdAt.asOrder(WCTOrderedDescending)];
+    NSArray *results = [self.database getObjectsOfClass:[Song class]
+                                               fromTable:SongName
+                                                   where:Song.list == YES
+                                                  orders:Song.createdAt.asOrder(WCTOrderedDescending)];
     [self localConvert:results];
     return results;
 }

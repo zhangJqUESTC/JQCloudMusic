@@ -467,6 +467,7 @@
 @property (nonatomic, strong) UIImage* defaultAvatar;
 @property (nonatomic, strong) UIImage* loginNetease;
 @property (nonatomic, strong) UIImage* logo;
+@property (nonatomic, strong) UIImage* pause;
 @property (nonatomic, strong) UIImage* video;
 @property (nonatomic, strong) UIImage* stars;
 @property (nonatomic, strong) UIImage* superChevronRight;
@@ -563,6 +564,7 @@
 - (UIImage*)defaultAvatar { return [UIImage imageNamed:@"DefaultAvatar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)loginNetease { return [UIImage imageNamed:@"LoginNetease" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)logo { return [UIImage imageNamed:@"Logo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)pause { return [UIImage imageNamed:@"Pause" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)video { return [UIImage imageNamed:@"Video" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)stars { return [UIImage imageNamed:@"stars" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)superChevronRight { return [UIImage imageNamed:@"SuperChevronRight" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }

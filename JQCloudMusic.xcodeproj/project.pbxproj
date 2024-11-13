@@ -120,6 +120,9 @@
 		09E28ECD2CE3415D00B39B0A /* SuperDatabaseManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09E28ECC2CE3415D00B39B0A /* SuperDatabaseManager.mm */; };
 		09E28ED62CE378D900B39B0A /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28ED52CE378D900B39B0A /* DataUtil.m */; };
 		09E28EDC2CE379EC00B39B0A /* MusicListChangedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EDB2CE379EC00B39B0A /* MusicListChangedEvent.m */; };
+		09E28EE02CE3872200B39B0A /* SmallAudioControlPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EDF2CE3872200B39B0A /* SmallAudioControlPageView.m */; };
+		09E28EE42CE43D2400B39B0A /* SongSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EE32CE43D2400B39B0A /* SongSmallCell.m */; };
+		09E28EE82CE4461D00B39B0A /* SuperHorizontalProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EE72CE4461D00B39B0A /* SuperHorizontalProgressView.m */; };
 		32A0BAB8888FBAE1B965A80C /* Pods_JQCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */; };
 		6B60053BE17049B245EF5391 /* Pods_JQCloudMusic_JQCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */; };
 		F27B5E00385567DA3A0285E6 /* Pods_JQCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */; };
@@ -372,6 +375,12 @@
 		09E28ED52CE378D900B39B0A /* DataUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
 		09E28EDA2CE379EC00B39B0A /* MusicListChangedEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListChangedEvent.h; sourceTree = "<group>"; };
 		09E28EDB2CE379EC00B39B0A /* MusicListChangedEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListChangedEvent.m; sourceTree = "<group>"; };
+		09E28EDE2CE3872200B39B0A /* SmallAudioControlPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallAudioControlPageView.h; sourceTree = "<group>"; };
+		09E28EDF2CE3872200B39B0A /* SmallAudioControlPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallAudioControlPageView.m; sourceTree = "<group>"; };
+		09E28EE22CE43D2400B39B0A /* SongSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongSmallCell.h; sourceTree = "<group>"; };
+		09E28EE32CE43D2400B39B0A /* SongSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongSmallCell.m; sourceTree = "<group>"; };
+		09E28EE62CE4461D00B39B0A /* SuperHorizontalProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperHorizontalProgressView.h; sourceTree = "<group>"; };
+		09E28EE72CE4461D00B39B0A /* SuperHorizontalProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperHorizontalProgressView.m; sourceTree = "<group>"; };
 		34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusicTests/Pods-JQCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1027,6 +1036,7 @@
 		09CAB6CE2CB97B93004DEFCB /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				09E28EE52CE445C100B39B0A /* Progress */,
 				09D1653E2CD365BD00B6E336 /* Controller */,
 				09D165352CD1E76800B6E336 /* Setting */,
 				09D1652B2CD128E300B6E336 /* Log */,
@@ -1356,6 +1366,8 @@
 		09E28ED72CE3796800B39B0A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				09E28EE12CE43D0300B39B0A /* Cell */,
+				09E28EDD2CE386DD00B39B0A /* View */,
 				09E28ED82CE3796E00B39B0A /* Model */,
 			);
 			path = Music;
@@ -1376,6 +1388,33 @@
 				09E28EDB2CE379EC00B39B0A /* MusicListChangedEvent.m */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		09E28EDD2CE386DD00B39B0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09E28EDE2CE3872200B39B0A /* SmallAudioControlPageView.h */,
+				09E28EDF2CE3872200B39B0A /* SmallAudioControlPageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E28EE12CE43D0300B39B0A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09E28EE22CE43D2400B39B0A /* SongSmallCell.h */,
+				09E28EE32CE43D2400B39B0A /* SongSmallCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09E28EE52CE445C100B39B0A /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				09E28EE62CE4461D00B39B0A /* SuperHorizontalProgressView.h */,
+				09E28EE72CE4461D00B39B0A /* SuperHorizontalProgressView.m */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 		262DC25882317B543228A00F /* Frameworks */ = {
@@ -1660,6 +1699,7 @@
 				099B50E52CE0A25300F33013 /* SongGroupData.m in Sources */,
 				099B50A52CDA52AE00F33013 /* PreferenceUtil.m in Sources */,
 				099B50DE2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m in Sources */,
+				09E28EE02CE3872200B39B0A /* SmallAudioControlPageView.m in Sources */,
 				099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */,
 				099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */,
 				09E28ECD2CE3415D00B39B0A /* SuperDatabaseManager.mm in Sources */,
@@ -1668,6 +1708,7 @@
 				099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
 				09E0B5B92CBFB227006B65C1 /* FeedController.m in Sources */,
+				09E28EE82CE4461D00B39B0A /* SuperHorizontalProgressView.m in Sources */,
 				09162CF82CC52C63000A21C7 /* BaseTitleController.m in Sources */,
 				090CA4142CBEBAA9005E9426 /* SuperBaseId.m in Sources */,
 				099E08D62CC13062008A34D0 /* ItemTitleView.m in Sources */,
@@ -1747,6 +1788,7 @@
 				099B509B2CDA45A600F33013 /* SuperRegularUtil.m in Sources */,
 				099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */,
 				099B50A92CDB314F00F33013 /* LoginStatusChangedEvent.m in Sources */,
+				09E28EE42CE43D2400B39B0A /* SongSmallCell.m in Sources */,
 				09162CFF2CC690EF000A21C7 /* SuperWebController.m in Sources */,
 				09162CE22CC4F4B2000A21C7 /* DiscoverySongCell.m in Sources */,
 				09E0B5C32CBFB2F8006B65C1 /* MainController.m in Sources */,

@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(UITableView *)tableView;
 
 +(UICollectionView *)collectionView;
+//水平collectionView
++(UICollectionView *)pageCollectionView;
++(UICollectionViewFlowLayout *)pageCollectionViewFlowLayout;
 +(UICollectionViewFlowLayout *)collectionViewFlowLayout;
 +(UIView *)smallDivider;
 

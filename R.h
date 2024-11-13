@@ -3124,6 +3124,7 @@ en: "WiFi预加载"
 - (UIImage*)defaultAvatar;
 - (UIImage*)loginNetease;
 - (UIImage*)logo;
+- (UIImage*)pause;
 - (UIImage*)video;
 - (UIImage*)stars;
 - (UIImage*)superChevronRight;
