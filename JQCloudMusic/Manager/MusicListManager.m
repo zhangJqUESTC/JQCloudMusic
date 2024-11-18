@@ -70,11 +70,6 @@ static MusicListManager *sharedInstance = nil;
     if (!sharedInstance) {
         sharedInstance = [[self alloc] init];
     }
-    if (!sharedInstance){
-        NSLog(@"zjqtest: 0");
-    }else{
-        NSLog(@"zjqtest: 1");
-    }
     return sharedInstance;
 }
 
@@ -348,6 +343,58 @@ static MusicListManager *sharedInstance = nil;
 
 - (Song *)getData{
     return self.data;
+}
+
+//删除音乐
+- (void)delete:(NSInteger)index{
+    //获取要删除的音乐
+    Song *song = [_datum objectAtIndex:index];
+
+    if ([song.id isEqualToString:self.data.id]) {
+        //删除的音乐就是当前播放的音乐
+
+        //应该停止当前播放
+        [self pause];
+
+        //并播放下一首音乐
+        Song *next = [self next];
+
+        if ([next.id isEqualToString:self.data.id]) {
+            //找到了自己
+            //没有歌曲可以播放了
+            _data = nil;
+            //TODO Bug 随机循环的情况下有可能获取到自己
+        } else {
+            [self play:next];
+        }
+    }
+
+    //直接删除
+    [_datum removeObject:song];
+    
+    song.list=NO;
+    [[SuperDatabaseManager shared] saveSong:song];
+
+    [self sendMusicListChanged];
+}
+
+//删除所有音乐
+- (void)deleteAll{
+    //如果在播放音乐就暂停
+    if ([_musicPlayerManager isPlaying]) {
+        [self pause];
+    }
+    
+    //将原来数据playList标志设置为false
+    [DataUtil changePlayListFlag:_datum inList:NO];
+
+    //保存到数据库
+    [self saveAll];
+
+    //清空列表
+    [_datum removeAllObjects];
+
+    [self sendMusicListChanged];
 }
 
 

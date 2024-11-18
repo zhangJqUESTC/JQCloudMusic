@@ -5,12 +5,16 @@
 //  Created by zhangjq on 2024/10/16.
 //
 
+//一行代码实现遮罩视图
+#import <GKCover/GKCover.h>
 #import "MainController.h"
 #import "DiscoveryController.h"
 #import "VideoController.h"
 #import "MeController.h"
 #import "FeedController.h"
 #import "RoomController.h"
+#import "ClickEvent.h"
+#import "PlayListView.h"
 
 @interface MainController ()
 
@@ -44,7 +48,39 @@
     [self addChildController:[FeedController new] title:R.string.localizable.feed imageName:@"Feed"];
     [self addChildController:[RoomController new] title:R.string.localizable.live imageName:@"Live"];
     
+    @weakify(self);
+    //点击事件
+    [QTSubMain(self,ClickEvent) next:^(ClickEvent *event) {
+        @strongify(self);
+        [self processClick:event.style];
+    }];
+    
 }
+
+-(void)processClick:(int)style{
+    switch (style) {
+        case StylePlayList:
+            [self onListClick];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(void)onListClick{
+    //创建一个View
+    PlayListView *contentView = [PlayListView new];
+    contentView.myWidth = SCREEN_WIDTH;
+    contentView.myHeight = self.view.frame.size.height/1.5;
+
+    //设置尺寸
+//    contentView.gk_size = CGSizeMake(SCREEN_WIDTH, SCREEN_WIDTH);
+
+    [GKCover coverFrom:self.view contentView:contentView style:GKCoverStyleTranslucent showStyle:GKCoverShowStyleBottom showAnimStyle:GKCoverShowAnimStyleBottom hideAnimStyle:GKCoverHideAnimStyleBottom notClick:NO];
+}
+
+
 
 #pragma mark - TabBar
 

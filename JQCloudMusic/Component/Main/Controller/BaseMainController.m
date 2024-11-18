@@ -119,6 +119,11 @@
 
 /// 进入前台了
 -(void)onEnterForeground:(NSNotification *)data{
+    [self onMusicListChanged];
+    
+    if (self.smallAudioControlPageView.superview==nil) {
+        return;
+    }
 
     //显示播放数据
     [self initPlayData];
@@ -169,7 +174,7 @@
     [self scrollPosition];
     
     //显示歌词数据
-//    [self showLyricData];
+    [self showLyricData];
 }
 
 /// 选中当前播放的音乐
@@ -224,7 +229,7 @@
         UITapGestureRecognizer *tapGestureRecognizer=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onSmallAudioControlClick:)];
         [_smallAudioControlPageView addGestureRecognizer:tapGestureRecognizer];
         
-        //播放按钮点击，可以通过代理，block回调，但因为这些知识点已经讲解了，所以就直接设置
+        //播放按钮点击，可以通过代理，block回调
         [_smallAudioControlPageView.playButtonView addTarget:self action:@selector(onPlayClick:) forControlEvents:UIControlEventTouchUpInside];
 
         //播放列表点击
@@ -265,7 +270,7 @@
     float progress = [[MusicListManager shared] getData].progress;
     float duration = [[MusicListManager shared] getData].duration;
     if (duration > 0) {
-        [_smallAudioControlPageView setProgress:progress/duration];
+        [_smallAudioControlPageView setProgress:progress];
     }else{
         [_smallAudioControlPageView setProgress:0];
     }
@@ -295,6 +300,11 @@
 /// @param gestureRecognizer gestureRecognizer description
 -(void)onSmallAudioControlClick:(UITapGestureRecognizer *)gestureRecognizer{
     [self startMusicPlayerController];
+}
+
+/// 显示歌词数据
+-(void)showLyricData{
+    _smallAudioControlPageView.data = [[MusicListManager shared] getData].parsedLyric;
 }
 
 #pragma mark - 播放管理器代理
@@ -330,7 +340,7 @@
 /// 歌词信息改变了
 /// @param data data description
 - (void)onLyricReady:(Song *)data{
-//    [self showLyricData];
+    [self showLyricData];
 }
 
 @end

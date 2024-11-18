@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
  @return return value description
  */
 + (NSString *)second2MinuteSecond:(float)data;
+
++(int)parseToInt:(NSString *)data;
 @end
 
 NS_ASSUME_NONNULL_END

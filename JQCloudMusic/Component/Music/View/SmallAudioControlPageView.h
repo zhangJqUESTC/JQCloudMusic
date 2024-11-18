@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) BOOL isDrag;
 
 /// 歌词对象
-//@property(nonatomic,strong) Lyric *data;
+@property(nonatomic,strong) Lyric *data;
 
 /// 选中当前音乐
 -(void)scrollPosition:(NSIndexPath *)data;

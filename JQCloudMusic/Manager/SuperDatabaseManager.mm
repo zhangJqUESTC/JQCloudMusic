@@ -71,7 +71,7 @@ static SuperDatabaseManager *sharedInstance = nil;
 /// 保存搜索历史
 /// @param data data description
 -(void)saveSearchHistory:(SearchHistory *)data{
-    [self.database insertObject:data intoTable:SearchHistoryName];
+    [self.database insertOrReplaceObject:data intoTable:SearchHistoryName];
 }
 
 /// 查询所有搜索历史列表
@@ -90,14 +90,14 @@ static SuperDatabaseManager *sharedInstance = nil;
     //将嵌套模型转为单独的字段
     [self convertLocal:data];
 
-    [self.database insertObjects:data intoTable:SongName];
+    [self.database insertOrReplaceObjects:data intoTable:SongName];
 }
 
 -(void)saveSong:(Song *)data{
     [data convertLocal];
 
 
-    [self.database insertObject:data intoTable:SongName];
+    [self.database insertOrReplaceObject:data intoTable:SongName];
 }
 
 -(NSArray *)findPlayList{

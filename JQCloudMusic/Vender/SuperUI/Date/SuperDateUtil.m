@@ -44,4 +44,17 @@
     return [NSString stringWithFormat:@"%02d:%02d",minute,second];
 }
 
++(int)parseToInt:(NSString *)data{
+    //将:替换为.
+    data=[data stringByReplacingOccurrencesOfString:@":" withString:@"."];
+    
+    //.拆分
+    NSArray *strings = [data componentsSeparatedByString:@"."];
+    int m=[strings[0] intValue];
+    int s=[strings[1] intValue];
+    int ms=[strings[2] intValue];
+    
+    return (m*60+s)*1000+ms;
+}
+
 @end

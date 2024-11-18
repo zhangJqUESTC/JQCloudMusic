@@ -3116,6 +3116,7 @@ en: "WiFi预加载"
 @interface RImages: NSObject
 - (UIImage*)rank;
 - (UIImage*)message;
+- (UIImage*)play;
 - (UIImage*)dayRecommend;
 - (UIImage*)me;
 - (UIImage*)inputPassword;

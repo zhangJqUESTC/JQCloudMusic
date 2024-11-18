@@ -8,6 +8,7 @@
 #import "SmallAudioControlPageView.h"
 #import "MusicListManager.h"
 #import "SongSmallCell.h"
+#import "LyricUtil.h"
 
 
 @implementation SmallAudioControlPageView
@@ -89,49 +90,49 @@
         return;
     }
     
-    _progressView.progress = progress;
-//    
-//    if (_data && _data.datum.count>0) {
-//       //获取当前时间对应的歌词索引
-//       NSInteger newLineNumber = [LyricUtil getLineNumber:_data progress:progress];
-//
-//       LyricLine *object = _data.datum[newLineNumber];
-//
-//       //获取cell
-//       SongSmallCell *cell= [self getCurrentCell];
-//
-//       if (cell) {
-//           cell.lineView.data = object;
-//           cell.lineView.accurate = _data.isAccurate;
-//
-//           //如果是精确到字歌曲
-//           //还需要将时间分发到item中
-//           //因为要持续绘制
-//           if (_data.isAccurate) {
-//               //获取当前时间是该行的第几个字
-//               NSInteger lyricCurrentWordIndex=[LyricUtil getWordIndex:object progress:progress];
-//
-//               //获取当前时间改字
-//               //已经播放的时间
-//               NSInteger wordPlayedTime=[LyricUtil getWordPlayedTime:object progress:progress];
-//
-//
-//               //有可能获取不到当前位置的Cell
-//               //因为上面使用了滚动动画
-//               //如果不使用滚动动画效果不太好
-//
-//               //将当前时间对应的字索引设置到控件
-//               [cell.lineView setLyricCurrentWordIndex:lyricCurrentWordIndex];
-//
-//               //设置当前字已经播放的时间
-//               [cell.lineView setWordPlayedTime:wordPlayedTime];
-//
-//           }
-//
-//           //标记需要绘制
-//           [cell.lineView setNeedsDisplay];
-//       }
-//   }
+    _progressView.value = progress;
+    
+    if (_data && _data.datum.count>0) {
+       //获取当前时间对应的歌词索引
+       NSInteger newLineNumber = [LyricUtil getLineNumber:_data progress:progress];
+
+       LyricLine *object = _data.datum[newLineNumber];
+
+       //获取cell
+       SongSmallCell *cell= [self getCurrentCell];
+
+       if (cell) {
+           cell.lineView.data = object;
+           cell.lineView.accurate = _data.isAccurate;
+
+           //如果是精确到字歌曲
+           //还需要将时间分发到item中
+           //因为要持续绘制
+           if (_data.isAccurate) {
+               //获取当前时间是该行的第几个字
+               NSInteger lyricCurrentWordIndex=[LyricUtil getWordIndex:object progress:progress];
+
+               //获取当前时间改字
+               //已经播放的时间
+               NSInteger wordPlayedTime=[LyricUtil getWordPlayedTime:object progress:progress];
+
+
+               //有可能获取不到当前位置的Cell
+               //因为上面使用了滚动动画
+               //如果不使用滚动动画效果不太好
+
+               //将当前时间对应的字索引设置到控件
+               [cell.lineView setLyricCurrentWordIndex:lyricCurrentWordIndex];
+
+               //设置当前字已经播放的时间
+               [cell.lineView setWordPlayedTime:wordPlayedTime];
+
+           }
+
+           //标记需要绘制
+           [cell.lineView setNeedsDisplay];
+       }
+   }
 }
 
 /// 获取当前位置的index

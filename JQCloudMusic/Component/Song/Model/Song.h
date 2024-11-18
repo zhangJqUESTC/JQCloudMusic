@@ -7,6 +7,7 @@
 
 #import "SuperCommon.h"
 #import "User.h"
+#import "Lyric.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -64,7 +65,7 @@ static NSString * const SongName = @"song";
 /**
  * 已经解析后的歌词
  */
-//@property (nonatomic, strong) Lyric *parsedLyric;
+@property (nonatomic, strong) Lyric *parsedLyric;
 
 /**
  * 歌词内容

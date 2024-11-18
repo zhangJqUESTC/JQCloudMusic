@@ -88,6 +88,10 @@ target 'JQCloudMusic' do
   #https://github.com/Tencent/wcdb
   pod 'WCDB.objc'
   
+  #一行代码实现遮罩视图
+  #https://github.com/QuintGao/GKCover
+  pod 'GKCover'
+  
   #测试
   target 'JQCloudMusicTests' do
     inherit! :search_paths

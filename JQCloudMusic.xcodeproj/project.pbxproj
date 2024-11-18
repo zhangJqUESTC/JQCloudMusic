@@ -14,6 +14,15 @@
 		090CA4142CBEBAA9005E9426 /* SuperBaseId.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4132CBEBAA9005E9426 /* SuperBaseId.m */; };
 		090CA4172CBEBB3B005E9426 /* SuperCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4162CBEBB3B005E9426 /* SuperCommon.m */; };
 		090CA41A2CBEBC14005E9426 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 090CA4192CBEBC14005E9426 /* Video.m */; };
+		09161E9A2CEB1AE900B2D6B3 /* LyricParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161E992CEB1AE900B2D6B3 /* LyricParser.m */; };
+		09161E9E2CEB1BF700B2D6B3 /* Lyric.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161E9D2CEB1BF700B2D6B3 /* Lyric.m */; };
+		09161EA12CEB1C4B00B2D6B3 /* LyricLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EA02CEB1C4B00B2D6B3 /* LyricLine.m */; };
+		09161EA42CEB1D6000B2D6B3 /* KSCLyricParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EA32CEB1D6000B2D6B3 /* KSCLyricParser.m */; };
+		09161EA72CEB1D7000B2D6B3 /* LRCLyricParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EA62CEB1D7000B2D6B3 /* LRCLyricParser.m */; };
+		09161EAB2CEB294E00B2D6B3 /* LyricListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EAA2CEB294E00B2D6B3 /* LyricListView.m */; };
+		09161EAF2CEB2FBB00B2D6B3 /* LyricCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EAE2CEB2FBB00B2D6B3 /* LyricCell.m */; };
+		09161EB32CEB392200B2D6B3 /* LyricUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EB22CEB392200B2D6B3 /* LyricUtil.m */; };
+		09161EB62CEB6EF100B2D6B3 /* LyricLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EB52CEB6EF100B2D6B3 /* LyricLineView.m */; };
 		09162CD72CC4F1AD000A21C7 /* SongGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CD62CC4F1AD000A21C7 /* SongGroupCell.m */; };
 		09162CDA2CC4F2FD000A21C7 /* SongData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CD92CC4F2FD000A21C7 /* SongData.m */; };
 		09162CDF2CC4F392000A21C7 /* Song.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09162CDE2CC4F392000A21C7 /* Song.mm */; };
@@ -123,6 +132,10 @@
 		09E28EE02CE3872200B39B0A /* SmallAudioControlPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EDF2CE3872200B39B0A /* SmallAudioControlPageView.m */; };
 		09E28EE42CE43D2400B39B0A /* SongSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EE32CE43D2400B39B0A /* SongSmallCell.m */; };
 		09E28EE82CE4461D00B39B0A /* SuperHorizontalProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EE72CE4461D00B39B0A /* SuperHorizontalProgressView.m */; };
+		09E28EEB2CE452C800B39B0A /* BaseLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EEA2CE452C800B39B0A /* BaseLinearLayout.m */; };
+		09E28EEE2CE4534000B39B0A /* PlayListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EED2CE4534000B39B0A /* PlayListView.m */; };
+		09E28EF12CE457C700B39B0A /* PlayListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EF02CE457C700B39B0A /* PlayListCell.m */; };
+		09E28EF42CE4CD3D00B39B0A /* SuperAudioSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E28EF32CE4CD3D00B39B0A /* SuperAudioSessionManager.m */; };
 		32A0BAB8888FBAE1B965A80C /* Pods_JQCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5A42518171E14F01DB576 /* Pods_JQCloudMusicTests.framework */; };
 		6B60053BE17049B245EF5391 /* Pods_JQCloudMusic_JQCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A9D228A3E70BAE2756BF3E /* Pods_JQCloudMusic_JQCloudMusicUITests.framework */; };
 		F27B5E00385567DA3A0285E6 /* Pods_JQCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */; };
@@ -160,6 +173,24 @@
 		090CA4162CBEBB3B005E9426 /* SuperCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCommon.m; sourceTree = "<group>"; };
 		090CA4182CBEBC14005E9426 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		090CA4192CBEBC14005E9426 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		09161E982CEB1AE900B2D6B3 /* LyricParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricParser.h; sourceTree = "<group>"; };
+		09161E992CEB1AE900B2D6B3 /* LyricParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricParser.m; sourceTree = "<group>"; };
+		09161E9C2CEB1BF700B2D6B3 /* Lyric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lyric.h; sourceTree = "<group>"; };
+		09161E9D2CEB1BF700B2D6B3 /* Lyric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lyric.m; sourceTree = "<group>"; };
+		09161E9F2CEB1C4B00B2D6B3 /* LyricLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricLine.h; sourceTree = "<group>"; };
+		09161EA02CEB1C4B00B2D6B3 /* LyricLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricLine.m; sourceTree = "<group>"; };
+		09161EA22CEB1D6000B2D6B3 /* KSCLyricParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCLyricParser.h; sourceTree = "<group>"; };
+		09161EA32CEB1D6000B2D6B3 /* KSCLyricParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCLyricParser.m; sourceTree = "<group>"; };
+		09161EA52CEB1D7000B2D6B3 /* LRCLyricParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRCLyricParser.h; sourceTree = "<group>"; };
+		09161EA62CEB1D7000B2D6B3 /* LRCLyricParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRCLyricParser.m; sourceTree = "<group>"; };
+		09161EA92CEB294E00B2D6B3 /* LyricListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricListView.h; sourceTree = "<group>"; };
+		09161EAA2CEB294E00B2D6B3 /* LyricListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricListView.m; sourceTree = "<group>"; };
+		09161EAD2CEB2FBB00B2D6B3 /* LyricCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricCell.h; sourceTree = "<group>"; };
+		09161EAE2CEB2FBB00B2D6B3 /* LyricCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricCell.m; sourceTree = "<group>"; };
+		09161EB12CEB392200B2D6B3 /* LyricUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricUtil.h; sourceTree = "<group>"; };
+		09161EB22CEB392200B2D6B3 /* LyricUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricUtil.m; sourceTree = "<group>"; };
+		09161EB42CEB6EF100B2D6B3 /* LyricLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricLineView.h; sourceTree = "<group>"; };
+		09161EB52CEB6EF100B2D6B3 /* LyricLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricLineView.m; sourceTree = "<group>"; };
 		09162CD52CC4F1AD000A21C7 /* SongGroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongGroupCell.h; sourceTree = "<group>"; };
 		09162CD62CC4F1AD000A21C7 /* SongGroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongGroupCell.m; sourceTree = "<group>"; };
 		09162CD82CC4F2FD000A21C7 /* SongData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongData.h; sourceTree = "<group>"; };
@@ -381,6 +412,14 @@
 		09E28EE32CE43D2400B39B0A /* SongSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongSmallCell.m; sourceTree = "<group>"; };
 		09E28EE62CE4461D00B39B0A /* SuperHorizontalProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperHorizontalProgressView.h; sourceTree = "<group>"; };
 		09E28EE72CE4461D00B39B0A /* SuperHorizontalProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperHorizontalProgressView.m; sourceTree = "<group>"; };
+		09E28EE92CE452C800B39B0A /* BaseLinearLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLinearLayout.h; sourceTree = "<group>"; };
+		09E28EEA2CE452C800B39B0A /* BaseLinearLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLinearLayout.m; sourceTree = "<group>"; };
+		09E28EEC2CE4534000B39B0A /* PlayListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayListView.h; sourceTree = "<group>"; };
+		09E28EED2CE4534000B39B0A /* PlayListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayListView.m; sourceTree = "<group>"; };
+		09E28EEF2CE457C700B39B0A /* PlayListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayListCell.h; sourceTree = "<group>"; };
+		09E28EF02CE457C700B39B0A /* PlayListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayListCell.m; sourceTree = "<group>"; };
+		09E28EF22CE4CD3D00B39B0A /* SuperAudioSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAudioSessionManager.h; sourceTree = "<group>"; };
+		09E28EF32CE4CD3D00B39B0A /* SuperAudioSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAudioSessionManager.m; sourceTree = "<group>"; };
 		34EC971BDB4BFFFC27B06886 /* Pods_JQCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		417E6CA5DA3E0CA027197D27 /* Pods-JQCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusicTests/Pods-JQCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC30F7BD681888883047412 /* Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-JQCloudMusic-JQCloudMusicUITests/Pods-JQCloudMusic-JQCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -483,6 +522,71 @@
 				090CA4192CBEBC14005E9426 /* Video.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09161E962CEB1A4800B2D6B3 /* Lyric */ = {
+			isa = PBXGroup;
+			children = (
+				09161EB02CEB390E00B2D6B3 /* Util */,
+				09161EAC2CEB2F9600B2D6B3 /* Cell */,
+				09161EA82CEB293000B2D6B3 /* View */,
+				09161E9B2CEB1BE200B2D6B3 /* Model */,
+				09161E972CEB1A5400B2D6B3 /* Parser */,
+			);
+			path = Lyric;
+			sourceTree = "<group>";
+		};
+		09161E972CEB1A5400B2D6B3 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				09161E982CEB1AE900B2D6B3 /* LyricParser.h */,
+				09161E992CEB1AE900B2D6B3 /* LyricParser.m */,
+				09161EA22CEB1D6000B2D6B3 /* KSCLyricParser.h */,
+				09161EA32CEB1D6000B2D6B3 /* KSCLyricParser.m */,
+				09161EA52CEB1D7000B2D6B3 /* LRCLyricParser.h */,
+				09161EA62CEB1D7000B2D6B3 /* LRCLyricParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		09161E9B2CEB1BE200B2D6B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09161E9C2CEB1BF700B2D6B3 /* Lyric.h */,
+				09161E9D2CEB1BF700B2D6B3 /* Lyric.m */,
+				09161E9F2CEB1C4B00B2D6B3 /* LyricLine.h */,
+				09161EA02CEB1C4B00B2D6B3 /* LyricLine.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09161EA82CEB293000B2D6B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09161EA92CEB294E00B2D6B3 /* LyricListView.h */,
+				09161EAA2CEB294E00B2D6B3 /* LyricListView.m */,
+				09161EB42CEB6EF100B2D6B3 /* LyricLineView.h */,
+				09161EB52CEB6EF100B2D6B3 /* LyricLineView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09161EAC2CEB2F9600B2D6B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09161EAD2CEB2FBB00B2D6B3 /* LyricCell.h */,
+				09161EAE2CEB2FBB00B2D6B3 /* LyricCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09161EB02CEB390E00B2D6B3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				09161EB12CEB392200B2D6B3 /* LyricUtil.h */,
+				09161EB22CEB392200B2D6B3 /* LyricUtil.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		09162CDB2CC4F369000A21C7 /* Song */ = {
@@ -826,6 +930,8 @@
 				099B50F32CE2213700F33013 /* MusicListManager.m */,
 				09E28ECB2CE3415D00B39B0A /* SuperDatabaseManager.h */,
 				09E28ECC2CE3415D00B39B0A /* SuperDatabaseManager.mm */,
+				09E28EF22CE4CD3D00B39B0A /* SuperAudioSessionManager.h */,
+				09E28EF32CE4CD3D00B39B0A /* SuperAudioSessionManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -980,6 +1086,7 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				09161E962CEB1A4800B2D6B3 /* Lyric */,
 				09E28ED72CE3796800B39B0A /* Music */,
 				099B50F52CE2F87900F33013 /* Search */,
 				099B50E62CE0B2B900F33013 /* Player */,
@@ -1221,6 +1328,8 @@
 				09E0B5992CBF99B3006B65C1 /* PlaceholderView.m */,
 				099B50DC2CE09E9500F33013 /* BaseTableViewHeaderFooterView.h */,
 				099B50DD2CE09E9500F33013 /* BaseTableViewHeaderFooterView.m */,
+				09E28EE92CE452C800B39B0A /* BaseLinearLayout.h */,
+				09E28EEA2CE452C800B39B0A /* BaseLinearLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1395,6 +1504,8 @@
 			children = (
 				09E28EDE2CE3872200B39B0A /* SmallAudioControlPageView.h */,
 				09E28EDF2CE3872200B39B0A /* SmallAudioControlPageView.m */,
+				09E28EEC2CE4534000B39B0A /* PlayListView.h */,
+				09E28EED2CE4534000B39B0A /* PlayListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1404,6 +1515,8 @@
 			children = (
 				09E28EE22CE43D2400B39B0A /* SongSmallCell.h */,
 				09E28EE32CE43D2400B39B0A /* SongSmallCell.m */,
+				09E28EEF2CE457C700B39B0A /* PlayListCell.h */,
+				09E28EF02CE457C700B39B0A /* PlayListCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1703,7 +1816,9 @@
 				099B50CB2CDBBAF900F33013 /* SetPasswordController.m in Sources */,
 				099B50C32CDBAE1800F33013 /* InputCodePageData.m in Sources */,
 				09E28ECD2CE3415D00B39B0A /* SuperDatabaseManager.mm in Sources */,
+				09161EA72CEB1D7000B2D6B3 /* LRCLyricParser.m in Sources */,
 				099B50A22CDA4EE000F33013 /* Session.m in Sources */,
+				09E28EEB2CE452C800B39B0A /* BaseLinearLayout.m in Sources */,
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
 				099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
@@ -1712,14 +1827,19 @@
 				09162CF82CC52C63000A21C7 /* BaseTitleController.m in Sources */,
 				090CA4142CBEBAA9005E9426 /* SuperBaseId.m in Sources */,
 				099E08D62CC13062008A34D0 /* ItemTitleView.m in Sources */,
+				09161E9E2CEB1BF700B2D6B3 /* Lyric.m in Sources */,
+				09161EA12CEB1C4B00B2D6B3 /* LyricLine.m in Sources */,
 				09E0B5C72CBFB71E006B65C1 /* UIImage+SuperUI.m in Sources */,
 				09CAB6ED2CBA5633004DEFCB /* UIColor+Theme.m in Sources */,
 				095E13512CC0078B005A32D9 /* ResourceUtil.m in Sources */,
 				09CAB69D2CB9501F004DEFCB /* JQCloudMusic.xcdatamodeld in Sources */,
 				09CAB6CC2CB95780004DEFCB /* SplashController.m in Sources */,
+				09E28EF12CE457C700B39B0A /* PlayListCell.m in Sources */,
 				09162CED2CC52398000A21C7 /* FooterData.m in Sources */,
 				09CAB6972CB9501F004DEFCB /* ViewController.m in Sources */,
+				09161E9A2CEB1AE900B2D6B3 /* LyricParser.m in Sources */,
 				099B50AD2CDB4EBA00F33013 /* SuperBase+MJExtension.m in Sources */,
+				09161EB32CEB392200B2D6B3 /* LyricUtil.m in Sources */,
 				09E0B5962CBF8BCD006B65C1 /* DefaultRepository.m in Sources */,
 				09CAB70B2CBB9C38004DEFCB /* GuideController.m in Sources */,
 				09D165382CD1E7A100B6E336 /* SuperSettingView.m in Sources */,
@@ -1732,11 +1852,13 @@
 				09E0B5A32CBFA1B7006B65C1 /* SuperToast.m in Sources */,
 				099B50F92CE2F8B000F33013 /* SearchHistory.mm in Sources */,
 				09E0B5AE2CBFB0ED006B65C1 /* VideoController.m in Sources */,
+				09161EB62CEB6EF100B2D6B3 /* LyricLineView.m in Sources */,
 				095E134E2CBFFC4C005A32D9 /* BannerCell.m in Sources */,
 				099E08C82CC0FDF6008A34D0 /* DiscoveryButtonView.m in Sources */,
 				099E08DD2CC13A7E008A34D0 /* SheetCell.m in Sources */,
 				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
 				095E13462CBFF3F5005A32D9 /* BannerData.m in Sources */,
+				09E28EEE2CE4534000B39B0A /* PlayListView.m in Sources */,
 				09CAB6FA2CBA6485004DEFCB /* BaseLogicController.m in Sources */,
 				099B50B12CDB5A0E00F33013 /* SuperDialogController.m in Sources */,
 				09162CF12CC5245A000A21C7 /* ClickEvent.m in Sources */,
@@ -1746,11 +1868,13 @@
 				09162CF52CC52AD3000A21C7 /* SuperToolbarView.m in Sources */,
 				09E0B5A62CBFA7CE006B65C1 /* TipUtil.m in Sources */,
 				09CAB6F42CBA61E7004DEFCB /* BaseController.m in Sources */,
+				09161EAB2CEB294E00B2D6B3 /* LyricListView.m in Sources */,
 				09D1652F2CD1C8BF00B6E336 /* LogFormater.m in Sources */,
 				09515B972CBD5B4C00CA2AB6 /* MSNetwork.m in Sources */,
 				09CAB7052CBB8AE9004DEFCB /* DefaultPreferenceUtil.m in Sources */,
 				09CAB6DF2CBA280A004DEFCB /* R.m in Sources */,
 				09CAB6EA2CBA529C004DEFCB /* UIColor+Config.m in Sources */,
+				09161EA42CEB1D6000B2D6B3 /* KSCLyricParser.m in Sources */,
 				099B50E22CE09F1D00F33013 /* SongGroupHeaderView.m in Sources */,
 				090CA40F2CBE6AF2005E9426 /* Meta.m in Sources */,
 				099E08E02CC1458A008A34D0 /* ImageUtil.m in Sources */,
@@ -1771,6 +1895,7 @@
 				09D165342CD1D14300B6E336 /* DrawerController.m in Sources */,
 				099B50B62CDB635400F33013 /* RegisterController.m in Sources */,
 				090CA41A2CBEBC14005E9426 /* Video.m in Sources */,
+				09E28EF42CE4CD3D00B39B0A /* SuperAudioSessionManager.m in Sources */,
 				09E0B59F2CBF9AAD006B65C1 /* StringUtil.m in Sources */,
 				09162CFB2CC5399D000A21C7 /* BaseMainController.m in Sources */,
 				099E08C42CC0EEAD008A34D0 /* IconTitleButtonData.m in Sources */,
@@ -1788,6 +1913,7 @@
 				099B509B2CDA45A600F33013 /* SuperRegularUtil.m in Sources */,
 				099E08C12CC0EE16008A34D0 /* ButtonData.m in Sources */,
 				099B50A92CDB314F00F33013 /* LoginStatusChangedEvent.m in Sources */,
+				09161EAF2CEB2FBB00B2D6B3 /* LyricCell.m in Sources */,
 				09E28EE42CE43D2400B39B0A /* SongSmallCell.m in Sources */,
 				09162CFF2CC690EF000A21C7 /* SuperWebController.m in Sources */,
 				09162CE22CC4F4B2000A21C7 /* DiscoverySongCell.m in Sources */,

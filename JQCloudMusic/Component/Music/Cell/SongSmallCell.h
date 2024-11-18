@@ -7,6 +7,7 @@
 
 #import "BaseCollectionViewCell.h"
 #import "Song.h"
+#import "LyricLineView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) MyLinearLayout *rightContainer;
 
 /// 歌词view
-//@property(nonatomic, strong) LyricLineView *lineView;
+@property(nonatomic, strong) LyricLineView *lineView;
 
 -(void)bind:(Song *)data;
 @end

@@ -5,8 +5,13 @@
 //  Created by zhangjq on 2024/11/10.
 //
 
+#import <MediaPlayer/MediaPlayer.h>
+//图片加载框架
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "MusicPlayerManager.h"
 #import "SuperDatabaseManager.h"
+#import "SuperAudioSessionManager.h"
+#import "LyricParser.h"
 
 //当前类日志Tag
 static NSString * const MusicPlayerManagerTag = @"MusicPlayerManager";
@@ -62,7 +67,7 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
 
 - (void)play:(NSString *)uri data:(Song *)data{
     //设置音频会话
-//    [SuperAudioSessionManager requestAudioFocus];
+    [SuperAudioSessionManager requestAudioFocus];
     
     //更改播放状态
     _status = PlayStatusPlaying;
@@ -100,8 +105,53 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
     
     //启动进度分发定时器
     [self startPublishProgress];
-//    
-//    [self prepareLyric];
+    
+    [self prepareLyric];
+}
+
+-(void)prepareLyric{
+    //歌词处理
+    //真实项目可能会
+    //将歌词这个部分拆分到其他组件中
+    if (_data.parsedLyric) {
+        //解析好了
+        [self onLyricReady];
+    } else if(_data.lyric) {
+        //有歌词，但是没有解析
+        [self parseLyric];
+    }else{
+        //没有歌词，并且不是本地音乐才请求
+
+        //真实项目中可以会缓存歌词
+        //获取歌词数据
+        [[DefaultRepository shared] songDetailWithId:_data.id success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull d) {
+            //请求成功
+            Song *data=d;
+            self.data.style=data.style;
+            self.data.lyric=data.lyric;
+            
+            [self parseLyric];
+        }];
+    }
+}
+
+-(void)parseLyric{
+    if ([StringUtil isNotBlank:self.data.lyric]) {
+        //有歌词
+        
+        //在这里解析的好处是
+        //外面不用管，直接使用
+        self.data.parsedLyric = [LyricParser parse:self.data.style data:self.data.lyric];
+    }
+    
+    //通知歌词准备好了
+    [self onLyricReady];
+}
+
+-(void)onLyricReady{
+    if (self.delegate) {
+        [self.delegate onLyricReady:_data];
+    }
 }
 
 -(void)initListeners{
@@ -144,7 +194,7 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
             {
                 //准备播放完成了
                 //音乐的总时间
-                self.data.duration= CMTimeGetSeconds(self.player.currentItem.asset.duration);
+                self.data.duration = CMTimeGetSeconds(self.player.currentItem.asset.duration);
                 
                 LogDebugTag(MusicPlayerManagerTag, @"observeValue status ReadyToPlay duration:%f",self.data.duration);
                                 
@@ -225,7 +275,7 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
 
 - (void)resume{
     //设置音频会话
-//    [SuperAudioSessionManager requestAudioFocus];
+    [SuperAudioSessionManager requestAudioFocus];
     
     //更改播放状态
     _status = PlayStatusPlaying;
@@ -324,6 +374,59 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
         //停止定时器
         [self stopPublishProgress];
     }
+}
+
+#pragma mark - 媒体中心
+
+/// 更新系统媒体控制中心信息
+/// 不需要更新进度到控制中心
+/// 他那边会自动倒计时
+/// 这部分可以重构到公共类，因为像播放视频也可以更新到系统媒体中心
+-(void)updateMediaInfo{
+    //下载图片,这部分应该封装，因为其他界面也用到了
+    SDWebImageManager *manager =[SDWebImageManager sharedManager];
+    
+    NSURL *url= [NSURL URLWithString:[ResourceUtil resourceUri:self.data.icon]];
+    
+    [manager loadImageWithURL:url options:SDWebImageProgressiveLoad progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+        //进度，这里用不到
+    } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+        NSLog(@"load song image success");
+        if (image!=NULL) {
+            [self setMediaInfo:image];
+        }
+    }];
+}
+
+- (void)setMediaInfo:(UIImage *)image{
+    //初始化一个可变字典
+    NSMutableDictionary *songInfo=[[NSMutableDictionary alloc] init];
+
+    //初始化一个封面
+    MPMediaItemArtwork *albumArt=[[MPMediaItemArtwork alloc] initWithBoundsSize:image.size requestHandler:^UIImage * _Nonnull(CGSize size) {
+        return image;
+    }];
+
+    //设置封面
+    [songInfo setObject:albumArt forKey:MPMediaItemPropertyArtwork];
+
+    //歌曲名称
+    [songInfo setObject:self.data.title forKey:MPMediaItemPropertyTitle];
+
+    //歌手
+    [songInfo setObject:self.data.singer.nickname forKey:MPMediaItemPropertyArtist];
+
+    //专辑名
+    [songInfo setObject:@"这是专辑名" forKey:MPMediaItemPropertyAlbumTitle];
+
+    //流派，服务器没返回这样的数据
+    //    [songInfo setObject:@"流派" forKey:MPMediaItemPropertyGenre];
+
+    //设置总时长
+    [songInfo setObject:[NSString stringWithFormat:@"%f",self.data.duration] forKey:MPMediaItemPropertyPlaybackDuration];
+
+    //设置到系统
+    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songInfo];
 }
 
 @end

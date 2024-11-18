@@ -22,15 +22,15 @@
     [self.rightContainer addSubview:self.titleView];
     
     //歌词
-//    _lineView = [LyricLineView new];
-//    _lineView.myWidth = MyLayoutSize.fill;
-//    _lineView.myHeight = 14;
-//    _lineView.gravity = LyricLineGravityLeft;
-//    _lineView.lyricTextSize = 12;
-//
-//    //这一行歌词始终是选中状态
-//    [_lineView setLineSelected:YES];
-//    [self.rightContainer addSubview:_lineView];
+    _lineView = [LyricLineView new];
+    _lineView.myWidth = MyLayoutSize.fill;
+    _lineView.myHeight = 14;
+    _lineView.gravity = LyricLineGravityLeft;
+    _lineView.lyricTextSize = 12;
+
+    //这一行歌词始终是选中状态
+    [_lineView setLineSelected:YES];
+    [self.rightContainer addSubview:_lineView];
 }
 
 -(MyOrientation)getContainerOrientation{

@@ -459,6 +459,7 @@
 @interface RImages ()
 @property (nonatomic, strong) UIImage* rank;
 @property (nonatomic, strong) UIImage* message;
+@property (nonatomic, strong) UIImage* play;
 @property (nonatomic, strong) UIImage* dayRecommend;
 @property (nonatomic, strong) UIImage* me;
 @property (nonatomic, strong) UIImage* inputPassword;
@@ -556,6 +557,7 @@
 @implementation RImages
 - (UIImage*)rank { return [UIImage imageNamed:@"Rank" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)message { return [UIImage imageNamed:@"Message" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)play { return [UIImage imageNamed:@"Play" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)dayRecommend { return [UIImage imageNamed:@"DayRecommend" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)me { return [UIImage imageNamed:@"Me" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)inputPassword { return [UIImage imageNamed:@"InputPassword" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }

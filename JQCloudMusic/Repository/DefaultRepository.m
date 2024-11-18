@@ -87,6 +87,9 @@
     [SuperHttpUtil requestListObjectWith:[Song class] url:URL_SONG parameters:nil cachePolicy:MSCachePolicyNetElseCache controller:controller success:success];
 }
 
+-(void)songDetailWithId:(NSString *)id success:(SuperHttpSuccess)success{
+    [SuperHttpUtil requestObjectWith:[Song class] url:URL_SONG id:id success:success];
+}
 #pragma mark - 登陆
 -(void)loginWithController:(nullable BaseLogicController *)controller data:(User *)data success:(SuperHttpSuccess)success{
     

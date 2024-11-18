@@ -15,6 +15,9 @@
 #import "LogFormater.h"
 #import "LoginStatusChangedEvent.h"
 #import "LoginHomeController.h"
+#import "MusicListManager.h"
+#import "MusicPlayerManager.h"
+
 
 @interface AppDelegate ()
 
@@ -226,6 +229,89 @@
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
     }
+}
+
+#pragma mark - 媒体会话
+/**
+ 初始化音频会话控制
+ 
+ 就是插入耳机，打电话；可以通过系统播放控制中心控制等功能
+ 
+ 官网文档：https://developer.apple.com/documentation/avfoundation/avaudiosession?language=objc
+ */
+-(void)initMedia{
+    //告诉系统，我们要接受远程控制事件
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+
+    //设置响应者
+    [self becomeFirstResponder];
+
+}
+
+#pragma mark - 远程控制媒体
+//第一响应者
+- (BOOL)canBecomeFirstResponder{
+    return YES;
+}
+
+/// 接收远程音乐播放控制消息
+/// 例如：点击耳机上的按钮，点击媒体控制中心按钮等
+/// @param event event description
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event{
+    //判断是不是远程控制事件
+    if (event.type == UIEventTypeRemoteControl) {
+        if ([[MusicListManager shared] getData] == nil) {
+            //当前播放列表中没有音乐
+            return;
+        }
+
+        //判断事件类型
+        switch (event.subtype) {
+            case UIEventSubtypeRemoteControlPlay:{
+                //点击了播放按钮
+                [[MusicListManager shared] resume];
+                NSLog(@"AppDelegate play");
+            }
+                break;
+            case UIEventSubtypeRemoteControlPause:{
+                //点击了暂停
+                [[MusicListManager shared] pause];
+                NSLog(@"AppDelegate pause");
+            }
+                break;
+            case UIEventSubtypeRemoteControlNextTrack:{
+                //下一首
+                //双击iPhone有线耳机上的控制按钮
+                Song *song = [[MusicListManager shared] next];
+                [[MusicListManager shared] play:song];
+                NSLog(@"AppDelegate Next");
+            }
+                break;
+            case UIEventSubtypeRemoteControlPreviousTrack:{
+                //上一首
+                //三击iPhone有线耳机上的控制按钮
+                Song *song = [[MusicListManager shared] previous];
+                [[MusicListManager shared] play:song];
+                NSLog(@"AppDelegate Previous");
+            }
+                break;
+            case UIEventSubtypeRemoteControlTogglePlayPause:{
+                //播放或者暂停
+                if ([[MusicPlayerManager shared] isPlaying]) {
+                    [[MusicListManager shared] pause];
+                } else {
+                    [[MusicListManager shared] resume];
+                }
+            }
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+-(MusicListManager *)getMusicListManager{
+    return [MusicListManager shared];
 }
 
 @end

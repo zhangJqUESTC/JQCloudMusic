@@ -20,6 +20,7 @@ PODS:
   - CRBoxInputView (1.2.2):
     - Masonry
   - CWLateralSlide (1.6.5)
+  - GKCover (3.0.1)
   - GKCycleScrollView (1.2.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
@@ -365,6 +366,7 @@ DEPENDENCIES:
   - CocoaLumberjack
   - CRBoxInputView
   - CWLateralSlide
+  - GKCover
   - GKCycleScrollView
   - MBProgressHUD
   - MJExtension
@@ -387,6 +389,7 @@ SPEC REPOS:
     - CocoaLumberjack
     - CRBoxInputView
     - CWLateralSlide
+    - GKCover
     - GKCycleScrollView
     - Masonry
     - MBProgressHUD
@@ -411,6 +414,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
   CRBoxInputView: 2380c292aabbf786fe923776f111ba3053438fba
   CWLateralSlide: 8939c8dea91a24e40d0793553118cb57cd67f64b
+  GKCover: 6486cf87c0a5cae4bb5c3a09e17925ad8b466412
   GKCycleScrollView: 8ed79d2142e62895a701973358b6f94b661b4829
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -430,6 +434,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXCountDownView: 486d888558551210c6790855ec24e82853a31d9e
 
-PODFILE CHECKSUM: d3a3debedae747216a43dd2217f0b4471ceda718
+PODFILE CHECKSUM: 7b7085313332d03c89947b6a83e9ffc41a233f84
 
 COCOAPODS: 1.15.2
