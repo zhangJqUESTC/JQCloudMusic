@@ -7,6 +7,7 @@
 
 #import "BasePlayerController.h"
 #import "SimplePlayerController.h"
+#import "MusicPlayerController.h"
 
 
 @interface BasePlayerController ()
@@ -17,10 +18,10 @@
 
 -(void)startMusicPlayerController{
     //简单播放器界面
-    [SimplePlayerController start:self.navigationController];
+//    [SimplePlayerController start:self.navigationController];
     
     //黑胶唱片播放界面
-//    [self startController:[MusicPlayerController class]];
+    [self startController:[MusicPlayerController class]];
 }
 
 @end

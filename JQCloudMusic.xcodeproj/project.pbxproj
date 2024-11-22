@@ -23,6 +23,11 @@
 		09161EAF2CEB2FBB00B2D6B3 /* LyricCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EAE2CEB2FBB00B2D6B3 /* LyricCell.m */; };
 		09161EB32CEB392200B2D6B3 /* LyricUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EB22CEB392200B2D6B3 /* LyricUtil.m */; };
 		09161EB62CEB6EF100B2D6B3 /* LyricLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EB52CEB6EF100B2D6B3 /* LyricLineView.m */; };
+		09161EBA2CEC66D900B2D6B3 /* MusicPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EB92CEC66D900B2D6B3 /* MusicPlayerController.m */; };
+		09161EBD2CEC77E500B2D6B3 /* RecordPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EBC2CEC77E500B2D6B3 /* RecordPageView.m */; };
+		09161EC02CEC7BAA00B2D6B3 /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EBF2CEC7BAA00B2D6B3 /* RecordCell.m */; };
+		09161EC42CED887000B2D6B3 /* SheetListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EC32CED887000B2D6B3 /* SheetListView.m */; };
+		09161EC92CED97BD00B2D6B3 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09161EC82CED97BD00B2D6B3 /* TopicCell.m */; };
 		09162CD72CC4F1AD000A21C7 /* SongGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CD62CC4F1AD000A21C7 /* SongGroupCell.m */; };
 		09162CDA2CC4F2FD000A21C7 /* SongData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09162CD92CC4F2FD000A21C7 /* SongData.m */; };
 		09162CDF2CC4F392000A21C7 /* Song.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09162CDE2CC4F392000A21C7 /* Song.mm */; };
@@ -191,6 +196,16 @@
 		09161EB22CEB392200B2D6B3 /* LyricUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricUtil.m; sourceTree = "<group>"; };
 		09161EB42CEB6EF100B2D6B3 /* LyricLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricLineView.h; sourceTree = "<group>"; };
 		09161EB52CEB6EF100B2D6B3 /* LyricLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricLineView.m; sourceTree = "<group>"; };
+		09161EB82CEC66D900B2D6B3 /* MusicPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayerController.h; sourceTree = "<group>"; };
+		09161EB92CEC66D900B2D6B3 /* MusicPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerController.m; sourceTree = "<group>"; };
+		09161EBB2CEC77E500B2D6B3 /* RecordPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordPageView.h; sourceTree = "<group>"; };
+		09161EBC2CEC77E500B2D6B3 /* RecordPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordPageView.m; sourceTree = "<group>"; };
+		09161EBE2CEC7BAA00B2D6B3 /* RecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordCell.h; sourceTree = "<group>"; };
+		09161EBF2CEC7BAA00B2D6B3 /* RecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordCell.m; sourceTree = "<group>"; };
+		09161EC22CED887000B2D6B3 /* SheetListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheetListView.h; sourceTree = "<group>"; };
+		09161EC32CED887000B2D6B3 /* SheetListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetListView.m; sourceTree = "<group>"; };
+		09161EC72CED97BD00B2D6B3 /* TopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
+		09161EC82CED97BD00B2D6B3 /* TopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 		09162CD52CC4F1AD000A21C7 /* SongGroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongGroupCell.h; sourceTree = "<group>"; };
 		09162CD62CC4F1AD000A21C7 /* SongGroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongGroupCell.m; sourceTree = "<group>"; };
 		09162CD82CC4F2FD000A21C7 /* SongData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongData.h; sourceTree = "<group>"; };
@@ -589,6 +604,41 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		09161EB72CEC66AB00B2D6B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09161EB82CEC66D900B2D6B3 /* MusicPlayerController.h */,
+				09161EB92CEC66D900B2D6B3 /* MusicPlayerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09161EC12CED884E00B2D6B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09161EC22CED887000B2D6B3 /* SheetListView.h */,
+				09161EC32CED887000B2D6B3 /* SheetListView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09161EC52CED979F00B2D6B3 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				09161EC62CED97A700B2D6B3 /* Cell */,
+			);
+			path = Topic;
+			sourceTree = "<group>";
+		};
+		09161EC62CED97A700B2D6B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09161EC72CED97BD00B2D6B3 /* TopicCell.h */,
+				09161EC82CED97BD00B2D6B3 /* TopicCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		09162CDB2CC4F369000A21C7 /* Song */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +661,7 @@
 		09162CE32CC50316000A21C7 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				09161EC12CED884E00B2D6B3 /* View */,
 				09162CE42CC5032E000A21C7 /* Model */,
 			);
 			path = User;
@@ -1086,6 +1137,7 @@
 		09CAB6C72CB956F8004DEFCB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				09161EC52CED979F00B2D6B3 /* Topic */,
 				09161E962CEB1A4800B2D6B3 /* Lyric */,
 				09E28ED72CE3796800B39B0A /* Music */,
 				099B50F52CE2F87900F33013 /* Search */,
@@ -1475,6 +1527,7 @@
 		09E28ED72CE3796800B39B0A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				09161EB72CEC66AB00B2D6B3 /* Controller */,
 				09E28EE12CE43D0300B39B0A /* Cell */,
 				09E28EDD2CE386DD00B39B0A /* View */,
 				09E28ED82CE3796E00B39B0A /* Model */,
@@ -1506,6 +1559,8 @@
 				09E28EDF2CE3872200B39B0A /* SmallAudioControlPageView.m */,
 				09E28EEC2CE4534000B39B0A /* PlayListView.h */,
 				09E28EED2CE4534000B39B0A /* PlayListView.m */,
+				09161EBB2CEC77E500B2D6B3 /* RecordPageView.h */,
+				09161EBC2CEC77E500B2D6B3 /* RecordPageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1517,6 +1572,8 @@
 				09E28EE32CE43D2400B39B0A /* SongSmallCell.m */,
 				09E28EEF2CE457C700B39B0A /* PlayListCell.h */,
 				09E28EF02CE457C700B39B0A /* PlayListCell.m */,
+				09161EBE2CEC7BAA00B2D6B3 /* RecordCell.h */,
+				09161EBF2CEC7BAA00B2D6B3 /* RecordCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1820,7 +1877,9 @@
 				099B50A22CDA4EE000F33013 /* Session.m in Sources */,
 				09E28EEB2CE452C800B39B0A /* BaseLinearLayout.m in Sources */,
 				09CAB6F72CBA6389004DEFCB /* BaseCommonController.m in Sources */,
+				09161EBD2CEC77E500B2D6B3 /* RecordPageView.m in Sources */,
 				099B50ED2CE0B33D00F33013 /* SimplePlayerController.m in Sources */,
+				09161EC42CED887000B2D6B3 /* SheetListView.m in Sources */,
 				09CAB6A52CB95020004DEFCB /* main.m in Sources */,
 				09E0B5B92CBFB227006B65C1 /* FeedController.m in Sources */,
 				09E28EE82CE4461D00B39B0A /* SuperHorizontalProgressView.m in Sources */,
@@ -1854,16 +1913,19 @@
 				09E0B5AE2CBFB0ED006B65C1 /* VideoController.m in Sources */,
 				09161EB62CEB6EF100B2D6B3 /* LyricLineView.m in Sources */,
 				095E134E2CBFFC4C005A32D9 /* BannerCell.m in Sources */,
+				09161EC02CEC7BAA00B2D6B3 /* RecordCell.m in Sources */,
 				099E08C82CC0FDF6008A34D0 /* DiscoveryButtonView.m in Sources */,
 				099E08DD2CC13A7E008A34D0 /* SheetCell.m in Sources */,
 				09CAB6912CB9501F004DEFCB /* AppDelegate.m in Sources */,
 				095E13462CBFF3F5005A32D9 /* BannerData.m in Sources */,
 				09E28EEE2CE4534000B39B0A /* PlayListView.m in Sources */,
 				09CAB6FA2CBA6485004DEFCB /* BaseLogicController.m in Sources */,
+				09161EBA2CEC66D900B2D6B3 /* MusicPlayerController.m in Sources */,
 				099B50B12CDB5A0E00F33013 /* SuperDialogController.m in Sources */,
 				09162CF12CC5245A000A21C7 /* ClickEvent.m in Sources */,
 				09CAB6FD2CBA7C36004DEFCB /* TermServiceDialogController.m in Sources */,
 				09E0B5AB2CBFB066006B65C1 /* DiscoveryController.m in Sources */,
+				09161EC92CED97BD00B2D6B3 /* TopicCell.m in Sources */,
 				09CAB6E62CBA5093004DEFCB /* UIColor+Hex.m in Sources */,
 				09162CF52CC52AD3000A21C7 /* SuperToolbarView.m in Sources */,
 				09E0B5A62CBFA7CE006B65C1 /* TipUtil.m in Sources */,

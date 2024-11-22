@@ -9,7 +9,7 @@
 #import "MusicListManager.h"
 #import "SongSmallCell.h"
 #import "LyricUtil.h"
-
+#import "MusicPlayerManager.h"
 
 @implementation SmallAudioControlPageView
 

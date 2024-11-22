@@ -40,8 +40,6 @@ typedef NS_ENUM(NSInteger, PlayStatus) {
 /// 上一次保存播放进度时间
 @property(nonatomic, assign) NSTimeInterval lastSaveProgressTime;
 
-/// 当前音乐
-@property(nonatomic, strong) Song *data;
 
 @end
 

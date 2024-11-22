@@ -173,6 +173,8 @@
     //选中当前播放的音乐
     [self scrollPosition];
     
+    [self initPreperdLyric];
+    
     //显示歌词数据
     [self showLyricData];
 }
@@ -215,6 +217,15 @@
         //隐藏迷你控制器
         [self.smallAudioControlPageView removeFromSuperview];
     }
+}
+
+-(void)initPreperdLyric{
+    //获取当前音乐在播放列表中的索引
+    Song *data = [[MusicListManager shared] getData];
+    
+    [MusicPlayerManager shared].data = data;
+    
+    [[MusicPlayerManager shared] prepareLyric];
 }
 
 /// 返回迷你播放控制器
@@ -317,6 +328,9 @@
 
     //选中当前音乐
     [self scrollPosition];
+//    
+//    //显示歌词数据
+//    [self showLyricData];
 }
 
 /// 暂停了

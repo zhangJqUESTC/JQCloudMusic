@@ -224,6 +224,9 @@ static NSString * const SimplePlayerControllerTag = @"SimplePlayerController";
 
     //显示播放数据
     [self initPlayData];//再调用的目的是：当在后台时，有外部事件的发生，导致播放状态改变，所以，需要init
+    
+    //选中当前播放的音乐
+    [self scrollPosition];
 
     [self setMusicPlayerDelegate];
     

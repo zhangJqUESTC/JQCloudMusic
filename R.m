@@ -465,16 +465,20 @@
 @property (nonatomic, strong) UIImage* inputPassword;
 @property (nonatomic, strong) UIImage* payAliapy;
 @property (nonatomic, strong) UIImage* mic;
+@property (nonatomic, strong) UIImage* next;
 @property (nonatomic, strong) UIImage* defaultAvatar;
 @property (nonatomic, strong) UIImage* loginNetease;
+@property (nonatomic, strong) UIImage* defaultCover;
 @property (nonatomic, strong) UIImage* logo;
 @property (nonatomic, strong) UIImage* pause;
 @property (nonatomic, strong) UIImage* video;
+@property (nonatomic, strong) UIImage* ellipsisVertical;
 @property (nonatomic, strong) UIImage* stars;
 @property (nonatomic, strong) UIImage* superChevronRight;
 @property (nonatomic, strong) UIImage* sheet;
 @property (nonatomic, strong) UIImage* splashLogo;
 @property (nonatomic, strong) UIImage* shopCart;
+@property (nonatomic, strong) UIImage* repeatRandom;
 @property (nonatomic, strong) UIImage* mode;
 @property (nonatomic, strong) UIImage* guide1;
 @property (nonatomic, strong) UIImage* live;
@@ -496,6 +500,7 @@
 @property (nonatomic, strong) UIImage* loginWeibo;
 @property (nonatomic, strong) UIImage* fire;
 @property (nonatomic, strong) UIImage* fans;
+@property (nonatomic, strong) UIImage* download;
 @property (nonatomic, strong) UIImage* qrCode;
 @property (nonatomic, strong) UIImage* loginQq;
 @property (nonatomic, strong) UIImage* shop;
@@ -514,11 +519,15 @@
 @property (nonatomic, strong) UIImage* videoSelected;
 @property (nonatomic, strong) UIImage* scan;
 @property (nonatomic, strong) UIImage* payHuabeiStage;
+@property (nonatomic, strong) UIImage* repeatList;
+@property (nonatomic, strong) UIImage* recordBackground;
 @property (nonatomic, strong) UIImage* timer;
 @property (nonatomic, strong) UIImage* loginWechat;
+@property (nonatomic, strong) UIImage* repeatOne;
 @property (nonatomic, strong) UIImage* loginWeiboSelected;
 @property (nonatomic, strong) UIImage* feedSelected;
 @property (nonatomic, strong) UIImage* refresh;
+@property (nonatomic, strong) UIImage* eq;
 @property (nonatomic, strong) UIImage* arrowLeft;
 @property (nonatomic, strong) UIImage* comments;
 @property (nonatomic, strong) UIImage* search;
@@ -526,6 +535,7 @@
 @property (nonatomic, strong) UIImage* liveSelected;
 @property (nonatomic, strong) UIImage* inputUsername;
 @property (nonatomic, strong) UIImage* splashBanner;
+@property (nonatomic, strong) UIImage* recordThumb;
 @property (nonatomic, strong) UIImage* meSelect;
 @property (nonatomic, strong) UIImage* previous;
 @property (nonatomic, strong) UIImage* guide2;
@@ -563,16 +573,20 @@
 - (UIImage*)inputPassword { return [UIImage imageNamed:@"InputPassword" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)payAliapy { return [UIImage imageNamed:@"PayAliapy" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)mic { return [UIImage imageNamed:@"Mic" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)next { return [UIImage imageNamed:@"Next" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)defaultAvatar { return [UIImage imageNamed:@"DefaultAvatar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)loginNetease { return [UIImage imageNamed:@"LoginNetease" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)defaultCover { return [UIImage imageNamed:@"DefaultCover" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)logo { return [UIImage imageNamed:@"Logo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)pause { return [UIImage imageNamed:@"Pause" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)video { return [UIImage imageNamed:@"Video" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)ellipsisVertical { return [UIImage imageNamed:@"EllipsisVertical" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)stars { return [UIImage imageNamed:@"stars" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)superChevronRight { return [UIImage imageNamed:@"SuperChevronRight" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)sheet { return [UIImage imageNamed:@"Sheet" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashLogo { return [UIImage imageNamed:@"SplashLogo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)shopCart { return [UIImage imageNamed:@"ShopCart" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)repeatRandom { return [UIImage imageNamed:@"RepeatRandom" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)mode { return [UIImage imageNamed:@"Mode" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide1 { return [UIImage imageNamed:@"guide1" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)live { return [UIImage imageNamed:@"Live" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
@@ -594,6 +608,7 @@
 - (UIImage*)loginWeibo { return [UIImage imageNamed:@"LoginWeibo" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)fire { return [UIImage imageNamed:@"Fire" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)fans { return [UIImage imageNamed:@"Fans" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)download { return [UIImage imageNamed:@"Download" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)qrCode { return [UIImage imageNamed:@"QRCode" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)loginQq { return [UIImage imageNamed:@"LoginQq" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)shop { return [UIImage imageNamed:@"Shop" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
@@ -612,11 +627,15 @@
 - (UIImage*)videoSelected { return [UIImage imageNamed:@"VideoSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)scan { return [UIImage imageNamed:@"Scan" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)payHuabeiStage { return [UIImage imageNamed:@"PayHuabeiStage" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)repeatList { return [UIImage imageNamed:@"RepeatList" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)recordBackground { return [UIImage imageNamed:@"RecordBackground" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)timer { return [UIImage imageNamed:@"Timer" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)loginWechat { return [UIImage imageNamed:@"LoginWechat" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)repeatOne { return [UIImage imageNamed:@"RepeatOne" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)loginWeiboSelected { return [UIImage imageNamed:@"LoginWeiboSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)feedSelected { return [UIImage imageNamed:@"FeedSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)refresh { return [UIImage imageNamed:@"Refresh" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)eq { return [UIImage imageNamed:@"Eq" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)arrowLeft { return [UIImage imageNamed:@"ArrowLeft" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)comments { return [UIImage imageNamed:@"comments" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)search { return [UIImage imageNamed:@"Search" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
@@ -624,6 +643,7 @@
 - (UIImage*)liveSelected { return [UIImage imageNamed:@"LiveSelected" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)inputUsername { return [UIImage imageNamed:@"InputUsername" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)splashBanner { return [UIImage imageNamed:@"SplashBanner" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
+- (UIImage*)recordThumb { return [UIImage imageNamed:@"RecordThumb" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)meSelect { return [UIImage imageNamed:@"MeSelect" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)previous { return [UIImage imageNamed:@"Previous" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
 - (UIImage*)guide2 { return [UIImage imageNamed:@"guide2" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]; }
